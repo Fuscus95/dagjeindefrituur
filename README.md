@@ -1,13 +1,12 @@
 # Dagje in de Frituur
 
-Statische website, klaar voor GitHub Pages.
+Deze versie is aangepast aan de huidige GitHub-structuur:
 
-## Publiceren op GitHub Pages
-1. Maak een nieuwe GitHub repository.
-2. Upload de inhoud van deze map naar de root van de repository.
-3. Ga naar Settings → Pages.
-4. Kies Deploy from a branch.
-5. Kies `main` en `/ (root)`.
-6. Sla op.
+/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── excursies/
 
-De homepage staat in `index.html`.
+Upload alle bestanden en mappen rechtstreeks naar de root van je GitHub repository.
