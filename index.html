@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dagje in de Frituur | Vogelkijken & frituren in België</title>
- <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+
   <meta
     name="description"
     content="Dagje in de Frituur combineert vogelkijken, Belgische natuurgebieden en frituurcultuur. Ontdek excursies aan de Oostkust, op Linkeroever, in de Viroin, Gaume, Antwerpse rand en Hoge Venen."
   >
 
   <link rel="canonical" href="https://dagjeindefrituur.be/">
-  
 
   <script type="application/ld+json">
   {
@@ -27,499 +29,546 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dagje in de Frituur | Vogelkijken & frituren in België">
+
   <meta
     property="og:description"
     content="Een hoogst onwetenschappelijke gids voor vogelkijken, natuurgebieden en frituurcultuur in België."
   >
+
   <meta property="og:url" content="https://dagjeindefrituur.be/">
   <meta property="og:site_name" content="Dagje in de Frituur">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
     rel="stylesheet"
   >
+
   <link rel="stylesheet" href="/style.css">
 </head>
 
+
 <body>
 
-<header class="site-header">
-  <div class="container nav-wrap">
-
- <a class="brand" href="/">
-  <img class="brand-icon" src="/favicon.png" alt="Dagje in de Frituur">
-  <span>
-    <strong>Dagje in de Frituur</strong>
-    <small>Belgische natuur- & frituurbeleving</small>
-  </span>
-</a>
-
-    <button
-      class="nav-toggle"
-      aria-expanded="false"
-      aria-controls="main-nav"
-      aria-label="Menu openen"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-<nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
-  <a href="/">Home</a>
-  <a href="#excursies">Excursies</a>
-  <a href="/gidsen.html">Gidsen</a>
-  <a href="#werkwijze">Werkwijze</a>
-  <a href="#over">Over ons</a>
-</nav>
-
-  </div>
-</header>
+<!-- Centrale header uit components.js -->
+<div id="site-header"></div>
 
 
 <main id="top">
 
-<section class="hero">
-  <div class="container hero-content">
+  <!-- HERO -->
+  <section class="hero">
 
-    <p class="eyebrow">
-      Georganiseerd frituurveldwerk sinds ongeveer gisteren
-    </p>
+    <div class="container hero-content">
 
-    <h1>Ontdek België, frituur per frituur</h1>
+      <p class="eyebrow">
+        Georganiseerd frituurveldwerk sinds ongeveer gisteren
+      </p>
 
-    <p class="hero-copy">
-      Dagje in de Frituur is een hoogst onwetenschappelijke gids voor
-      vogelkijken en frituren in België. Van vogels zoeken aan de
-      Oostkust tot frieten eten na een dag in de Hoge Venen:
-      onze excursies combineren Belgische natuurgebieden met de
-      betere en bedenkelijkere frituurcultuur.
-    </p>
+      <h1>Ontdek België, frituur per frituur</h1>
 
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#excursies">
-        Bekijk alle excursies
-      </a>
+      <p class="hero-copy">
+        Dagje in de Frituur is een hoogst onwetenschappelijke gids voor
+        vogelkijken en frituren in België. Van vogels zoeken aan de
+        Oostkust tot frieten eten na een dag in de Hoge Venen:
+        onze excursies combineren Belgische natuurgebieden met de
+        betere en bedenkelijkere frituurcultuur.
+      </p>
 
-      <a class="btn btn-secondary" href="#werkwijze">
-        Hoe werkt het?
-      </a>
-    </div>
+      <div class="hero-actions">
 
-  </div>
-</section>
+        <a class="btn btn-primary" href="#excursies">
+          Bekijk alle excursies
+        </a>
 
+        <a class="btn btn-secondary" href="#werkwijze">
+          Hoe werkt het?
+        </a>
 
-<section class="section">
-  <div class="container narrow center">
-
-    <p class="eyebrow dark">Dagje in de Frituur</p>
-
-    <h2>Vogelkijken en frituren in België</h2>
-
-    <p>
-      Onze hoogst subjectieve gidsen combineren natuurgebieden,
-      vogelwaarnemingen en frituren verspreid over België.
-    </p>
-
-    <p style="color:var(--muted);font-size:19px;">
-      Elke route is opgevat als een echte natuurexcursie, compleet met
-      regio, moeilijkheidsgraad, doelhabitats en zorgvuldig geplande stops.
-      Alleen zijn de doelsoorten hier meestal gefrituurd.
-    </p>
-
-  </div>
-</section>
-
-
-<section id="excursies" class="section alt">
-  <div class="container">
-
-    <div class="section-head">
-      <div>
-        <p class="eyebrow dark">Onze routes</p>
-        <h2>Zes volstrekt noodzakelijke frituurexcursies door België</h2>
       </div>
-    </div>
-
-    <div class="cards">
-
-      <article class="card">
-        <div class="card-media">
-          <span class="tag">Kust</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Knokke – Zeebrugge – Blankenberge · 4–5 uur
-          </p>
-
-          <h3>
-            <a href="/excursies/oostkust.html">
-              Frituren van de Oostkust
-            </a>
-          </h3>
-
-          <p>
-            Vogelkijken rond Zeebrugge en de Belgische Oostkust,
-            gevolgd door een hoogst noodzakelijke evaluatie van de
-            plaatselijke frituren. Op zoek naar de grauwe fritis
-          </p>
-
-          <div class="card-footer">
-            <strong>5–7 frituren</strong>
-            <a class="mini-link" href="/excursies/oostkust.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="card">
-        <div class="card-media alt1">
-          <span class="tag">Haven & polders</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Linkeroever – Kallo – Doel · 3–4 uur
-          </p>
-
-          <h3>
-            <a href="/excursies/linkeroever.html">
-              Frituren van Linkeroever
-            </a>
-          </h3>
-
-          <p>
-            Polders, havengebied, moerasvogels en frieten op Linkeroever.
-            Een landschap van natuurontwikkeling, industrie en
-            strategisch geplaatste frituren. Polders zijn ook natuur.
-          </p>
-
-          <div class="card-footer">
-            <strong>4–6 frituren</strong>
-            <a class="mini-link" href="/excursies/linkeroever.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="card">
-        <div class="card-media alt2">
-          <span class="tag">Vallei</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Nismes – Olloy-sur-Viroin · Volledige dag
-          </p>
-
-          <h3>
-            <a href="/excursies/viroin.html">
-              Frituren van de Viroin
-            </a>
-          </h3>
-
-          <p>
-            Vogelkijken in de Viroin rond Nismes en Olloy-sur-Viroin,
-            tussen kalkgraslanden, bossen en dorpen waar de frituur
-            soms gevaarlijk dicht bij het ornithologische programma ligt.
-          </p>
-
-          <div class="card-footer">
-            <strong>4–5 frituren</strong>
-            <a class="mini-link" href="/excursies/viroin.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="card">
-        <div class="card-media alt3">
-          <span class="tag">Suburbaan</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Antwerpse rand · 4 uur
-          </p>
-
-          <h3>
-            <a href="/excursies/antwerpse-rand.html">
-              Frituren van de Antwerpse rand
-            </a>
-          </h3>
-
-          <p>
-            Steenwegen, verkavelingen, natuurgebieden en parkeerterreinen
-            vormen hier het ideale leefgebied voor de moderne frituur.
-          </p>
-
-          <div class="card-footer">
-            <strong>6–8 frituren</strong>
-            <a class="mini-link" href="/excursies/antwerpse-rand.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="card">
-        <div class="card-media alt4">
-          <span class="tag">Zuid-België</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Gaume · Volledige dag
-          </p>
-
-          <h3>
-            <a href="/excursies/gaume.html">
-              Frituren van de Gaume
-            </a>
-          </h3>
-
-          <p>
-            Vogelkijken in de Gaume tussen bossen, landbouwgebied en
-            rustige dorpen, gevolgd door een zoektocht naar de
-            meest zuidelijke frituurcultuur van België.
-          </p>
-
-          <div class="card-footer">
-            <strong>4–6 frituren</strong>
-            <a class="mini-link" href="/excursies/gaume.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="card">
-        <div class="card-media alt5">
-          <span class="tag">Hoogland</span>
-        </div>
-
-        <div class="card-body">
-          <p class="meta">
-            Hoge Venen – Brackvenn – Eupen · 5–6 uur
-          </p>
-
-          <h3>
-            <a href="/excursies/hoge-venen.html">
-              Snackbars van de Hoge Venen
-            </a>
-          </h3>
-
-          <p>
-            Vogelkijken in de Hoge Venen, Brackvenn en omgeving,
-            gevolgd door de existentiële vraag waar je na uren
-            veenlopen nog degelijk kunt eten.
-          </p>
-
-          <div class="card-footer">
-            <strong>3–5 snackbars</strong>
-            <a class="mini-link" href="/excursies/hoge-venen.html">
-              Bekijk excursie →
-            </a>
-          </div>
-        </div>
-      </article>
 
     </div>
-  </div>
-</section>
+
+  </section>
 
 
-<section id="werkwijze" class="section">
-  <div class="container split">
+  <!-- INTRO -->
+  <section class="section">
 
-    <div class="content">
+    <div class="container narrow center">
 
-      <p class="eyebrow dark">Onze werkwijze</p>
+      <p class="eyebrow dark">
+        Dagje in de Frituur
+      </p>
 
-      <h2>Van terreinverkenning tot frietbak</h2>
+      <h2>Vogelkijken en frituren in België</h2>
 
       <p>
-        We behandelen elke regio alsof we een bijzonder kwetsbaar
-        ecosysteem onderzoeken. We vergelijken locaties, plannen
-        verplaatsingen en houden rekening met kritieke factoren zoals
-        openingsuren, wachtrijen en de aanwezigheid van zitbanken.
+        Onze hoogst subjectieve gidsen combineren natuurgebieden,
+        vogelwaarnemingen en frituren verspreid over België.
       </p>
 
-      <div class="checklist">
+      <p style="color:var(--muted);font-size:19px;">
+        Elke route is opgevat als een echte natuurexcursie, compleet met
+        regio, moeilijkheidsgraad, doelhabitats en zorgvuldig geplande stops.
+        Alleen zijn de doelsoorten hier meestal gefrituurd.
+      </p>
 
-        <div class="checkitem">
-          <span>✓</span>
-          <div>
-            <strong>Regionale focus</strong><br>
-            Elke excursie draait rond een herkenbaar landschap,
-            vogelgebied of stedelijke regio.
-          </div>
-        </div>
+    </div>
 
-        <div class="checkitem">
-          <span>✓</span>
-          <div>
-            <strong>Meerdere stops</strong><br>
-            Geen excursie zonder voldoende ornithologisch en
-            gastronomisch veldmateriaal.
-          </div>
-        </div>
+  </section>
 
-        <div class="checkitem">
-          <span>✓</span>
-          <div>
-            <strong>Volledig onwetenschappelijke scoring</strong><br>
-            Portiegrootte, sfeer, sauzen en habitatkwaliteit worden
-            vrij geïnterpreteerd.
-          </div>
+
+  <!-- EXCURSIES -->
+  <section id="excursies" class="section alt">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow dark">
+            Onze routes
+          </p>
+
+          <h2>
+            Zes volstrekt noodzakelijke frituurexcursies door België
+          </h2>
+
         </div>
 
       </div>
+
+
+      <div class="cards">
+
+        <!-- OOSTKUST -->
+        <article class="card">
+
+          <div class="card-media">
+            <span class="tag">Kust</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Knokke – Zeebrugge – Blankenberge · 4–5 uur
+            </p>
+
+            <h3>
+              <a href="/excursies/oostkust.html">
+                Frituren van de Oostkust
+              </a>
+            </h3>
+
+            <p>
+              Vogelkijken rond Zeebrugge en de Belgische Oostkust,
+              gevolgd door een hoogst noodzakelijke evaluatie van de
+              plaatselijke frituren. Op zoek naar de grauwe fritis
+            </p>
+
+            <div class="card-footer">
+
+              <strong>5–7 frituren</strong>
+
+              <a class="mini-link" href="/excursies/oostkust.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- LINKEROEVER -->
+        <article class="card">
+
+          <div class="card-media alt1">
+            <span class="tag">Haven & polders</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Linkeroever – Kallo – Doel · 3–4 uur
+            </p>
+
+            <h3>
+              <a href="/excursies/linkeroever.html">
+                Frituren van Linkeroever
+              </a>
+            </h3>
+
+            <p>
+              Polders, havengebied, moerasvogels en frieten op Linkeroever.
+              Een landschap van natuurontwikkeling, industrie en
+              strategisch geplaatste frituren. Polders zijn ook natuur.
+            </p>
+
+            <div class="card-footer">
+
+              <strong>4–6 frituren</strong>
+
+              <a class="mini-link" href="/excursies/linkeroever.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- VIROIN -->
+        <article class="card">
+
+          <div class="card-media alt2">
+            <span class="tag">Vallei</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Nismes – Olloy-sur-Viroin · Volledige dag
+            </p>
+
+            <h3>
+              <a href="/excursies/viroin.html">
+                Frituren van de Viroin
+              </a>
+            </h3>
+
+            <p>
+              Vogelkijken in de Viroin rond Nismes en Olloy-sur-Viroin,
+              tussen kalkgraslanden, bossen en dorpen waar de frituur
+              soms gevaarlijk dicht bij het ornithologische programma ligt.
+            </p>
+
+            <div class="card-footer">
+
+              <strong>4–5 frituren</strong>
+
+              <a class="mini-link" href="/excursies/viroin.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ANTWERPSE RAND -->
+        <article class="card">
+
+          <div class="card-media alt3">
+            <span class="tag">Suburbaan</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Antwerpse rand · 4 uur
+            </p>
+
+            <h3>
+              <a href="/excursies/antwerpse-rand.html">
+                Frituren van de Antwerpse rand
+              </a>
+            </h3>
+
+            <p>
+              Steenwegen, verkavelingen, natuurgebieden en parkeerterreinen
+              vormen hier het ideale leefgebied voor de moderne frituur.
+            </p>
+
+            <div class="card-footer">
+
+              <strong>6–8 frituren</strong>
+
+              <a class="mini-link" href="/excursies/antwerpse-rand.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- GAUME -->
+        <article class="card">
+
+          <div class="card-media alt4">
+            <span class="tag">Zuid-België</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Gaume · Volledige dag
+            </p>
+
+            <h3>
+              <a href="/excursies/gaume.html">
+                Frituren van de Gaume
+              </a>
+            </h3>
+
+            <p>
+              Vogelkijken in de Gaume tussen bossen, landbouwgebied en
+              rustige dorpen, gevolgd door een zoektocht naar de
+              meest zuidelijke frituurcultuur van België.
+            </p>
+
+            <div class="card-footer">
+
+              <strong>4–6 frituren</strong>
+
+              <a class="mini-link" href="/excursies/gaume.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- HOGE VENEN -->
+        <article class="card">
+
+          <div class="card-media alt5">
+            <span class="tag">Hoogland</span>
+          </div>
+
+          <div class="card-body">
+
+            <p class="meta">
+              Hoge Venen – Brackvenn – Eupen · 5–6 uur
+            </p>
+
+            <h3>
+              <a href="/excursies/hoge-venen.html">
+                Snackbars van de Hoge Venen
+              </a>
+            </h3>
+
+            <p>
+              Vogelkijken in de Hoge Venen, Brackvenn en omgeving,
+              gevolgd door de existentiële vraag waar je na uren
+              veenlopen nog degelijk kunt eten.
+            </p>
+
+            <div class="card-footer">
+
+              <strong>3–5 snackbars</strong>
+
+              <a class="mini-link" href="/excursies/hoge-venen.html">
+                Bekijk excursie →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
     </div>
 
-    <aside class="quote-box">
-      <p class="eyebrow">Veldfilosofie</p>
+  </section>
 
-      <h3 style="font-size:34px;">
-        “Een goede frituur vind je niet. Je observeert haar.”
-      </h3>
 
-      <p style="color:rgba(255,255,255,.65);">
-        — interne veldnota, bron onbekend
+  <!-- WERKWIJZE -->
+  <section id="werkwijze" class="section">
+
+    <div class="container split">
+
+      <div class="content">
+
+        <p class="eyebrow dark">
+          Onze werkwijze
+        </p>
+
+        <h2>
+          Van terreinverkenning tot frietbak
+        </h2>
+
+        <p>
+          We behandelen elke regio alsof we een bijzonder kwetsbaar
+          ecosysteem onderzoeken. We vergelijken locaties, plannen
+          verplaatsingen en houden rekening met kritieke factoren zoals
+          openingsuren, wachtrijen en de aanwezigheid van zitbanken.
+        </p>
+
+
+        <div class="checklist">
+
+          <div class="checkitem">
+
+            <span>✓</span>
+
+            <div>
+              <strong>Regionale focus</strong><br>
+              Elke excursie draait rond een herkenbaar landschap,
+              vogelgebied of stedelijke regio.
+            </div>
+
+          </div>
+
+
+          <div class="checkitem">
+
+            <span>✓</span>
+
+            <div>
+              <strong>Meerdere stops</strong><br>
+              Geen excursie zonder voldoende ornithologisch en
+              gastronomisch veldmateriaal.
+            </div>
+
+          </div>
+
+
+          <div class="checkitem">
+
+            <span>✓</span>
+
+            <div>
+              <strong>Volledig onwetenschappelijke scoring</strong><br>
+              Portiegrootte, sfeer, sauzen en habitatkwaliteit worden
+              vrij geïnterpreteerd.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <aside class="quote-box">
+
+        <p class="eyebrow">
+          Veldfilosofie
+        </p>
+
+        <h3 style="font-size:34px;">
+          “Een goede frituur vind je niet. Je observeert haar.”
+        </h3>
+
+        <p style="color:rgba(255,255,255,.65);">
+          — interne veldnota, bron onbekend
+        </p>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+
+  <!-- OVER -->
+  <section id="over" class="section alt">
+
+    <div class="container narrow center">
+
+      <p class="eyebrow dark">
+        Over het project
       </p>
-    </aside>
 
-  </div>
-</section>
+      <h2>
+        Een parodie met honger
+      </h2>
 
+      <p style="color:var(--muted);font-size:18px;">
+        Dagje in de Frituur is een onafhankelijke trollsite over Belgische
+        frituurcultuur, ontstaan nadat ik gewoon tering kreeg van de eindeloze
+        sluikreclame via de commentaren op Waarnemingen.be. Geen echte
+        excursies, geen boekingsdruk en voorlopig ook geen aansprakelijkheid
+        voor te veel mayonaise.
+      </p>
 
-<section id="over" class="section alt">
-  <div class="container narrow center">
+    </div>
 
-    <p class="eyebrow dark">Over het project</p>
-
-    <h2>Een parodie met honger</h2>
-
-    <p style="color:var(--muted);font-size:18px;">
-      Dagje in de Frituur is een onafhankelijke trollsite over Belgische
-      frituurcultuur, ontstaan nadat ik gewoon tering kreeg van de eindeloze
-      sluikreclame via de commentaren op Waarnemingen.be. Geen echte
-      excursies, geen boekingsdruk en voorlopig ook geen aansprakelijkheid
-      voor te veel mayonaise.
-    </p>
-
-  </div>
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="container narrow">
+  <!-- SEO / ALLE EXCURSIES -->
+  <section class="section">
 
-    <h2>Alle excursies</h2>
+    <div class="container narrow">
 
-    <ul>
-      <li>
-        <a href="/excursies/oostkust.html">
-          Vogelkijken en frituren aan de Oostkust
-        </a>
-      </li>
+      <h2>Alle excursies</h2>
 
-      <li>
-        <a href="/excursies/linkeroever.html">
-          Vogelkijken en frituren op Linkeroever
-        </a>
-      </li>
+      <ul>
 
-      <li>
-        <a href="/excursies/viroin.html">
-          Vogelkijken en frituren in de Viroin
-        </a>
-      </li>
+        <li>
+          <a href="/excursies/oostkust.html">
+            Vogelkijken en frituren aan de Oostkust
+          </a>
+        </li>
 
-      <li>
-        <a href="/excursies/antwerpse-rand.html">
-          Vogelkijken en frituren in de Antwerpse rand
-        </a>
-      </li>
+        <li>
+          <a href="/excursies/linkeroever.html">
+            Vogelkijken en frituren op Linkeroever
+          </a>
+        </li>
 
-      <li>
-        <a href="/excursies/gaume.html">
-          Vogelkijken en frituren in de Gaume
-        </a>
-      </li>
+        <li>
+          <a href="/excursies/viroin.html">
+            Vogelkijken en frituren in de Viroin
+          </a>
+        </li>
 
-      <li>
-        <a href="/excursies/hoge-venen.html">
-          Vogelkijken en snackbars in de Hoge Venen
-        </a>
-      </li>
-    </ul>
+        <li>
+          <a href="/excursies/antwerpse-rand.html">
+            Vogelkijken en frituren in de Antwerpse rand
+          </a>
+        </li>
 
-  </div>
-</section>
+        <li>
+          <a href="/excursies/gaume.html">
+            Vogelkijken en frituren in de Gaume
+          </a>
+        </li>
+
+        <li>
+          <a href="/excursies/hoge-venen.html">
+            Vogelkijken en snackbars in de Hoge Venen
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
 
 </main>
 
 
-<footer>
-  <div class="container footer-grid">
+<!-- Centrale footer uit components.js -->
+<div id="site-footer"></div>
 
-    <div>
-  <a class="brand" href="/">
-  <img class="brand-icon" src="/favicon.png" alt="Dagje in de Frituur">
-  <span>
-    <strong>Dagje in de Frituur</strong>
-    <small>Belgische natuur- & frituurbeleving</small>
-  </span>
-</a>
 
-      <p>
-        Een onafhankelijke ode aan vogels, natuurgebieden, frieten,
-        snackbars en veel te serieuze excursieteksten.
-      </p>
-    </div>
+<!-- Eerst centrale header/footer laden -->
+<script src="/components.js"></script>
 
-    <div>
-      <strong>Excursies</strong>
-      <a href="/excursies/oostkust.html">Oostkust</a>
-      <a href="/excursies/linkeroever.html">Linkeroever</a>
-      <a href="/excursies/viroin.html">Viroin</a>
-      <a href="/excursies/antwerpse-rand.html">Antwerpse rand</a>
-      <a href="/excursies/gaume.html">Gaume</a>
-      <a href="/excursies/hoge-venen.html">Hoge Venen</a>
-    </div>
-
-   <div>
-  <strong>Meer</strong>
-  <a href="/gidsen.html">Gidsen</a>
-  <a href="#werkwijze">Werkwijze</a>
-  <a href="#over">Over ons</a>
-</div>
-
-  </div>
-
-  <div class="container footer-bottom">
-    <span>
-      © <span data-year></span> Dagje in de Frituur |
-      Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
-    </span>
-    <span>Parodieproject</span>
-  </div>
-</footer>
-
+<!-- Daarna algemene JavaScript -->
 <script src="/script.js"></script>
+
 
 </body>
 </html>
