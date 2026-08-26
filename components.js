@@ -61,11 +61,15 @@ const footerHTML = `
         </a>
       </p>
 
-      <p>
-        <a href="/algemene-voorwaarden.html">
-          Download onze Algemene Voorwaarden
-        </a>
-      </p>
+     <p>
+  <a
+    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download onze Algemene Voorwaarden
+  </a>
+</p>
 
       <p class="footer-disclaimer">
         Dagje in de Frituur is een onafhankelijk parodieproject over
