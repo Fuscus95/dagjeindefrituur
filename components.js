@@ -119,12 +119,10 @@ const footerHTML = `
   <div class="container footer-bottom">
 
     <span>
-      © <span data-year></span> Dagje in de Frituur
+      © <span data-year></span> Dagje in de Frituur | Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
     </span>
 
-    <span>
-      Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
-    </span>
+   
 
   </div>
 
