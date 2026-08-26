@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bertrand | Gidsen | Dagje in de Frituur</title>
+
+  <meta
+    name="description"
+    content="Maak kennis met Bertrand, internationaal vogelgids, globetrotter en nieuwste toptransfer van Dagje in de Frituur."
+  >
+
+  <link
+    rel="canonical"
+    href="https://dagjeindefrituur.be/gidsen/bertrand.html"
+  >
+
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+
+    .guide-hero {
+      padding: 70px 0 40px;
+    }
+
+    .guide-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 390px) 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .guide-photo {
+      position: sticky;
+      top: 30px;
+    }
+
+    .guide-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .guide-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ded8c7, #aaa381);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      box-sizing: border-box;
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .guide-name {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 0.95;
+      margin: 8px 0 18px;
+    }
+
+    .guide-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .guide-meta span {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--surface, #ece8db);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .guide-intro {
+      font-size: 21px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .guide-text {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .guide-text p {
+      margin: 0 0 24px;
+    }
+
+    .guide-facts {
+      margin: 45px 0;
+      padding: 30px;
+      border-radius: 18px;
+      background: var(--surface, #ece8db);
+    }
+
+    .guide-facts h2 {
+      margin-top: 0;
+    }
+
+    .guide-facts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 35px;
+    }
+
+    .guide-fact small {
+      display: block;
+      color: var(--muted, #666);
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: .09em;
+      font-weight: 700;
+    }
+
+    .guide-fact strong {
+      font-size: 17px;
+    }
+
+    .guide-back {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+
+      .guide-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .guide-photo {
+        position: static;
+        max-width: 500px;
+      }
+
+      .guide-facts-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- Centrale header uit components.js -->
+<div id="site-header"></div>
+
+
+<main>
+
+  <section class="guide-hero">
+
+    <div class="container guide-layout">
+
+
+      <aside class="guide-photo">
+
+        <!--
+        Zodra je een foto hebt:
+
+        <img
+          src="/images/gidsen/bertrand.jpg"
+          alt="Bertrand"
+        >
+        -->
+
+        <div class="guide-photo-placeholder">
+          Foto van Bertrand<br>
+          liefst op een ander continent<br>
+          of in de buurt van een frituur
+        </div>
+
+      </aside>
+
+
+      <article>
+
+        <p class="eyebrow dark">
+          Onze gidsen
+        </p>
+
+        <h1 class="guide-name">
+          Bertrand
+        </h1>
+
+
+        <div class="guide-meta">
+
+          <span>Toptransfer</span>
+          <span>Wereldvogelen</span>
+          <span>Reisleider</span>
+          <span>Canada</span>
+          <span>Frituur Champions League</span>
+
+        </div>
+
+
+        <p class="guide-intro">
+          Na jarenlang rijpen in de wachtkamers van Starling en Ornis
+          maakt Bertrand eindelijk zijn droomtransfer waar:
+          de Champions League van het internationale gidsenwezen,
+          <strong>Dagje in de Frituur</strong>.
+        </p>
+
+
+        <div class="guide-text">
+
+          <p>
+            Bertrand is al jaren actief op het hoogste internationale niveau.
+            Europa, het Midden-Oosten, Afrika, Azië, Noord-Amerika en
+            Zuid-Amerika: zet ergens een zeldzame vogel neer en de kans is
+            groot dat hij er al eens met een groep betalende vogelaars
+            achteraan is gelopen.
+          </p>
+
+          <p>
+            Zijn carrière begon nochtans bescheiden, tussen de Belgische
+            akkers en bossen. Al snel bleek België ornithologisch te klein
+            en begon hij heel Europa en het Midden-Oosten af te schuimen.
+            Een reis naar Ghana en São Tomé zorgde vervolgens voor de
+            definitieve besmetting met tropisch vogelen.
+          </p>
+
+          <p>
+            Daarna ging het snel. Bertrand dook op in verre uithoeken van
+            de wereld, werkte zich door eindeloze soortenlijsten en
+            ontwikkelde een professionele capaciteit om om 04:15 uur
+            vol enthousiasme aan een hotelreceptie te staan alsof dit een
+            normaal tijdstip is om aan een werkdag te beginnen.
+          </p>
+
+          <p>
+            Uiteindelijk belandde hij zelfs in Canada, waar hij vanuit
+            Victoria zowat iedere beschikbare hoek van British Columbia
+            begon uit te kammen. Een normaal mens zou daar genoegen nemen
+            met bergen, bossen en walvissen. Bertrand besloot dat ook elke
+            moeilijk bereikbare vogel nog gecontroleerd moest worden.
+          </p>
+
+          <p>
+            Ondertussen werd zijn talent ook opgepikt door de traditionele
+            opleidingsclubs. Bij <strong>Starling</strong> mocht hij zich
+            uitleven als gids, communicator, organisator van groepsreizen
+            en algemeen ornithologisch manusje-van-alles.
+          </p>
+
+          <p>
+            Daarna volgde <strong>Ornis</strong>, waar Bertrand zich mocht
+            bewijzen op het internationale circuit. Peru, Vietnam,
+            Saudi-Arabië, Senegal en nog een handvol bestemmingen waar de
+            gemiddelde Belg eerst Google Maps voor moet openen: hij draait
+            er zijn hand niet voor om.
+          </p>
+
+          <p>
+            In Senegal slaagde hij er zelfs in om tussen het gewone
+            gidsenwerk door een <strong>Cabanis's Bunting</strong> te vinden,
+            pas de tweede waarneming voor het land. Een prima prestatie,
+            maar bij Dagje in de Frituur kijken we uiteraard vooral naar
+            de moeilijkere parameters: kan iemand een degelijke frituur
+            vinden vóór sluitingstijd en weet hij het verschil tussen een
+            viandel en een boulet?
+          </p>
+
+          <p>
+            Na jaren rijpen bij Starling en Ornis kwam dan eindelijk het
+            telefoontje waarop iedere professionele vogelgids stiekem wacht.
+            De scoutingscel van Dagje in de Frituur had voldoende gezien.
+          </p>
+
+          <p>
+            De onderhandelingen sleepten nog even aan, maar uiteindelijk
+            werd het akkoord beklonken. Bertrand laat de wachtkamers achter
+            zich en maakt zijn langverwachte droomtransfer naar de
+            <strong>Champions League van het gidsen</strong>.
+          </p>
+
+          <p>
+            Waar andere organisaties schermen met endemische soorten,
+            luxe lodges en professionele logistiek, gaan wij een stap verder:
+            een excursie is pas geslaagd wanneer zowel de targetsoort als
+            de correcte frituursnack op de lijst staat.
+          </p>
+
+          <p>
+            Bertrand brengt daarvoor een indrukwekkend internationaal
+            palmares mee. Wij zorgen voor de mayonaise.
+          </p>
+
+          <p>
+            Zijn favoriete Monster is overigens
+            <strong>Rehab</strong>. Een keuze die vermoedelijk noodzakelijk
+            werd na jarenlang om 03:45 uur opstaan voor pittas,
+            antpitta's en andere vogels die weigeren zich tijdens normale
+            kantooruren te laten zien.
+          </p>
+
+          <p>
+            Welkom op het hoogste niveau, Bertrand.
+          </p>
+
+        </div>
+
+
+        <section class="guide-facts">
+
+          <h2>Veldfiche</h2>
+
+          <div class="guide-facts-grid">
+
+            <div class="guide-fact">
+              <small>Naam op de ploeglijst</small>
+              <strong>Bertrand</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Favoriete Monster</small>
+              <strong>Rehab</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Vorige clubs</small>
+              <strong>Starling & Ornis</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Huidige club</small>
+              <strong>Dagje in de Frituur</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Competitie</small>
+              <strong>Champions League van het gidsen</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Standplaats</small>
+              <strong>Victoria, Canada</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Werkterrein</small>
+              <strong>Min of meer de volledige planeet</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Specialiteit</small>
+              <strong>Wereldvogelen & verre reizen</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Senegalees wapenfeit</small>
+              <strong>Cabanis's Bunting</strong>
+            </div>
+
+            <div class="guide-fact">
+              <small>Nieuwe uitdaging</small>
+              <strong>Leren gidsen op frituurniveau</strong>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <div class="guide-back">
+
+          <a
+            href="/gidsen.html"
+            class="btn btn-secondary"
+          >
+            ← Terug naar alle gidsen
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- Centrale footer uit components.js -->
+<div id="site-footer"></div>
+
+
+<script src="/components.js"></script>
+<script src="/script.js"></script>
+
+
+</body>
+
+</html>
