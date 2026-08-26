@@ -82,7 +82,7 @@ const footerHTML = `
       <div class="social-links">
 
         <a
-          href="#"
+          href="https://www.facebook.com/birdingbelgium/"
           class="social-button"
           aria-label="Facebook"
           target="_blank"
