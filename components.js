@@ -3,10 +3,10 @@ const headerHTML = `
   <div class="container nav-wrap">
 
     <a class="brand" href="/">
-      <span class="brand-icon">🍟</span>
+      <img class="brand-icon" src="/favicon.png" alt="Dagje in de Frituur">
       <span>
         <strong>Dagje in de Frituur</strong>
-        <small>Belgische frituurbeleving</small>
+        <small>Belgische natuur- & frituurbeleving</small>
       </span>
     </a>
 
@@ -21,8 +21,14 @@ const headerHTML = `
       <span></span>
     </button>
 
-    <nav id="main-nav" class="main-nav">
+    <nav
+      id="main-nav"
+      class="main-nav"
+      aria-label="Hoofdnavigatie"
+    >
+      <a href="/">Home</a>
       <a href="/#excursies">Excursies</a>
+      <a href="/gidsen.html">Gidsen</a>
       <a href="/#werkwijze">Werkwijze</a>
       <a href="/#over">Over ons</a>
     </nav>
@@ -30,6 +36,7 @@ const headerHTML = `
   </div>
 </header>
 `;
+
 
 const footerHTML = `
 <footer>
@@ -39,44 +46,73 @@ const footerHTML = `
     <div>
 
       <a class="brand" href="/">
-        <span class="brand-icon">🍟</span>
+        <img class="brand-icon" src="/favicon.png" alt="Dagje in de Frituur">
 
         <span>
           <strong>Dagje in de Frituur</strong>
-          <small>Belgische frituurbeleving</small>
+          <small>Belgische natuur- & frituurbeleving</small>
         </span>
       </a>
 
       <p>
-        Een onafhankelijke ode aan frieten, snackbars en veel te
-        serieuze excursieteksten.
+        Een onafhankelijke ode aan vogels, natuurgebieden, frieten,
+        snackbars en veel te serieuze excursieteksten.
       </p>
 
     </div>
+
 
     <div>
 
       <strong>Excursies</strong>
 
-      <a href="/excursies/oostkust.html">Oostkust</a>
-      <a href="/excursies/linkeroever.html">Linkeroever</a>
-      <a href="/excursies/viroin.html">Viroin</a>
-      <a href="/excursies/antwerpse-rand.html">Antwerpse Rand</a>
-      <a href="/excursies/gaume.html">Gaume</a>
-      <a href="/excursies/hoge-venen.html">Hoge Venen</a>
+      <a href="/excursies/oostkust.html">
+        Oostkust
+      </a>
+
+      <a href="/excursies/linkeroever.html">
+        Linkeroever
+      </a>
+
+      <a href="/excursies/viroin.html">
+        Viroin
+      </a>
+
+      <a href="/excursies/antwerpse-rand.html">
+        Antwerpse rand
+      </a>
+
+      <a href="/excursies/gaume.html">
+        Gaume
+      </a>
+
+      <a href="/excursies/hoge-venen.html">
+        Hoge Venen
+      </a>
 
     </div>
+
 
     <div>
 
       <strong>Meer</strong>
 
-      <a href="/#werkwijze">Werkwijze</a>
-      <a href="/#over">Over ons</a>
+      <a href="/gidsen.html">
+        Gidsen
+      </a>
+
+      <a href="/#werkwijze">
+        Werkwijze
+      </a>
+
+      <a href="/#over">
+        Over ons
+      </a>
 
     </div>
 
   </div>
+
 
   <div class="container footer-bottom">
 
@@ -85,19 +121,24 @@ const footerHTML = `
       Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
     </span>
 
-    <span>Parodieproject</span>
+    <span>
+      Parodieproject
+    </span>
 
   </div>
 
 </footer>
 `;
 
+
 const headerTarget = document.getElementById("site-header");
 const footerTarget = document.getElementById("site-footer");
+
 
 if (headerTarget) {
   headerTarget.innerHTML = headerHTML;
 }
+
 
 if (footerTarget) {
   footerTarget.innerHTML = footerHTML;
