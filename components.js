@@ -39,75 +39,55 @@ const headerHTML = `
 
 
 const footerHTML = `
-<footer>
+<footer class="site-footer">
 
   <div class="container footer-grid">
 
-    <div>
+    <div class="footer-contact">
 
-      <a class="brand" href="/">
-        <img class="brand-icon" src="/favicon.png" alt="Dagje in de Frituur">
-
-        <span>
-          <strong>Dagje in de Frituur</strong>
-          <small>Belgische natuur- & frituurbeleving</small>
-        </span>
-      </a>
+      <h2>ADRES & CONTACT</h2>
 
       <p>
-        Een onafhankelijke ode aan vogels, natuurgebieden, frieten,
-        snackbars en veel te serieuze excursieteksten.
+        <strong>Dagje in de Frituur</strong><br>
+        België
+      </p>
+
+      <p>
+        E-mail:
+        <a href="mailto:info@dagjeindefrituur.be">
+          info@dagjeindefrituur.be
+        </a>
+      </p>
+
+      <p>
+        <a href="/algemene-voorwaarden.html">
+          Algemene voorwaarden
+        </a>
+      </p>
+
+      <p class="footer-disclaimer">
+        Dagje in de Frituur is een onafhankelijk parodieproject over
+        vogels, natuurgebieden, frieten en de Belgische frituurcultuur.
       </p>
 
     </div>
 
 
-    <div>
+    <div class="footer-online">
 
-      <strong>Excursies</strong>
+      <h2>VIND ONS ONLINE</h2>
 
-      <a href="/excursies/oostkust.html">
-        Oostkust
-      </a>
+      <div class="social-links">
 
-      <a href="/excursies/linkeroever.html">
-        Linkeroever
-      </a>
+        <a href="#" aria-label="Facebook" class="social-button">
+          f
+        </a>
 
-      <a href="/excursies/viroin.html">
-        Viroin
-      </a>
+        <a href="#" aria-label="Instagram" class="social-button">
+          ◎
+        </a>
 
-      <a href="/excursies/antwerpse-rand.html">
-        Antwerpse rand
-      </a>
-
-      <a href="/excursies/gaume.html">
-        Gaume
-      </a>
-
-      <a href="/excursies/hoge-venen.html">
-        Hoge Venen
-      </a>
-
-    </div>
-
-
-    <div>
-
-      <strong>Meer</strong>
-
-      <a href="/gidsen.html">
-        Gidsen
-      </a>
-
-      <a href="/#werkwijze">
-        Werkwijze
-      </a>
-
-      <a href="/#over">
-        Over ons
-      </a>
+      </div>
 
     </div>
 
@@ -117,19 +97,17 @@ const footerHTML = `
   <div class="container footer-bottom">
 
     <span>
-      © <span data-year></span> Dagje in de Frituur |
-      Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
+      © <span data-year></span> Dagje in de Frituur
     </span>
 
     <span>
-      Parodieproject
+      Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
     </span>
 
   </div>
 
 </footer>
 `;
-
 
 const headerTarget = document.getElementById("site-header");
 const footerTarget = document.getElementById("site-footer");
