@@ -81,19 +81,20 @@ const footerHTML = `
 
       <div class="social-links">
 
-        <a
-          href="https://www.facebook.com/birdingbelgium/"
-          class="social-button"
-          aria-label="Facebook"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V10H6.5v3h3v9h4z"
-            />
-          </svg>
-        </a>
+       <a
+  href="https://www.facebook.com/birdingbelgium/"
+  class="social-button"
+  aria-label="Bezoek Birding Belgium op Facebook"
+  title="Birding Belgium op Facebook"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V10H6.5v3h3v9h4z"
+    />
+  </svg>
+</a>
 
         <a
           href="#"
