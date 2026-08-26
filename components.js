@@ -49,6 +49,8 @@ const footerHTML = `
 
       <p>
         <strong>Dagje in de Frituur</strong><br>
+        Pieter Vanderdoncktdoorgang 69<br>
+        9000 Gent<br>
         België
       </p>
 
@@ -61,7 +63,7 @@ const footerHTML = `
 
       <p>
         <a href="/algemene-voorwaarden.html">
-          Algemene voorwaarden
+          Download onze Algemene Voorwaarden
         </a>
       </p>
 
@@ -79,12 +81,32 @@ const footerHTML = `
 
       <div class="social-links">
 
-        <a href="#" aria-label="Facebook" class="social-button">
-          f
+        <a
+          href="#"
+          class="social-button"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V10H6.5v3h3v9h4z"
+            />
+          </svg>
         </a>
 
-        <a href="#" aria-label="Instagram" class="social-button">
-          ◎
+        <a
+          href="#"
+          class="social-button"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+            />
+          </svg>
         </a>
 
       </div>
@@ -108,7 +130,6 @@ const footerHTML = `
 
 </footer>
 `;
-
 const headerTarget = document.getElementById("site-header");
 const footerTarget = document.getElementById("site-footer");
 
