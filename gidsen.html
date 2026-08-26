@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Gidsen | Dagje in de Frituur</title>
-  <meta name="description" content="Maak kennis met de gidsen van Dagje in de Frituur. Experts in vogels, frituren en andere essentiële veldkennis.">
 
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta
+    name="description"
+    content="Maak kennis met de gidsen van Dagje in de Frituur. Experts in vogels, frituren en andere essentiële veldkennis."
+  >
 
+  <link rel="canonical" href="https://dagjeindefrituur.be/gidsen.html">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Algemene styling van de website -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Specifieke styling voor de gidsenpagina -->
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f2ea;
-      color: #202020;
-    }
-
-    .container {
-      width: min(1180px, 90%);
-      margin: 0 auto;
-    }
 
     .guides-section {
       padding: 70px 0;
+      background: #f4f2ea;
     }
 
     .guides-section h1 {
@@ -92,13 +100,18 @@
       background: #c69447;
     }
 
+
     @media (max-width: 1000px) {
+
       .guides-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
+
     @media (max-width: 600px) {
+
       .guides-grid {
         grid-template-columns: 1fr;
       }
@@ -106,119 +119,200 @@
       .guide-card img {
         height: 380px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <main class="guides-section">
-    <div class="container">
 
-      <h1>Onze gidsen</h1>
-
-      <div class="guides-intro">
-        <p>
-          Een goede excursie staat of valt met een gids die niet alleen weet
-          waar de vogels zitten, maar ook waar onderweg degelijk gefrituurd kan
-          worden.
-        </p>
-
-        <p>
-          Maak kennis met het zorgvuldig geselecteerde team van
-          <strong>Dagje in de Frituur</strong>: specialisten in veldornithologie,
-          obscure industrieterreinen, verdachte bospaadjes en de beoordeling
-          van frituurvet.
-        </p>
-      </div>
-
-      <div class="guides-grid">
-
-        <article class="guide-card">
-          <img src="/images/gidsen/simon.jpg" alt="to do">
-
-          <div class="guide-content">
-            <h2>Chris Snoeck</h2>
-            <div class="guide-specialty">
-              Vogels & industriële frituren
-            </div>
-
-            <p>
-              Specialist in het combineren van vogelwaarnemingen met
-              gastronomisch onverantwoorde tussenstops.
-            </p>
-
-            <a href="/gidsen/simon.html" class="guide-button">
-              Bekijk meer
-            </a>
-          </div>
-        </article>
+<!-- Centrale header uit components.js -->
+<div id="site-header"></div>
 
 
-        <article class="guide-card">
-          <img src="/images/gidsen/gids2.jpg" alt="Naam gids">
+<main class="guides-section">
 
-          <div class="guide-content">
-            <h2>Patje Jansen</h2>
-            <div class="guide-specialty">
-              Kustvogels en Fraters spekken
-            </div>
+  <div class="container">
 
-            <p>
-              Workshop determinatie Kneu op de Zwinvlakte
-            </p>
-
-            <a href="/gidsen/gids2.html" class="guide-button">
-              Bekijk meer
-            </a>
-          </div>
-        </article>
+    <h1>Onze gidsen</h1>
 
 
-        <article class="guide-card">
-          <img src="/images/gidsen/gids3.jpg" alt="Naam gids">
+    <div class="guides-intro">
 
-          <div class="guide-content">
-            <h2>Papa Kongo</h2>
-            <div class="guide-specialty">
-              Wallonië
-            </div>
+      <p>
+        Een goede excursie staat of valt met een gids die niet alleen weet
+        waar de vogels zitten, maar ook waar onderweg degelijk gefrituurd kan
+        worden.
+      </p>
 
-            <p>
-              Gespecialiseerd in bossen, rotsen, uilen en frituren
-              waarvan de openingsuren niemand begrijpt.
-            </p>
+      <p>
+        Maak kennis met het zorgvuldig geselecteerde team van
+        <strong>Dagje in de Frituur</strong>: specialisten in veldornithologie,
+        obscure industrieterreinen, verdachte bospaadjes en de beoordeling
+        van frituurvet.
+      </p>
 
-            <a href="/gidsen/gids3.html" class="guide-button">
-              Bekijk meer
-            </a>
-          </div>
-        </article>
-
-
-        <article class="guide-card">
-          <img src="/images/gidsen/gids4.jpg" alt="Naam gids">
-
-          <div class="guide-content">
-            <h2>Johannes</h2>
-            <div class="guide-specialty">
-              Specialist Whatsappgroepetiquette
-            </div>
-
-            <p>
-              Expert in steltlopers, ganzen, sluipwegen en de subtiele
-              verschillen tussen goede en catastrophale mayonaise.
-            </p>
-
-            <a href="/gidsen/gids4.html" class="guide-button">
-              Bekijk meer
-            </a>
-          </div>
-        </article>
-
-      </div>
     </div>
-  </main>
+
+
+    <div class="guides-grid">
+
+
+      <!-- CHRIS SNOECK -->
+      <article class="guide-card">
+
+        <img
+          src="/images/gidsen/simon.jpg"
+          alt="Chris Snoeck"
+        >
+
+        <div class="guide-content">
+
+          <h2>Chris Snoeck</h2>
+
+          <div class="guide-specialty">
+            Vogels & industriële frituren
+          </div>
+
+          <p>
+            Specialist in het combineren van vogelwaarnemingen met
+            gastronomisch onverantwoorde tussenstops.
+          </p>
+
+          <a
+            href="/gidsen/simon.html"
+            class="guide-button"
+          >
+            Bekijk meer
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PATJE JANSEN -->
+      <article class="guide-card">
+
+        <img
+          src="/images/gidsen/gids2.jpg"
+          alt="Patje Jansen"
+        >
+
+        <div class="guide-content">
+
+          <h2>Patje Jansen</h2>
+
+          <div class="guide-specialty">
+            Kustvogels en Fraters spekken
+          </div>
+
+          <p>
+            Workshop determinatie Kneu op de Zwinvlakte
+          </p>
+
+          <a
+            href="/gidsen/gids2.html"
+            class="guide-button"
+          >
+            Bekijk meer
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PAPA KONGO -->
+      <article class="guide-card">
+
+        <img
+          src="/images/gidsen/gids3.jpg"
+          alt="Papa Kongo"
+        >
+
+        <div class="guide-content">
+
+          <h2>Papa Kongo</h2>
+
+          <div class="guide-specialty">
+            Wallonië
+          </div>
+
+          <p>
+            Gespecialiseerd in bossen, rotsen, uilen en frituren
+            waarvan de openingsuren niemand begrijpt.
+          </p>
+
+          <a
+            href="/gidsen/gids3.html"
+            class="guide-button"
+          >
+            Bekijk meer
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- JOHANNES -->
+      <article class="guide-card">
+
+        <img
+          src="/images/gidsen/gids4.jpg"
+          alt="Johannes"
+        >
+
+        <div class="guide-content">
+
+          <h2>Johannes</h2>
+
+          <div class="guide-specialty">
+            Specialist Whatsappgroepetiquette
+          </div>
+
+          <p>
+            Expert in steltlopers, ganzen, sluipwegen en de subtiele
+            verschillen tussen goede en catastrophale mayonaise.
+          </p>
+
+          <a
+            href="/gidsen/gids4.html"
+            class="guide-button"
+          >
+            Bekijk meer
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- Centrale footer uit components.js -->
+<div id="site-footer"></div>
+
+
+<!-- Eerst header en footer injecteren -->
+<script src="/components.js"></script>
+
+<!-- Daarna algemene JavaScript -->
+<script src="/script.js"></script>
+
 
 </body>
 </html>
