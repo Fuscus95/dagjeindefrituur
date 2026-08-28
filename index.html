@@ -47,6 +47,99 @@
   >
 
   <link rel="stylesheet" href="/style.css">
+
+  <style>
+    .excursion-filters {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+      gap: 14px;
+      align-items: end;
+      margin: 0 0 18px;
+      padding: 20px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .filter-group label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    .filter-group select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 38px 10px 12px;
+      font: inherit;
+      color: var(--ink);
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .filter-group select:focus {
+      outline: 2px solid var(--orange);
+      outline-offset: 2px;
+    }
+
+    .filter-reset {
+      min-height: 46px;
+      padding: 10px 18px;
+      font: inherit;
+      font-weight: 700;
+      color: var(--green-dark);
+      background: transparent;
+      border: 1px solid var(--green);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .filter-reset:hover {
+      background: var(--green);
+      color: white;
+    }
+
+    .filter-result-count {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .excursion-card[hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 980px) {
+      .excursion-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .filter-reset {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .excursion-filters {
+        grid-template-columns: 1fr;
+        padding: 18px;
+      }
+
+      .filter-reset {
+        grid-column: auto;
+      }
+    }
+  </style>
+
 </head>
 
 
@@ -143,10 +236,72 @@
       </div>
 
 
-      <div class="cards">
+
+      <div class="excursion-filters" aria-label="Excursies filteren">
+
+        <div class="filter-group">
+          <label for="filter-province">Provincie</label>
+          <select id="filter-province">
+            <option value="">Alle provincies</option>
+            <option value="antwerpen">Antwerpen</option>
+            <option value="limburg">Limburg</option>
+            <option value="oost-vlaanderen">Oost-Vlaanderen</option>
+            <option value="west-vlaanderen">West-Vlaanderen</option>
+            <option value="vlaams-brabant">Vlaams-Brabant</option>
+            <option value="waals-brabant">Waals-Brabant</option>
+            <option value="henegouwen">Henegouwen</option>
+            <option value="luik">Luik</option>
+            <option value="luxemburg">Luxemburg</option>
+            <option value="namen">Namen</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter-duration">Duur</label>
+          <select id="filter-duration">
+            <option value="">Alle duren</option>
+            <option value="halve-dag">Halve dag</option>
+            <option value="hele-dag">Hele dag</option>
+            <option value="weekendje">Weekendje</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter-guide">Gids</label>
+          <select id="filter-guide">
+            <option value="">Alle gidsen</option>
+            <option value="roger">Roger</option>
+            <option value="bertrand">Bertrand</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter-category">Categorie</label>
+          <select id="filter-category">
+            <option value="">Alle categorieën</option>
+            <option value="vogels">Vogels</option>
+            <option value="zoogdieren">Zoogdieren</option>
+            <option value="vlinders">Vlinders</option>
+            <option value="planten">Planten</option>
+            <option value="insecten-en-meer">Insecten &amp; meer</option>
+            <option value="reptielen-en-amfibieen">Reptielen &amp; amfibieën</option>
+            <option value="astronomie">Astronomie</option>
+            <option value="beginnersexcursie">Beginnersexcursie</option>
+          </select>
+        </div>
+
+        <button type="button" id="reset-filters" class="filter-reset">
+          Wis filters
+        </button>
+
+      </div>
+
+      <p id="filter-result-count" class="filter-result-count" aria-live="polite"></p>
+
+      <div class="cards" id="excursion-grid">
 
         <!-- OOSTKUST -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="west-vlaanderen" data-category="vogels">
 
           <div class="card-media">
             <span class="tag">Kust</span>
@@ -186,7 +341,7 @@
 
 
         <!-- LINKEROEVER -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="oost-vlaanderen" data-category="vogels">
 
           <div class="card-media alt1">
             <span class="tag">Haven & polders</span>
@@ -226,7 +381,7 @@
 
 
         <!-- VIROIN -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="namen" data-category="vogels">
 
           <div class="card-media alt2">
             <span class="tag">Vallei</span>
@@ -266,7 +421,7 @@
 
 
         <!-- ANTWERPSE RAND -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="antwerpen" data-category="vogels">
 
           <div class="card-media alt3">
             <span class="tag">Suburbaan</span>
@@ -305,7 +460,7 @@
 
 
         <!-- GAUME -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="luxemburg" data-category="vogels">
 
           <div class="card-media alt4">
             <span class="tag">Zuid-België</span>
@@ -345,7 +500,7 @@
 
 
         <!-- HOGE VENEN -->
-        <article class="card">
+        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="luik" data-category="vogels">
 
           <div class="card-media alt5">
             <span class="tag">Hoogland</span>
@@ -569,6 +724,67 @@
 <!-- Daarna algemene JavaScript -->
 <script src="/script.js"></script>
 
+
+
+<script>
+  (() => {
+    const province = document.querySelector("#filter-province");
+    const duration = document.querySelector("#filter-duration");
+    const guide = document.querySelector("#filter-guide");
+    const category = document.querySelector("#filter-category");
+    const reset = document.querySelector("#reset-filters");
+    const count = document.querySelector("#filter-result-count");
+    const cards = [...document.querySelectorAll(".excursion-card")];
+
+    if (!cards.length) return;
+
+    function applyExcursionFilters() {
+      const selectedProvince = province?.value || "";
+      const selectedDuration = duration?.value || "";
+      const selectedGuide = guide?.value || "";
+      const selectedCategory = category?.value || "";
+
+      let visible = 0;
+
+      cards.forEach(card => {
+        const categories = (card.dataset.category || "").split(/\s+/).filter(Boolean);
+
+        const matches =
+          (!selectedProvince || card.dataset.province === selectedProvince) &&
+          (!selectedDuration || card.dataset.duration === selectedDuration) &&
+          (!selectedGuide || card.dataset.guide === selectedGuide) &&
+          (!selectedCategory || categories.includes(selectedCategory));
+
+        card.hidden = !matches;
+        if (matches) visible++;
+      });
+
+      if (count) {
+        if (visible === cards.length) {
+          count.textContent = `${visible} excursies`;
+        } else if (visible === 1) {
+          count.textContent = "1 excursie gevonden";
+        } else {
+          count.textContent = `${visible} excursies gevonden`;
+        }
+      }
+    }
+
+    [province, duration, guide, category].forEach(el => {
+      el?.addEventListener("change", applyExcursionFilters);
+    });
+
+    reset?.addEventListener("click", () => {
+      if (province) province.value = "";
+      if (duration) duration.value = "";
+      if (guide) guide.value = "";
+      if (category) category.value = "";
+      applyExcursionFilters();
+    });
+
+    applyExcursionFilters();
+  })();
+</script>
 
 </body>
 </html>
