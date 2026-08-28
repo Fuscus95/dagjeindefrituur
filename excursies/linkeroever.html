@@ -33,19 +33,26 @@
 
 <body>
 
+<!-- Centrale header uit components.js -->
 <div id="site-header"></div>
 
 
-<main>
+<main
+  data-guide="roger"
+  data-duration="halve-dag"
+  data-province="oost-vlaanderen"
+  data-category="vogels"
+>
 
+  <!-- HERO -->
   <section class="subhero">
 
     <div class="container subhero-content">
 
       <div class="breadcrumbs">
         <a href="/">Home</a> /
-        Excursies /
-        Frituren van Linkeroever
+        <a href="/#excursies">Excursies</a> /
+        <span>Frituren van Linkeroever</span>
       </div>
 
       <p class="eyebrow">
@@ -65,6 +72,7 @@
   </section>
 
 
+  <!-- OVER DE EXCURSIE -->
   <section class="section">
 
     <div class="container split">
@@ -190,6 +198,7 @@
       </div>
 
 
+      <!-- PRAKTISCHE GEGEVENS -->
       <aside class="info-box">
 
         <p class="eyebrow">
@@ -199,12 +208,32 @@
         <dl>
 
           <div>
+            <dt>Gids</dt>
+            <dd>Roger</dd>
+          </div>
+
+          <div>
+            <dt>Duur</dt>
+            <dd>Halve dag</dd>
+          </div>
+
+          <div>
+            <dt>Provincie</dt>
+            <dd>Oost-Vlaanderen</dd>
+          </div>
+
+          <div>
+            <dt>Categorie</dt>
+            <dd>Vogels</dd>
+          </div>
+
+          <div>
             <dt>Regio</dt>
             <dd>Linkeroever – Kallo – Waaslandhaven</dd>
           </div>
 
           <div>
-            <dt>Duur</dt>
+            <dt>Indicatieve duur</dt>
             <dd>4–6 uur</dd>
           </div>
 
@@ -242,6 +271,7 @@
   </section>
 
 
+  <!-- ROUTE -->
   <section class="section alt">
 
     <div class="container">
@@ -365,6 +395,7 @@
   </section>
 
 
+  <!-- AFSLUITER -->
   <section class="section">
 
     <div class="container narrow center">
@@ -395,6 +426,7 @@
 </main>
 
 
+<!-- Centrale footer uit components.js -->
 <div id="site-footer"></div>
 
 
