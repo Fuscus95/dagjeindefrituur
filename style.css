@@ -814,6 +814,111 @@ h3 {
 
 }
 
+/* =========================================================
+   EXCURSIEKAARTEN — GELIJKE UITLIJNING
+   ========================================================= */
+
+.excursions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+/* Volledige kaart */
+.excursion-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Gekleurde header bovenaan */
+.excursion-card .card-visual {
+  flex: 0 0 auto;
+}
+
+
+/* Witte inhoud */
+.excursion-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 24px 22px;
+}
+
+
+/* Oranje regio / duur */
+.excursion-card .card-meta {
+  min-height: 38px;
+
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 8px;
+}
+
+
+/* Titel overal dezelfde verticale ruimte */
+.excursion-card h3 {
+  min-height: 64px;
+  margin: 0 0 14px;
+}
+
+
+/* Beschrijving neemt alle resterende ruimte */
+.excursion-card .card-description {
+  flex: 1;
+  margin: 0;
+}
+
+
+/* Onderste lijn altijd gelijk */
+.excursion-card .card-footer {
+  margin-top: 22px;
+  padding-top: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  border-top: 1px solid var(--line);
+}
+
+
+/* Voorkomt dat de CTA op twee regels komt */
+.excursion-card .card-footer a {
+  white-space: nowrap;
+}
+
+
+/* Frituur-aantal links ook netjes */
+.excursion-card .card-footer strong {
+  white-space: nowrap;
+}
+
+
+/* Tablet */
+@media (max-width: 980px) {
+  .excursions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* Mobiel */
+@media (max-width: 650px) {
+  .excursions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .excursion-card h3,
+  .excursion-card .card-meta {
+    min-height: auto;
+  }
+}
 
 @media (max-width: 600px) {
 
