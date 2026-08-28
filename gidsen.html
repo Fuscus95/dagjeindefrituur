@@ -50,6 +50,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
+      align-items: stretch;
     }
 
     .guide-card {
@@ -57,6 +58,10 @@
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .guide-card img {
@@ -68,6 +73,10 @@
 
     .guide-content {
       padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .guide-content h2 {
@@ -94,6 +103,9 @@
       padding: 11px 18px;
       border-radius: 6px;
       font-weight: bold;
+
+      margin-top: auto;
+      align-self: flex-start;
     }
 
     .guide-button:hover {
@@ -231,7 +243,7 @@
 
 
 
-      <!-- Bertrand  -->
+      <!-- Bertrand -->
       <article class="guide-card">
 
         <img
@@ -265,7 +277,7 @@
 
 
 
-      <!-- JOHANNES -->
+      <!-- Johannes -->
       <article class="guide-card">
 
         <img
