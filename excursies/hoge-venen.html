@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Vogelkijken in de Hoge Venen en daarna op zoek naar frieten en snackbars. Een eigenzinnige gids door hoogveen, bossen en Oost-Belgische frituurcultuur."
+    content="Vogelkijken in de Hoge Venen, Brackvenn en omgeving, gecombineerd met veenlandschap, bos, vogels en een hoogst noodzakelijke zoektocht naar eten in Eupen."
   >
 
   <link
@@ -33,30 +33,37 @@
 
 <body>
 
+<!-- Centrale header uit components.js -->
 <div id="site-header"></div>
 
 
-<main>
+<main
+  data-guide="bertrand"
+  data-duration="hele-dag"
+  data-province="luik"
+  data-category="vogels"
+>
 
+  <!-- HERO -->
   <section class="subhero">
 
     <div class="container subhero-content">
 
       <div class="breadcrumbs">
         <a href="/">Home</a> /
-        Excursies /
-        Snackbars van de Hoge Venen
+        <a href="/#excursies">Excursies</a> /
+        <span>Snackbars van de Hoge Venen</span>
       </div>
 
       <p class="eyebrow">
-        Oost-België · Hoge Venen
+        Hoogland · Hoge Venen · Brackvenn · Eupen
       </p>
 
       <h1>Snackbars van de Hoge Venen</h1>
 
       <p class="subhero-copy">
-        Mist, hoogveen, sparrenbossen en eindeloze wegen: nergens in België
-        is de afstand tussen vogel en warme snack groter.
+        Uren door veen, bos en wind lopen, waarna onvermijdelijk de
+        moeilijkste determinatie van de dag volgt: waar gaan we eten?
       </p>
 
     </div>
@@ -64,6 +71,7 @@
   </section>
 
 
+  <!-- OVER DE EXCURSIE -->
   <section class="section">
 
     <div class="container split">
@@ -74,19 +82,44 @@
           Over deze excursie
         </p>
 
-        <h2>Terreinbeschrijving</h2>
+        <h2>Vogelkijken in de Hoge Venen</h2>
 
         <p>
-          De Hoge Venen combineren enkele van de meest onherbergzame
-          vogelgebieden van België met een opvallend beperkt aanbod aan
-          klassieke frituren. Wie hier veldwerk doet, moet daarom flexibel
-          omspringen met begrippen als frituur, snackbar, grill en pita.
+          De Hoge Venen zijn al jaren de schrik van menig vogelkijker.
+          Niemand maakt voor zijn plezier de lange verplaatsing richting
+          Eupen om vervolgens uren door nat gras, veen en sparrenbos te lopen.
+        </p>
+
+        <p>
+          Gelukkig is de Grijskopspecht al lang kapotgetapt, is het Korhoen
+          eigenlijk niet meer tikbaar en zijn verschillende klassieke
+          vogelplekken ondertussen zo grondig veranderd dat je jezelf
+          regelmatig afvraagt waarom je hier opnieuw bent beland.
+        </p>
+
+        <p>
+          Ineens staan we tegen beter weten in toch midden in de Brackvenn
+          en ontstaat er na enkele uren onvermijdelijk een hongergevoel.
+        </p>
+
+        <p>
+          Dan volgt de klassieke keuze tussen cholera en de pest:
+          vluchten naar de Duitse kant voor een twijfelachtige schnitzel,
+          of afdalen naar Eupen en jezelf culinair volledig buiten je
+          Vlaamse comfortzone begeven.
+        </p>
+
+        <p>
+          Gelukkig bestaat er nog een derde optie:
+          <strong>Eupen Grill</strong>. Daar kan de ornithologische dag
+          verantwoord worden afgesloten met pita, pide of ander voedsel
+          waarvan ten minste duidelijk is dat het warm hoort te zijn.
         </p>
 
         <div class="notice">
-          Deze excursie is momenteel fictief. Openingsuren, route,
-          vogelactiviteit en snackbeschikbaarheid kunnen in het wild
-          sterk variëren.
+          Openingsuren, terreincondities en de aanwezigheid van vogels
+          kunnen sterk variëren. Een hongerdip na uren veenlopen is
+          daarentegen vrijwel gegarandeerd.
         </div>
 
 
@@ -99,28 +132,35 @@
           <div class="checkitem">
             <span>✓</span>
             <div>
-              Hoogveen, bossen en ijskoude parkeerplaatsen
+              Een hele dag veldwerk in en rond de Hoge Venen
             </div>
           </div>
 
           <div class="checkitem">
             <span>✓</span>
             <div>
-              Een opvallend lage dichtheid aan klassieke frituren
+              Veen, bos, hoogland en meteorologische tegenwerking
             </div>
           </div>
 
           <div class="checkitem">
             <span>✓</span>
             <div>
-              Regelmatige grensoverschrijdingen richting Duitsland
+              Vogels zoeken onder begeleiding van Bertrand
             </div>
           </div>
 
           <div class="checkitem">
             <span>✓</span>
             <div>
-              Grote kans dat een warme snack belangrijker wordt dan de volgende vogel
+              Een existentiële discussie over waar je in Eupen moet eten
+            </div>
+          </div>
+
+          <div class="checkitem">
+            <span>✓</span>
+            <div>
+              Mogelijke afdaling naar Eupen Grill
             </div>
           </div>
 
@@ -129,6 +169,7 @@
       </div>
 
 
+      <!-- PRAKTISCHE GEGEVENS -->
       <aside class="info-box">
 
         <p class="eyebrow">
@@ -138,23 +179,38 @@
         <dl>
 
           <div>
-            <dt>Regio</dt>
-            <dd>Hoge Venen & Oost-België</dd>
+            <dt>Gids</dt>
+            <dd>Bertrand</dd>
           </div>
 
           <div>
             <dt>Duur</dt>
-            <dd>Volledige dag</dd>
+            <dd>Hele dag</dd>
           </div>
 
           <div>
-            <dt>Afstand</dt>
-            <dd>ca. 80 km</dd>
+            <dt>Provincie</dt>
+            <dd>Luik</dd>
+          </div>
+
+          <div>
+            <dt>Categorie</dt>
+            <dd>Vogels</dd>
+          </div>
+
+          <div>
+            <dt>Regio</dt>
+            <dd>Hoge Venen – Brackvenn – Eupen</dd>
+          </div>
+
+          <div>
+            <dt>Indicatieve duur</dt>
+            <dd>5–6 uur</dd>
           </div>
 
           <div>
             <dt>Niveau</dt>
-            <dd>Gevorderd</dd>
+            <dd>Gemiddeld tot koppig</dd>
           </div>
 
           <div>
@@ -164,7 +220,7 @@
 
           <div>
             <dt>Beste periode</dt>
-            <dd>Wanneer er iets open is</dd>
+            <dd>Voorjaar – najaar</dd>
           </div>
 
         </dl>
@@ -176,6 +232,7 @@
   </section>
 
 
+  <!-- ROUTE -->
   <section class="section alt">
 
     <div class="container">
@@ -196,11 +253,12 @@
           </div>
 
           <div>
-            <strong>Vroege ochtend in de venen</strong>
+            <strong>Hoge Venen</strong>
 
             <p>
-              Start tussen mist, hoogveen en sparrenbossen terwijl de lokale
-              horeca nog collectief gesloten is.
+              We starten de dag in het klassieke hoogveenlandschap,
+              waar de eerste uren worden besteed aan vogels zoeken,
+              wandelen en klagen over het weer.
             </p>
           </div>
 
@@ -214,11 +272,12 @@
           </div>
 
           <div>
-            <strong>Brackvenn en omgeving</strong>
+            <strong>Brackvenn</strong>
 
             <p>
-              Intensief veldwerk gevolgd door de eerste tekenen van honger
-              en lichte wanhoop.
+              Tegen beter weten in trekken we verder door veen, bos
+              en open terrein op zoek naar iets dat de verplaatsing
+              naar Oost-België alsnog kan rechtvaardigen.
             </p>
           </div>
 
@@ -232,11 +291,11 @@
           </div>
 
           <div>
-            <strong>Eupen</strong>
+            <strong>Hongerdip</strong>
 
             <p>
-              Afdaling uit de venen op zoek naar een eetgelegenheid die
-              voldoende dicht bij het begrip frituur komt.
+              Na enkele uren veldwerk wordt duidelijk dat de belangrijkste
+              soort van de dag stilaan een warme maaltijd wordt.
             </p>
           </div>
 
@@ -250,11 +309,31 @@
           </div>
 
           <div>
-            <strong>Finale</strong>
+            <strong>Afdaling naar Eupen</strong>
 
             <p>
-              Frieten, pita of schnitzel. Op dit punt van de dag zijn
-              de taxonomische grenzen niet langer belangrijk.
+              We verlaten het veen en dalen af richting Eupen,
+              waar de zoektocht naar voedsel minstens even complex
+              wordt als de ornithologische determinaties van die ochtend.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="route-step">
+
+          <div class="step-num">
+            5
+          </div>
+
+          <div>
+            <strong>Eupen Grill</strong>
+
+            <p>
+              Finale van de excursie met pide, pita en het geruststellende
+              besef dat we voorlopig niet naar Duitsland hoeven te rijden
+              voor een schnitzel.
             </p>
           </div>
 
@@ -267,6 +346,7 @@
   </section>
 
 
+  <!-- TERUG NAAR EXCURSIES -->
   <section class="section">
 
     <div class="container narrow center">
@@ -280,8 +360,8 @@
       </h2>
 
       <p style="color:var(--muted);font-size:18px;">
-        Bekijk de andere frituurexcursies en vergelijk snackhabitats
-        door heel België.
+        Bekijk de andere excursies en vergelijk gidsen, provincies,
+        vogelgebieden en frituurhabitats door heel België.
       </p>
 
       <a
@@ -298,10 +378,14 @@
 </main>
 
 
+<!-- Centrale footer uit components.js -->
 <div id="site-footer"></div>
 
 
+<!-- Eerst header/footer laden -->
 <script src="/components.js"></script>
+
+<!-- Daarna algemene JavaScript -->
 <script src="/script.js"></script>
 
 
