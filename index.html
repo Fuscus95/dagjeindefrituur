@@ -48,6 +48,100 @@
 
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/filters.css">
+
+  <style>
+    /* =====================================================
+       GELIJKE UITLIJNING EXCURSIEKAARTEN
+       ===================================================== */
+
+    #excursion-grid {
+      align-items: stretch;
+    }
+
+    #excursion-grid .excursion-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #excursion-grid .card-media {
+      flex: 0 0 auto;
+    }
+
+    #excursion-grid .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*
+      De regioregel krijgt dezelfde minimale hoogte.
+      Zo begint elke titel op dezelfde hoogte.
+    */
+    #excursion-grid .card-body > .meta {
+      min-height: 40px;
+      margin-bottom: 8px;
+    }
+
+    /*
+      Twee regels ruimte voor elke titel.
+      Lange titels zoals Antwerpse Rand en Hoge Venen
+      duwen de rest daardoor niet meer naar beneden.
+    */
+    #excursion-grid .card-body > h3 {
+      min-height: 62px;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    /*
+      Beschrijving vult vrije ruimte op.
+      Daardoor blijft de footer onderaan de kaart.
+    */
+    #excursion-grid .card-description {
+      flex: 1;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    /*
+      Alle kaartfooters komen op dezelfde hoogte.
+    */
+    #excursion-grid .card-footer {
+      margin-top: 22px;
+      padding-top: 18px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    #excursion-grid .card-footer strong,
+    #excursion-grid .card-footer .mini-link {
+      white-space: nowrap;
+    }
+
+    /*
+      Tablet
+    */
+    @media (max-width: 980px) {
+      #excursion-grid .card-body > .meta,
+      #excursion-grid .card-body > h3 {
+        min-height: auto;
+      }
+    }
+
+    /*
+      Mobiel
+    */
+    @media (max-width: 650px) {
+      #excursion-grid .card-footer {
+        gap: 10px;
+      }
+    }
+  </style>
+
 </head>
 
 
@@ -59,6 +153,7 @@
 
 <main id="top">
 
+
   <!-- HERO -->
   <section class="hero">
 
@@ -68,7 +163,9 @@
         Georganiseerd frituurveldwerk sinds ongeveer gisteren
       </p>
 
-      <h1>Ontdek België, frituur per frituur</h1>
+      <h1>
+        Ontdek België, frituur per frituur
+      </h1>
 
       <p class="hero-copy">
         Dagje in de Frituur is een hoogst onwetenschappelijke gids voor
@@ -104,7 +201,9 @@
         Dagje in de Frituur
       </p>
 
-      <h2>Vogelkijken en frituren in België</h2>
+      <h2>
+        Vogelkijken en frituren in België
+      </h2>
 
       <p>
         Onze hoogst subjectieve gidsen combineren natuurgebieden,
@@ -144,76 +243,211 @@
       </div>
 
 
-
-      <div class="excursion-filters" aria-label="Excursies filteren">
+      <!-- FILTERS -->
+      <div
+        class="excursion-filters"
+        aria-label="Excursies filteren"
+      >
 
         <div class="filter-group">
-          <label for="filter-province">Provincie</label>
+
+          <label for="filter-province">
+            Provincie
+          </label>
+
           <select id="filter-province">
-            <option value="">Alle provincies</option>
-            <option value="antwerpen">Antwerpen</option>
-            <option value="limburg">Limburg</option>
-            <option value="oost-vlaanderen">Oost-Vlaanderen</option>
-            <option value="west-vlaanderen">West-Vlaanderen</option>
-            <option value="vlaams-brabant">Vlaams-Brabant</option>
-            <option value="waals-brabant">Waals-Brabant</option>
-            <option value="henegouwen">Henegouwen</option>
-            <option value="luik">Luik</option>
-            <option value="luxemburg">Luxemburg</option>
-            <option value="namen">Namen</option>
+
+            <option value="">
+              Alle provincies
+            </option>
+
+            <option value="antwerpen">
+              Antwerpen
+            </option>
+
+            <option value="limburg">
+              Limburg
+            </option>
+
+            <option value="oost-vlaanderen">
+              Oost-Vlaanderen
+            </option>
+
+            <option value="west-vlaanderen">
+              West-Vlaanderen
+            </option>
+
+            <option value="vlaams-brabant">
+              Vlaams-Brabant
+            </option>
+
+            <option value="waals-brabant">
+              Waals-Brabant
+            </option>
+
+            <option value="henegouwen">
+              Henegouwen
+            </option>
+
+            <option value="luik">
+              Luik
+            </option>
+
+            <option value="luxemburg">
+              Luxemburg
+            </option>
+
+            <option value="namen">
+              Namen
+            </option>
+
           </select>
+
         </div>
 
+
         <div class="filter-group">
-          <label for="filter-duration">Duur</label>
+
+          <label for="filter-duration">
+            Duur
+          </label>
+
           <select id="filter-duration">
-            <option value="">Alle duren</option>
-            <option value="halve-dag">Halve dag</option>
-            <option value="hele-dag">Hele dag</option>
-            <option value="weekendje">Weekendje</option>
+
+            <option value="">
+              Alle duren
+            </option>
+
+            <option value="halve-dag">
+              Halve dag
+            </option>
+
+            <option value="hele-dag">
+              Hele dag
+            </option>
+
+            <option value="weekendje">
+              Weekendje
+            </option>
+
           </select>
+
         </div>
 
+
         <div class="filter-group">
-          <label for="filter-guide">Gids</label>
+
+          <label for="filter-guide">
+            Gids
+          </label>
+
           <select id="filter-guide">
-            <option value="">Alle gidsen</option>
-            <option value="roger">Roger</option>
-            <option value="bertrand">Bertrand</option>
+
+            <option value="">
+              Alle gidsen
+            </option>
+
+            <option value="roger">
+              Roger
+            </option>
+
+            <option value="bertrand">
+              Bertrand
+            </option>
+
           </select>
+
         </div>
+
 
         <div class="filter-group">
-          <label for="filter-category">Categorie</label>
+
+          <label for="filter-category">
+            Categorie
+          </label>
+
           <select id="filter-category">
-            <option value="">Alle categorieën</option>
-            <option value="vogels">Vogels</option>
-            <option value="zoogdieren">Zoogdieren</option>
-            <option value="vlinders">Vlinders</option>
-            <option value="planten">Planten</option>
-            <option value="insecten-en-meer">Insecten &amp; meer</option>
-            <option value="reptielen-en-amfibieen">Reptielen &amp; amfibieën</option>
-            <option value="astronomie">Astronomie</option>
-            <option value="beginnersexcursie">Beginnersexcursie</option>
+
+            <option value="">
+              Alle categorieën
+            </option>
+
+            <option value="vogels">
+              Vogels
+            </option>
+
+            <option value="zoogdieren">
+              Zoogdieren
+            </option>
+
+            <option value="vlinders">
+              Vlinders
+            </option>
+
+            <option value="planten">
+              Planten
+            </option>
+
+            <option value="insecten-en-meer">
+              Insecten &amp; meer
+            </option>
+
+            <option value="reptielen-en-amfibieen">
+              Reptielen &amp; amfibieën
+            </option>
+
+            <option value="astronomie">
+              Astronomie
+            </option>
+
+            <option value="beginnersexcursie">
+              Beginnersexcursie
+            </option>
+
           </select>
+
         </div>
 
-        <button type="button" id="reset-filters" class="filter-reset">
+
+        <button
+          type="button"
+          id="reset-filters"
+          class="filter-reset"
+        >
           Wis filters
         </button>
 
       </div>
 
-      <p id="filter-result-count" class="filter-result-count" aria-live="polite"></p>
 
+      <p
+        id="filter-result-count"
+        class="filter-result-count"
+        aria-live="polite"
+      ></p>
+
+
+      <!-- KAARTEN -->
       <div class="cards" id="excursion-grid">
 
+
         <!-- OOSTKUST -->
-        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="west-vlaanderen" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="roger"
+          data-duration="halve-dag"
+          data-province="west-vlaanderen"
+          data-category="vogels"
+        >
 
           <div class="card-media">
-            <span class="tag">Kust</span>
+
+            <span class="tag">
+              Kust
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -222,12 +456,14 @@
             </p>
 
             <h3>
+
               <a href="/excursies/oostkust.html">
                 Frituren van de Oostkust
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Vogelkijken rond Zeebrugge en de Belgische Oostkust,
               gevolgd door een hoogst noodzakelijke evaluatie van de
               plaatselijke frituren. Op zoek naar de grauwe fritis
@@ -235,9 +471,14 @@
 
             <div class="card-footer">
 
-              <strong>5–7 frituren</strong>
+              <strong>
+                5–7 frituren
+              </strong>
 
-              <a class="mini-link" href="/excursies/oostkust.html">
+              <a
+                class="mini-link"
+                href="/excursies/oostkust.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -249,11 +490,22 @@
 
 
         <!-- LINKEROEVER -->
-        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="oost-vlaanderen" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="roger"
+          data-duration="halve-dag"
+          data-province="oost-vlaanderen"
+          data-category="vogels"
+        >
 
           <div class="card-media alt1">
-            <span class="tag">Haven & polders</span>
+
+            <span class="tag">
+              Haven &amp; polders
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -262,12 +514,14 @@
             </p>
 
             <h3>
+
               <a href="/excursies/linkeroever.html">
                 Frituren van Linkeroever
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Polders, havengebied, moerasvogels en frieten op Linkeroever.
               Een landschap van natuurontwikkeling, industrie en
               strategisch geplaatste frituren. Polders zijn ook natuur.
@@ -275,9 +529,14 @@
 
             <div class="card-footer">
 
-              <strong>4–6 frituren</strong>
+              <strong>
+                4–6 frituren
+              </strong>
 
-              <a class="mini-link" href="/excursies/linkeroever.html">
+              <a
+                class="mini-link"
+                href="/excursies/linkeroever.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -289,11 +548,22 @@
 
 
         <!-- VIROIN -->
-        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="namen" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="bertrand"
+          data-duration="hele-dag"
+          data-province="namen"
+          data-category="vogels"
+        >
 
           <div class="card-media alt2">
-            <span class="tag">Vallei</span>
+
+            <span class="tag">
+              Vallei
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -302,12 +572,14 @@
             </p>
 
             <h3>
+
               <a href="/excursies/viroin.html">
                 Frituren van de Viroin
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Vogelkijken in de Viroin rond Nismes en Olloy-sur-Viroin,
               tussen kalkgraslanden, bossen en dorpen waar de frituur
               soms gevaarlijk dicht bij het ornithologische programma ligt.
@@ -315,9 +587,14 @@
 
             <div class="card-footer">
 
-              <strong>4–5 frituren</strong>
+              <strong>
+                4–5 frituren
+              </strong>
 
-              <a class="mini-link" href="/excursies/viroin.html">
+              <a
+                class="mini-link"
+                href="/excursies/viroin.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -329,11 +606,22 @@
 
 
         <!-- ANTWERPSE RAND -->
-        <article class="card excursion-card" data-guide="roger" data-duration="halve-dag" data-province="antwerpen" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="roger"
+          data-duration="halve-dag"
+          data-province="antwerpen"
+          data-category="vogels"
+        >
 
           <div class="card-media alt3">
-            <span class="tag">Suburbaan</span>
+
+            <span class="tag">
+              Suburbaan
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -342,21 +630,28 @@
             </p>
 
             <h3>
+
               <a href="/excursies/antwerpse-rand.html">
                 Frituren van de Antwerpse rand
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Steenwegen, verkavelingen, natuurgebieden en parkeerterreinen
               vormen hier het ideale leefgebied voor de moderne frituur.
             </p>
 
             <div class="card-footer">
 
-              <strong>6–8 frituren</strong>
+              <strong>
+                6–8 frituren
+              </strong>
 
-              <a class="mini-link" href="/excursies/antwerpse-rand.html">
+              <a
+                class="mini-link"
+                href="/excursies/antwerpse-rand.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -368,11 +663,22 @@
 
 
         <!-- GAUME -->
-        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="luxemburg" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="bertrand"
+          data-duration="hele-dag"
+          data-province="luxemburg"
+          data-category="vogels"
+        >
 
           <div class="card-media alt4">
-            <span class="tag">Zuid-België</span>
+
+            <span class="tag">
+              Zuid-België
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -381,12 +687,14 @@
             </p>
 
             <h3>
+
               <a href="/excursies/gaume.html">
                 Frituren van de Gaume
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Vogelkijken in de Gaume tussen bossen, landbouwgebied en
               rustige dorpen, gevolgd door een zoektocht naar de
               meest zuidelijke frituurcultuur van België.
@@ -394,9 +702,14 @@
 
             <div class="card-footer">
 
-              <strong>4–6 frituren</strong>
+              <strong>
+                4–6 frituren
+              </strong>
 
-              <a class="mini-link" href="/excursies/gaume.html">
+              <a
+                class="mini-link"
+                href="/excursies/gaume.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -408,11 +721,22 @@
 
 
         <!-- HOGE VENEN -->
-        <article class="card excursion-card" data-guide="bertrand" data-duration="hele-dag" data-province="luik" data-category="vogels">
+        <article
+          class="card excursion-card"
+          data-guide="bertrand"
+          data-duration="hele-dag"
+          data-province="luik"
+          data-category="vogels"
+        >
 
           <div class="card-media alt5">
-            <span class="tag">Hoogland</span>
+
+            <span class="tag">
+              Hoogland
+            </span>
+
           </div>
+
 
           <div class="card-body">
 
@@ -421,12 +745,14 @@
             </p>
 
             <h3>
+
               <a href="/excursies/hoge-venen.html">
                 Snackbars van de Hoge Venen
               </a>
+
             </h3>
 
-            <p>
+            <p class="card-description">
               Vogelkijken in de Hoge Venen, Brackvenn en omgeving,
               gevolgd door de existentiële vraag waar je na uren
               veenlopen nog degelijk kunt eten.
@@ -434,9 +760,14 @@
 
             <div class="card-footer">
 
-              <strong>3–5 snackbars</strong>
+              <strong>
+                3–5 snackbars
+              </strong>
 
-              <a class="mini-link" href="/excursies/hoge-venen.html">
+              <a
+                class="mini-link"
+                href="/excursies/hoge-venen.html"
+              >
                 Bekijk excursie →
               </a>
 
@@ -445,6 +776,7 @@
           </div>
 
         </article>
+
 
       </div>
 
@@ -457,6 +789,7 @@
   <section id="werkwijze" class="section">
 
     <div class="container split">
+
 
       <div class="content">
 
@@ -478,14 +811,24 @@
 
         <div class="checklist">
 
+
           <div class="checkitem">
 
-            <span>✓</span>
+            <span>
+              ✓
+            </span>
 
             <div>
-              <strong>Regionale focus</strong><br>
+
+              <strong>
+                Regionale focus
+              </strong>
+
+              <br>
+
               Elke excursie draait rond een herkenbaar landschap,
               vogelgebied of stedelijke regio.
+
             </div>
 
           </div>
@@ -493,12 +836,21 @@
 
           <div class="checkitem">
 
-            <span>✓</span>
+            <span>
+              ✓
+            </span>
 
             <div>
-              <strong>Meerdere stops</strong><br>
+
+              <strong>
+                Meerdere stops
+              </strong>
+
+              <br>
+
               Geen excursie zonder voldoende ornithologisch en
               gastronomisch veldmateriaal.
+
             </div>
 
           </div>
@@ -506,15 +858,25 @@
 
           <div class="checkitem">
 
-            <span>✓</span>
+            <span>
+              ✓
+            </span>
 
             <div>
-              <strong>Volledig onwetenschappelijke scoring</strong><br>
+
+              <strong>
+                Volledig onwetenschappelijke scoring
+              </strong>
+
+              <br>
+
               Portiegrootte, sfeer, sauzen en habitatkwaliteit worden
               vrij geïnterpreteerd.
+
             </div>
 
           </div>
+
 
         </div>
 
@@ -536,6 +898,7 @@
         </p>
 
       </aside>
+
 
     </div>
 
@@ -568,8 +931,6 @@
   </section>
 
 
-
-
 </main>
 
 
@@ -586,4 +947,5 @@
 
 
 </body>
+
 </html>
