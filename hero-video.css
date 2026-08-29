@@ -1,1 +1,105 @@
-x
+/* =========================================================
+   VIDEO HERO — Dagje in de Frituur
+   ========================================================= */
+
+/*
+  De bestaande .hero-styling uit style.css blijft als fallback bestaan.
+  Als de video niet laadt, blijft dus de huidige groene/oranje hero zichtbaar.
+*/
+
+.video-hero {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* De video vult het volledige hero-vlak. */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  pointer-events: none;
+}
+
+/*
+  Donkere laag boven de frieten.
+  Links iets donkerder zodat de titel en intro altijd leesbaar blijven.
+*/
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11, 29, 18, 0.84) 0%,
+      rgba(11, 29, 18, 0.67) 42%,
+      rgba(11, 29, 18, 0.38) 72%,
+      rgba(11, 29, 18, 0.24) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(10, 22, 14, 0.24) 0%,
+      rgba(10, 22, 14, 0.05) 45%,
+      rgba(10, 22, 14, 0.14) 100%
+    );
+}
+
+/* Tekst en knoppen altijd boven video + overlay. */
+.video-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Extra leesbaarheid boven felle delen van het frituurvet. */
+.video-hero h1,
+.video-hero .hero-copy,
+.video-hero .eyebrow {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 700px) {
+
+  .video-hero {
+    min-height: 570px;
+  }
+
+  .hero-video {
+    object-position: center center;
+  }
+
+  .hero-video-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(11, 29, 18, 0.82) 0%,
+        rgba(11, 29, 18, 0.60) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(10, 22, 14, 0.28),
+        rgba(10, 22, 14, 0.08)
+      );
+  }
+}
+
+/*
+  Respecteert bezoekers die minder beweging ingesteld hebben.
+  Dan verschijnt automatisch je bestaande hero-achtergrond.
+*/
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-video {
+    display: none;
+  }
+
+}
