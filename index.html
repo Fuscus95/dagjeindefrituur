@@ -48,6 +48,7 @@
 
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/filters.css">
+  <link rel="stylesheet" href="/hero-video.css">
 
   <style>
     /* Zorg dat alle excursiekaarten intern hetzelfde uitlijnen */
@@ -132,8 +133,22 @@
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- HERO MET ACHTERGRONDVIDEO -->
+  <section class="hero video-hero">
+
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-hidden="true"
+    >
+      <source src="/video/friet-hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-video-overlay" aria-hidden="true"></div>
 
     <div class="container hero-content">
 
