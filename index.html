@@ -48,7 +48,6 @@
 
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/filters.css">
-  <link rel="stylesheet" href="/hero-video.css">
 
   <style>
     /* Zorg dat alle excursiekaarten intern hetzelfde uitlijnen */
@@ -120,6 +119,145 @@
     .excursion-card .card-footer {
       margin-top: 0;
     }
+  
+    /* =====================================================
+       FULL-SCREEN VIDEO HERO
+       ===================================================== */
+
+    /*
+      Override de gewone groene .hero uit style.css.
+      De MP4 vult nu het VOLLEDIGE hero-vlak.
+    */
+    .hero.video-hero {
+      position: relative;
+      min-height: 660px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background: #173623;
+    }
+
+    /* Verwijder de grote friet-emoji uit de standaard hero. */
+    .hero.video-hero::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    /* Video absoluut over de volledige hero. */
+    .hero.video-hero .hero-video {
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 0 !important;
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: none !important;
+      max-height: none !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      pointer-events: none;
+    }
+
+    /* Donkere laag over ALLE video, niet eronder. */
+    .hero.video-hero .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(10, 25, 16, .78) 0%,
+          rgba(10, 25, 16, .53) 48%,
+          rgba(10, 25, 16, .30) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, .28),
+          rgba(0, 0, 0, .10)
+        );
+    }
+
+    /* Tekst gecentreerd boven de video. */
+    .hero.video-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(920px, calc(100% - 40px));
+      max-width: 920px;
+      margin-inline: auto;
+      padding: 110px 0;
+      text-align: center;
+    }
+
+    .hero.video-hero .hero-copy {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero.video-hero .hero-actions {
+      justify-content: center;
+    }
+
+    .hero.video-hero h1,
+    .hero.video-hero .hero-copy,
+    .hero.video-hero .eyebrow {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, .36);
+    }
+
+    /* De secundaire knop moet leesbaar zijn op video. */
+    .hero.video-hero .btn-secondary {
+      color: #fff;
+      border-color: rgba(255, 255, 255, .72);
+      background: rgba(20, 30, 22, .20);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero.video-hero .btn-secondary:hover {
+      background: rgba(255, 255, 255, .14);
+    }
+
+    @media (max-width: 700px) {
+      .hero.video-hero {
+        min-height: 600px;
+      }
+
+      .hero.video-hero .hero-content {
+        width: min(100% - 32px, 920px);
+        padding: 82px 0;
+      }
+
+      .hero.video-hero .hero-video {
+        object-position: center center !important;
+      }
+
+      .hero.video-hero .hero-video-overlay {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(10, 25, 16, .72),
+            rgba(10, 25, 16, .48)
+          ),
+          linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .30),
+            rgba(0, 0, 0, .12)
+          );
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero.video-hero .hero-video {
+        display: none !important;
+      }
+    }
+
   </style>
 
 </head>
