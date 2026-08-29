@@ -50,17 +50,41 @@
   <link rel="stylesheet" href="/filters.css">
 
   <style>
+    /* Zorg dat alle excursiekaarten intern hetzelfde uitlijnen */
+    .excursion-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .excursion-card .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .excursion-card .card-body h3 {
+      margin-bottom: 12px;
+    }
+
+    .excursion-card .card-body > p:not(.meta) {
+      margin-top: 0;
+      margin-bottom: 16px;
+      line-height: 1.55;
+    }
+
+    /* Gids onderaan de tekstzone: zo staan alle gidsen op één lijn */
     .excursion-guide {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-top: 20px;
-      margin-bottom: 18px;
+      gap: 9px;
+      margin-top: auto;
+      margin-bottom: 14px;
+      min-height: 42px;
     }
 
     .excursion-guide img {
-      width: 42px;
-      height: 42px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
@@ -69,16 +93,19 @@
     .excursion-guide > div {
       display: flex;
       flex-direction: column;
-      line-height: 1.25;
+      justify-content: center;
+      line-height: 1.15;
     }
 
     .excursion-guide span {
-      font-size: 13px;
+      margin-bottom: 2px;
+      font-size: 12px;
       color: var(--muted, #888);
     }
 
     .excursion-guide a {
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 1.15;
       font-weight: 600;
       color: var(--ink, #20352a);
       text-decoration: none;
@@ -86,6 +113,11 @@
 
     .excursion-guide a:hover {
       text-decoration: underline;
+    }
+
+    /* Footer meteen onder de gids, zonder extra witruimte */
+    .excursion-card .card-footer {
+      margin-top: 0;
     }
   </style>
 
@@ -220,7 +252,7 @@
           <select id="filter-guide">
             <option value="">Alle gidsen</option>
             <option value="valeir">Valeir</option>
-            <option value="Walter">Walter</option>
+            <option value="de-walter">De Walter</option>
             <option value="bertrand">Bertrand</option>
           </select>
         </div>
@@ -251,7 +283,7 @@
       <div class="cards" id="excursion-grid">
 
         <!-- OOSTKUST -->
-        <article class="card excursion-card" data-guide="Walter" data-duration="halve-dag" data-province="west-vlaanderen" data-category="vogels">
+        <article class="card excursion-card" data-guide="de-walter" data-duration="halve-dag" data-province="west-vlaanderen" data-category="vogels">
 
           <div class="card-media">
             <span class="tag">Kust</span>
@@ -277,10 +309,10 @@
 
 
             <div class="excursion-guide">
-              <img src="/gids2.jpg" alt="Walter" loading="lazy">
+              <img src="/gids2.jpg" alt="De Walter" loading="lazy">
               <div>
                 <span>Begeleid door</span>
-                <a href="/gidsen/gids2">Walter</a>
+                <a href="/gidsen/gids2">De Walter</a>
               </div>
             </div>
 
@@ -300,7 +332,7 @@
 
 
         <!-- LINKEROEVER -->
-        <article class="card excursion-card" data-guide="Walter" data-duration="halve-dag" data-province="oost-vlaanderen" data-category="vogels">
+        <article class="card excursion-card" data-guide="de-walter" data-duration="halve-dag" data-province="oost-vlaanderen" data-category="vogels">
 
           <div class="card-media alt1">
             <span class="tag">Haven & polders</span>
@@ -326,10 +358,10 @@
 
 
             <div class="excursion-guide">
-              <img src="/gids2.jpg" alt="Walter" loading="lazy">
+              <img src="/gids2.jpg" alt="De Walter" loading="lazy">
               <div>
                 <span>Begeleid door</span>
-                <a href="/gidsen/gids2">Walter</a>
+                <a href="/gidsen/gids2">De Walter</a>
               </div>
             </div>
 
@@ -398,7 +430,7 @@
 
 
         <!-- ANTWERPSE RAND -->
-        <article class="card excursion-card" data-guide="Walter" data-duration="halve-dag" data-province="antwerpen" data-category="vogels">
+        <article class="card excursion-card" data-guide="de-walter" data-duration="halve-dag" data-province="antwerpen" data-category="vogels">
 
           <div class="card-media alt3">
             <span class="tag">Suburbaan</span>
@@ -423,10 +455,10 @@
 
 
             <div class="excursion-guide">
-              <img src="/gids2.jpg" alt="Walter" loading="lazy">
+              <img src="/gids2.jpg" alt="De Walter" loading="lazy">
               <div>
                 <span>Begeleid door</span>
-                <a href="/gidsen/gids2">Walter</a>
+                <a href="/gidsen/gids2">De Walter</a>
               </div>
             </div>
 
