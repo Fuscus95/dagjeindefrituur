@@ -14,7 +14,7 @@ window.EXCURSIONS = [
     guide: {
       id: "de-walter",
       name: "De Walter",
-      image: "/images/guides/gids2.jpg",
+      image: "/assets/images/guides/gids2.jpg",
       href: "/gidsen/gids2"
     },
 
@@ -140,7 +140,7 @@ window.EXCURSIONS = [
     guide: {
       id: "de-walter",
       name: "De Walter",
-      image: "/images/guides/gids2.jpg",
+      image: "/assets/images/guides/gids2.jpg",
       href: "/gidsen/gids2"
     },
 
@@ -271,7 +271,7 @@ window.EXCURSIONS = [
     guide: {
       id: "bertrand",
       name: "Bertrand",
-      image: "/images/guides/gids3.jpg",
+      image: "/assets/images/guides/gids3.jpg",
       href: "/gidsen/gids3"
     },
 
@@ -374,7 +374,7 @@ window.EXCURSIONS = [
     guide: {
       id: "de-walter",
       name: "De Walter",
-      image: "/images/guides/gids2.jpg",
+      image: "/assets/images/guides/gids2.jpg",
       href: "/gidsen/gids2"
     },
 
@@ -465,7 +465,7 @@ window.EXCURSIONS = [
     guide: {
       id: "bertrand",
       name: "Bertrand",
-      image: "/images/guides/gids3.jpg",
+      image: "/assets/images/guides/gids3.jpg",
       href: "/gidsen/gids3"
     },
 
@@ -554,7 +554,7 @@ window.EXCURSIONS = [
     guide: {
       id: "valeir",
       name: "Valeir",
-      image: "/images/guides/gids1.jpg",
+      image: "/assets/images/guides/gids1.jpg",
       href: "/gidsen/gids1"
     },
 
