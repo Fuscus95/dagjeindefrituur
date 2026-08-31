@@ -46,11 +46,16 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/filters.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/filters.css">
+  <link rel="stylesheet" href="/assets/css/hero-video.css">
 
   <style>
-    /* Zorg dat alle excursiekaarten intern hetzelfde uitlijnen */
+    /* =====================================================
+       EXCURSIEKAARTEN
+       ===================================================== */
+
     .excursion-card {
       display: flex;
       flex-direction: column;
@@ -72,7 +77,6 @@
       line-height: 1.55;
     }
 
-    /* Gids onderaan de tekstzone: zo staan alle gidsen op één lijn */
     .excursion-guide {
       display: flex;
       align-items: center;
@@ -115,19 +119,14 @@
       text-decoration: underline;
     }
 
-    /* Footer meteen onder de gids, zonder extra witruimte */
     .excursion-card .card-footer {
       margin-top: 0;
     }
-  
+
     /* =====================================================
        FULL-SCREEN VIDEO HERO
        ===================================================== */
 
-    /*
-      Override de gewone groene .hero uit style.css.
-      De MP4 vult nu het VOLLEDIGE hero-vlak.
-    */
     .hero.video-hero {
       position: relative;
       min-height: 660px;
@@ -138,13 +137,11 @@
       background: #173623;
     }
 
-    /* Verwijder de grote friet-emoji uit de standaard hero. */
     .hero.video-hero::after {
       content: none !important;
       display: none !important;
     }
 
-    /* Video absoluut over de volledige hero. */
     .hero.video-hero .hero-video {
       position: absolute !important;
       inset: 0 !important;
@@ -162,12 +159,12 @@
       pointer-events: none;
     }
 
-    /* Donkere laag over ALLE video, niet eronder. */
     .hero.video-hero .hero-video-overlay {
       position: absolute;
       inset: 0;
       z-index: 1;
       pointer-events: none;
+
       background:
         linear-gradient(
           90deg,
@@ -182,7 +179,6 @@
         );
     }
 
-    /* Tekst gecentreerd boven de video. */
     .hero.video-hero .hero-content {
       position: relative;
       z-index: 2;
@@ -211,7 +207,6 @@
       text-shadow: 0 2px 18px rgba(0, 0, 0, .36);
     }
 
-    /* De secundaire knop moet leesbaar zijn op video. */
     .hero.video-hero .btn-secondary {
       color: #fff;
       border-color: rgba(255, 255, 255, .72);
@@ -224,6 +219,7 @@
     }
 
     @media (max-width: 700px) {
+
       .hero.video-hero {
         min-height: 600px;
       }
@@ -253,11 +249,11 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       .hero.video-hero .hero-video {
         display: none !important;
       }
     }
-
   </style>
 
 </head>
@@ -265,13 +261,21 @@
 
 <body>
 
-<!-- Centrale header uit components.js -->
+<!-- =====================================================
+     CENTRALE HEADER
+     Wordt ingevuld door /assets/js/components.js
+     ===================================================== -->
+
 <div id="site-header"></div>
 
 
 <main id="top">
 
-  <!-- HERO MET ACHTERGRONDVIDEO -->
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
   <section class="hero video-hero">
 
     <video
@@ -283,10 +287,17 @@
       preload="metadata"
       aria-hidden="true"
     >
-      <source src="/video/friet-hero.mp4" type="video/mp4">
+      <source
+        src="/assets/video/friet-hero.mp4"
+        type="video/mp4"
+      >
     </video>
 
-    <div class="hero-video-overlay" aria-hidden="true"></div>
+    <div
+      class="hero-video-overlay"
+      aria-hidden="true"
+    ></div>
+
 
     <div class="container hero-content">
 
@@ -294,7 +305,9 @@
         Georganiseerd frituurveldwerk sinds ongeveer gisteren
       </p>
 
-      <h1>Ontdek België, frituur per frituur</h1>
+      <h1>
+        Ontdek België, frituur per frituur
+      </h1>
 
       <p class="hero-copy">
         Dagje in de Frituur is een hoogst onwetenschappelijke gids voor
@@ -304,13 +317,20 @@
         betere en bedenkelijkere frituurcultuur.
       </p>
 
+
       <div class="hero-actions">
 
-        <a class="btn btn-primary" href="#excursies">
+        <a
+          class="btn btn-primary"
+          href="#excursies"
+        >
           Bekijk alle excursies
         </a>
 
-        <a class="btn btn-secondary" href="#werkwijze">
+        <a
+          class="btn btn-secondary"
+          href="#werkwijze"
+        >
           Hoe werkt het?
         </a>
 
@@ -321,7 +341,10 @@
   </section>
 
 
-  <!-- INTRO -->
+  <!-- =====================================================
+       INTRO
+       ===================================================== -->
+
   <section class="section">
 
     <div class="container narrow center">
@@ -330,7 +353,9 @@
         Dagje in de Frituur
       </p>
 
-      <h2>Vogelkijken en frituren in België</h2>
+      <h2>
+        Vogelkijken en frituren in België
+      </h2>
 
       <p>
         Onze hoogst subjectieve gidsen combineren natuurgebieden,
@@ -348,10 +373,17 @@
   </section>
 
 
-  <!-- EXCURSIES -->
-  <section id="excursies" class="section alt">
+  <!-- =====================================================
+       EXCURSIES
+       ===================================================== -->
+
+  <section
+    id="excursies"
+    class="section alt"
+  >
 
     <div class="container">
+
 
       <div class="section-head">
 
@@ -370,82 +402,225 @@
       </div>
 
 
+      <!-- FILTERS -->
 
-      <div class="excursion-filters" aria-label="Excursies filteren">
+      <div
+        class="excursion-filters"
+        aria-label="Excursies filteren"
+      >
+
 
         <div class="filter-group">
-          <label for="filter-province">Provincie</label>
+
+          <label for="filter-province">
+            Provincie
+          </label>
+
           <select id="filter-province">
-            <option value="">Alle provincies</option>
-            <option value="antwerpen">Antwerpen</option>
-            <option value="limburg">Limburg</option>
-            <option value="oost-vlaanderen">Oost-Vlaanderen</option>
-            <option value="west-vlaanderen">West-Vlaanderen</option>
-            <option value="vlaams-brabant">Vlaams-Brabant</option>
-            <option value="waals-brabant">Waals-Brabant</option>
-            <option value="henegouwen">Henegouwen</option>
-            <option value="luik">Luik</option>
-            <option value="luxemburg">Luxemburg</option>
-            <option value="namen">Namen</option>
+
+            <option value="">
+              Alle provincies
+            </option>
+
+            <option value="antwerpen">
+              Antwerpen
+            </option>
+
+            <option value="limburg">
+              Limburg
+            </option>
+
+            <option value="oost-vlaanderen">
+              Oost-Vlaanderen
+            </option>
+
+            <option value="west-vlaanderen">
+              West-Vlaanderen
+            </option>
+
+            <option value="vlaams-brabant">
+              Vlaams-Brabant
+            </option>
+
+            <option value="waals-brabant">
+              Waals-Brabant
+            </option>
+
+            <option value="henegouwen">
+              Henegouwen
+            </option>
+
+            <option value="luik">
+              Luik
+            </option>
+
+            <option value="luxemburg">
+              Luxemburg
+            </option>
+
+            <option value="namen">
+              Namen
+            </option>
+
           </select>
+
         </div>
 
+
         <div class="filter-group">
-          <label for="filter-duration">Duur</label>
+
+          <label for="filter-duration">
+            Duur
+          </label>
+
           <select id="filter-duration">
-            <option value="">Alle duren</option>
-            <option value="halve-dag">Halve dag</option>
-            <option value="hele-dag">Hele dag</option>
-            <option value="weekendje">Weekendje</option>
+
+            <option value="">
+              Alle duren
+            </option>
+
+            <option value="halve-dag">
+              Halve dag
+            </option>
+
+            <option value="hele-dag">
+              Hele dag
+            </option>
+
+            <option value="weekendje">
+              Weekendje
+            </option>
+
           </select>
+
         </div>
 
+
         <div class="filter-group">
-          <label for="filter-guide">Gids</label>
+
+          <label for="filter-guide">
+            Gids
+          </label>
+
           <select id="filter-guide">
-            <option value="">Alle gidsen</option>
-            <option value="valeir">Valeir</option>
-            <option value="de-walter">De Walter</option>
-            <option value="bertrand">Bertrand</option>
+
+            <option value="">
+              Alle gidsen
+            </option>
+
+            <option value="valeir">
+              Valeir
+            </option>
+
+            <option value="de-walter">
+              De Walter
+            </option>
+
+            <option value="bertrand">
+              Bertrand
+            </option>
+
           </select>
+
         </div>
+
 
         <div class="filter-group">
-          <label for="filter-category">Categorie</label>
+
+          <label for="filter-category">
+            Categorie
+          </label>
+
           <select id="filter-category">
-            <option value="">Alle categorieën</option>
-            <option value="vogels">Vogels</option>
-            <option value="zoogdieren">Zoogdieren</option>
-            <option value="vlinders">Vlinders</option>
-            <option value="planten">Planten</option>
-            <option value="insecten-en-meer">Insecten &amp; meer</option>
-            <option value="reptielen-en-amfibieen">Reptielen &amp; amfibieën</option>
-            <option value="astronomie">Astronomie</option>
-            <option value="beginnersexcursie">Beginnersexcursie</option>
+
+            <option value="">
+              Alle categorieën
+            </option>
+
+            <option value="vogels">
+              Vogels
+            </option>
+
+            <option value="zoogdieren">
+              Zoogdieren
+            </option>
+
+            <option value="vlinders">
+              Vlinders
+            </option>
+
+            <option value="planten">
+              Planten
+            </option>
+
+            <option value="insecten-en-meer">
+              Insecten &amp; meer
+            </option>
+
+            <option value="reptielen-en-amfibieen">
+              Reptielen &amp; amfibieën
+            </option>
+
+            <option value="astronomie">
+              Astronomie
+            </option>
+
+            <option value="beginnersexcursie">
+              Beginnersexcursie
+            </option>
+
           </select>
+
         </div>
 
-        <button type="button" id="reset-filters" class="filter-reset">
+
+        <button
+          type="button"
+          id="reset-filters"
+          class="filter-reset"
+        >
           Wis filters
         </button>
 
       </div>
 
-      <p id="filter-result-count" class="filter-result-count" aria-live="polite"></p>
 
-      <div class="cards" id="excursion-grid">
-        <!-- Excursiekaarten worden automatisch opgebouwd door /excursions-list.js -->
-      </div>
+      <p
+        id="filter-result-count"
+        class="filter-result-count"
+        aria-live="polite"
+      ></p>
+
+
+      <!--
+        Wordt automatisch gevuld vanuit:
+        /data/excursions.js
+        via:
+        /assets/js/excursions-list.js
+      -->
+
+      <div
+        class="cards"
+        id="excursion-grid"
+      ></div>
+
 
     </div>
 
   </section>
 
 
-  <!-- WERKWIJZE -->
-  <section id="werkwijze" class="section">
+  <!-- =====================================================
+       WERKWIJZE
+       ===================================================== -->
+
+  <section
+    id="werkwijze"
+    class="section"
+  >
 
     <div class="container split">
+
 
       <div class="content">
 
@@ -466,6 +641,7 @@
 
 
         <div class="checklist">
+
 
           <div class="checkitem">
 
@@ -505,6 +681,7 @@
 
           </div>
 
+
         </div>
 
       </div>
@@ -526,13 +703,20 @@
 
       </aside>
 
+
     </div>
 
   </section>
 
 
-  <!-- OVER -->
-  <section id="over" class="section alt">
+  <!-- =====================================================
+       OVER
+       ===================================================== -->
+
+  <section
+    id="over"
+    class="section alt"
+  >
 
     <div class="container narrow center">
 
@@ -557,12 +741,17 @@
   </section>
 
 
-  <!-- SEO / ALLE EXCURSIES -->
+  <!-- =====================================================
+       SEO / ALLE EXCURSIES
+       ===================================================== -->
+
   <section class="section">
 
     <div class="container narrow">
 
-      <h2>Alle excursies</h2>
+      <h2>
+        Alle excursies
+      </h2>
 
       <ul>
 
@@ -608,25 +797,37 @@
 
   </section>
 
+
 </main>
 
 
-<!-- Centrale footer uit components.js -->
+<!-- =====================================================
+     CENTRALE FOOTER
+     ===================================================== -->
+
 <div id="site-footer"></div>
 
 
-<!-- Eerst centrale header/footer laden -->
-<script src="/components.js"></script>
+<!-- =====================================================
+     JAVASCRIPT
 
-<!-- Daarna algemene JavaScript -->
-<script src="/script.js"></script>
+     Volgorde is belangrijk:
+     1. components maakt header/footer
+     2. algemene JS
+     3. excursiedata
+     4. kaarten genereren
+     5. filters activeren
+     ===================================================== -->
 
-<!-- Centrale excursiedata + automatische kaarten -->
+<script src="/assets/js/components.js"></script>
+
+<script src="/assets/js/script.js"></script>
+
 <script src="/data/excursions.js"></script>
-<script src="/excursions-list.js"></script>
 
-<!-- Filters pas starten nadat de kaarten bestaan -->
-<script src="/filters.js"></script>
+<script src="/assets/js/excursions-list.js"></script>
+
+<script src="/assets/js/filters.js"></script>
 
 
 </body>
