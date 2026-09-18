@@ -463,10 +463,10 @@ window.EXCURSIONS = [
   duration: "Volledige dag",
 
   guide: {
-    id: "bertrand",
-    name: "Bertrand",
-    image: "/assets/images/guides/gids3.jpg",
-    href: "/gidsen/gids3"
+    id: "Jacobus",
+    name: "jacobus",
+    image: "/assets/images/guides/gids4.jpg",
+    href: "/gidsen/gids4"
   },
 
   card: {
@@ -552,7 +552,7 @@ window.EXCURSIONS = [
     ],
 
     practical: [
-      ["Gids", "Bertrand"],
+      ["Gids", "Jacobus"],
       ["Duur", "Hele dag"],
       ["Provincie", "Luxemburg"],
       ["Regio", "Torgny · Dampicourt · Sainte-Marie"],
