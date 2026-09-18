@@ -450,94 +450,146 @@ window.EXCURSIONS = [
     }
   },
 
-  {
-    slug: "gaume",
-    href: "/excursies/gaume",
-    title: "Frituren van de Gaume",
-    tag: "Zuid-België",
-    visualClass: "alt4",
-    province: "luxemburg",
-    category: "vogels",
-    durationFilter: "hele-dag",
-    region: "Gaume",
-    duration: "Volledige dag",
+ {
+  slug: "gaume",
+  href: "/excursies/gaume",
+  title: "Frituren van de Gaume",
+  tag: "Zuid-België",
+  visualClass: "alt4",
+  province: "luxemburg",
+  category: "vogels",
+  durationFilter: "hele-dag",
+  region: "Torgny – Dampicourt – Sainte-Marie",
+  duration: "Volledige dag",
 
-    guide: {
-      id: "bertrand",
-      name: "Bertrand",
-      image: "/assets/images/guides/gids3.jpg",
-      href: "/gidsen/gids3"
-    },
-
-    card: {
-      description: "Vogelkijken in de Gaume tussen bossen, landbouwgebied en rustige dorpen, gevolgd door een zoektocht naar de meest zuidelijke frituurcultuur van België.",
-      fries: "4–6 frituren"
-    },
-
-    seo: {
-      title: "Vogelkijken & frituren in de Gaume | Dagje in de Frituur",
-      description: "Vogelkijken in de Gaume tussen bossen, landbouwgebied en rustige dorpen, gecombineerd met een zoektocht naar de meest zuidelijke frituurcultuur van België.",
-      canonical: "https://dagjeindefrituur.be/excursies/gaume"
-    },
-
-    hero: {
-      eyebrow: "Zuid-België · Gaume · Provincie Luxemburg",
-      intro: "Bossen, landbouwgebied, rustige dorpen en de meest zuidelijke frituurcultuur van België."
-    },
-
-    detail: {
-      contentBlocks: [
-        {
-          type: "heading",
-          text: "Vogelkijken in de Gaume",
-          first: true
-        },
-        {
-          type: "p",
-          html: "De Gaume voelt op sommige plaatsen minder Belgisch dan de rest van België, wat uiteraard onmiddellijk vragen oproept over de lokale frituurcultuur."
-        },
-        {
-          type: "p",
-          html: "We combineren bos, open landbouwgebied en dorpen met een grondige zoektocht naar vogels en frituren die diep genoeg in het zuiden liggen om als veldwerk te tellen."
-        },
-        {
-          type: "notice",
-          html: "Afstanden zijn hier langer en openingsuren worden optimistisch geïnterpreteerd."
-        }
-      ],
-
-      practical: [
-        ["Gids", "Bertrand"],
-        ["Duur", "Hele dag"],
-        ["Provincie", "Luxemburg"],
-        ["Categorie", "Vogels"],
-        ["Regio", "Gaume"],
-        ["Stops", "4–6 frituren"],
-        ["Beste periode", "Voorjaar – najaar"]
-      ],
-
-      routeHeading: "Verloop van de excursie",
-
-      route: [
-        {
-          title: "Bosgebieden",
-          text: "Ochtendronde in de klassieke Gaumse bossen."
-        },
-        {
-          title: "Landbouwgebied",
-          text: "Open terrein en akkervogels."
-        },
-        {
-          title: "Dorpenronde",
-          text: "Controle van lokale frituren en snackbars."
-        },
-        {
-          title: "Frituurfinale",
-          text: "Afsluiten bij de meest overtuigende kandidaat."
-        }
-      ]
-    }
+  guide: {
+    id: "bertrand",
+    name: "Bertrand",
+    image: "/assets/images/guides/gids3.jpg",
+    href: "/gidsen/gids3"
   },
+
+  card: {
+    description: "Kalkgraslanden, zuiderse soorten, Grauwe Klauwieren en de enige frituur van België met een vermelding in Gault&Millau. Welkom in de Gaume.",
+    fries: "2–3 strategische stops"
+  },
+
+  seo: {
+    title: "Vogelkijken & frituren in de Gaume | Dagje in de Frituur",
+    description: "Vogelkijken in de Gaume rond Torgny, Dampicourt en Sainte-Marie, met kalkgraslanden, zuiderse soorten en een bezoek aan Paul - Frites et Burger.",
+    canonical: "https://dagjeindefrituur.be/excursies/gaume"
+  },
+
+  hero: {
+    eyebrow: "Zuid-België · Gaume · Torgny",
+    intro: "Kalkgraslanden, Bijeneters, Grauwe Klauwieren, Orval en frieten met gesmolten kaas. In het diepe zuiden gelden duidelijk andere regels."
+  },
+
+  detail: {
+    contentBlocks: [
+      {
+        type: "heading",
+        text: "Frituren in het diepe zuiden",
+        first: true
+      },
+      {
+        type: "p",
+        html: "Gezien de beperkte beschikbaarheid van <strong>koude sauzen</strong> in het diepe zuiden worden hier frieten geserveerd met <strong>gesmolten kaas</strong>. Consumptie van deze snack in combinatie met het endemische <strong>Orval-bier</strong> wordt sterk aanbevolen."
+      },
+      {
+        type: "heading",
+        text: "Torgny en de relicten van het kalkgrasland"
+      },
+      {
+        type: "p",
+        html: "Na een obligatoir bezoek aan de relicten van het <strong>kalkgrasland van Torgny</strong>, waar volgens de overlevering ooit een bloemrijke vegetatie moet hebben gestaan, gaan we op zoek naar wat er na jaren nulbeheer nog van overschiet."
+      },
+      {
+        type: "p",
+        html: "Met enig geluk valt er nog een <strong>Kalkvleugeltjesbloem</strong> óp het pad aan te treffen. Daarna trekken we de landsgrens over voor een bezoek aan de Franse kalkhellingen, waar het graslandbeheer voorlopig iets minder experimenteel wordt aangepakt."
+      },
+      {
+        type: "heading",
+        text: "Marais de Dampicourt"
+      },
+      {
+        type: "p",
+        html: "Hierna volgt een korte snack in de schrale frituur aan het <strong>Marais de Dampicourt</strong>, wellicht één van de beste plaatsen van België om <strong>Grauwe Klauwier</strong> op de frituurlijst te gooien."
+      },
+      {
+        type: "heading",
+        text: "De culinaire finale"
+      },
+      {
+        type: "p",
+        html: "Het hoogtepunt van de dag is echter een bezoek aan <strong>Paul - Frites et Burger in Sainte-Marie</strong>, de enige frituur in België die in de <strong>Gault&Millau</strong> vermeld staat."
+      },
+      {
+        type: "p",
+        html: "Hier kan je een mogelijk traumatische consumptie van een <strong>frites au fromage</strong> verwerken met wellicht enkele van Wallonië's beste burgers."
+      },
+      {
+        type: "notice",
+        html: "<strong>Waarschuwing:</strong> koude sauzen zijn in het diepe zuiden geen verworven recht. Orval, gesmolten kaas en een zekere culinaire flexibiliteit zijn sterk aanbevolen."
+      },
+      {
+        type: "heading",
+        text: "Wat kun je verwachten?"
+      },
+      {
+        type: "checklist",
+        items: [
+          "Zuiderse stemming met zuidelijke soorten zoals Bijeneter",
+          "Bezoek aan een klassieke Waalse frituur, waar bierconsumptie belangrijker is dan de frieten",
+          "Studiebezoek aan de gevolgen van nulbeheer op kalkgrasland",
+          "Topvlinders op uitwerpselen",
+          "Vergeefse hoop op het opduiken van een Kleine Sleedoornpage",
+          "Grauwe Klauwier proberen toevoegen aan de frituurlijst",
+          "Een mogelijk traumatische confrontatie met frites au fromage",
+          "Afsluiten met wellicht enkele van Wallonië's beste burgers"
+        ]
+      }
+    ],
+
+    practical: [
+      ["Gids", "Bertrand"],
+      ["Duur", "Hele dag"],
+      ["Provincie", "Luxemburg"],
+      ["Regio", "Torgny · Dampicourt · Sainte-Marie"],
+      ["Niveau", "Gemakkelijk tot gastronomisch uitdagend"],
+      ["Doelsoorten", "Bijeneter · Grauwe Klauwier · Kleine Sleedoornpage"],
+      ["Dranksuggestie", "Orval"],
+      ["Beste periode", "Voorjaar – zomer"]
+    ],
+
+    routeHeading: "Verloop van de excursie",
+
+    route: [
+      {
+        title: "Torgny — relicten van het kalkgrasland",
+        text: "We beginnen met een studiebezoek aan wat volgens oudere bronnen ooit een bloemrijk kalkgrasland moet zijn geweest. Met enig geluk groeit er nog een Kalkvleugeltjesbloem óp het pad."
+      },
+      {
+        title: "De Franse kalkhellingen",
+        text: "We steken de landsgrens over en zoeken verder naar zuiderse vogels, planten en vlinders op de Franse kalkhellingen."
+      },
+      {
+        title: "Marais de Dampicourt",
+        text: "Korte vogel- en snackstop aan het Marais de Dampicourt. Een uitstekende locatie om Grauwe Klauwier eindelijk ook op de frituurlijst te krijgen."
+      },
+      {
+        title: "Paul - Frites et Burger — Sainte-Marie",
+        text: "De grote finale bij de enige Belgische frituur met een vermelding in Gault&Millau. Eerst de confrontatie met frites au fromage, daarna hersteltherapie met één van Wallonië's betere burgers."
+      }
+    ],
+
+    closing: {
+      eyebrow: "Culinair basisprincipe",
+      title: "IN DE GAUME IS ORVAL OOK EEN KOUDE SAUS",
+      text: "En wanneer zelfs dat niet helpt, is er gelukkig nog gesmolten kaas."
+    }
+  }
+},
 
   {
     slug: "hoge-venen",
