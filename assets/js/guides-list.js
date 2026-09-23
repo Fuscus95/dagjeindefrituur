@@ -4,7 +4,7 @@
   const esc=(v="")=>String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
   grid.innerHTML=window.GUIDES.map(g=>`
     <article class="guide-card">
-      <img src="${esc(g.image)}" alt="${esc(g.name)}" loading="lazy">
+      <img src="${esc(g.image)}" alt="${esc(g.name)}" loading="lazy" decoding="async">
       <div class="guide-content">
         <h2>${esc(g.name)}</h2>
         <div class="guide-specialty">${esc(g.specialty)}</div>
