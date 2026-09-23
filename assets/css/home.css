@@ -1,0 +1,202 @@
+/* =====================================================
+       EXCURSIEKAARTEN
+       ===================================================== */
+
+    .excursion-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .excursion-card .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .excursion-card .card-body h3 {
+      margin-bottom: 12px;
+    }
+
+    .excursion-card .card-body > p:not(.meta) {
+      margin-top: 0;
+      margin-bottom: 16px;
+      line-height: 1.55;
+    }
+
+    .excursion-guide {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: auto;
+      margin-bottom: 14px;
+      min-height: 42px;
+    }
+
+    .excursion-guide img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .excursion-guide > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.15;
+    }
+
+    .excursion-guide span {
+      margin-bottom: 2px;
+      font-size: 12px;
+      color: var(--muted, #888);
+    }
+
+    .excursion-guide a {
+      font-size: 14px;
+      line-height: 1.15;
+      font-weight: 600;
+      color: var(--ink, #20352a);
+      text-decoration: none;
+    }
+
+    .excursion-guide a:hover {
+      text-decoration: underline;
+    }
+
+    .excursion-card .card-footer {
+      margin-top: 0;
+    }
+
+    /* =====================================================
+       FULL-SCREEN VIDEO HERO
+       ===================================================== */
+
+    .hero.video-hero {
+      position: relative;
+      min-height: 660px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background: #173623;
+    }
+
+    .hero.video-hero::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    .hero.video-hero .hero-video {
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 0 !important;
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: none !important;
+      max-height: none !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      pointer-events: none;
+    }
+
+    .hero.video-hero .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(10, 25, 16, .78) 0%,
+          rgba(10, 25, 16, .53) 48%,
+          rgba(10, 25, 16, .30) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, .28),
+          rgba(0, 0, 0, .10)
+        );
+    }
+
+    .hero.video-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(920px, calc(100% - 40px));
+      max-width: 920px;
+      margin-inline: auto;
+      padding: 110px 0;
+      text-align: center;
+    }
+
+    .hero.video-hero .hero-copy {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero.video-hero .hero-actions {
+      justify-content: center;
+    }
+
+    .hero.video-hero h1,
+    .hero.video-hero .hero-copy,
+    .hero.video-hero .eyebrow {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, .36);
+    }
+
+    .hero.video-hero .btn-secondary {
+      color: #fff;
+      border-color: rgba(255, 255, 255, .72);
+      background: rgba(20, 30, 22, .20);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero.video-hero .btn-secondary:hover {
+      background: rgba(255, 255, 255, .14);
+    }
+
+    @media (max-width: 700px) {
+
+      .hero.video-hero {
+        min-height: 600px;
+      }
+
+      .hero.video-hero .hero-content {
+        width: min(100% - 32px, 920px);
+        padding: 82px 0;
+      }
+
+      .hero.video-hero .hero-video {
+        object-position: center center !important;
+      }
+
+      .hero.video-hero .hero-video-overlay {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(10, 25, 16, .72),
+            rgba(10, 25, 16, .48)
+          ),
+          linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .30),
+            rgba(0, 0, 0, .12)
+          );
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .hero.video-hero .hero-video {
+        display: none !important;
+      }
+    }
