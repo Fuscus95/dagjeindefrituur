@@ -1,6 +1,8 @@
 (() => {
   const root = document.querySelector("#excursion-page");
-  if (!root || !Array.isArray(window.EXCURSIONS)) return;\n\n  const guideById = (id) => Array.isArray(window.GUIDES) ? window.GUIDES.find((guide) => guide.id === id) : null;
+  if (!root || !Array.isArray(window.EXCURSIONS)) return;
+
+  const guideById = (id) => Array.isArray(window.GUIDES) ? window.GUIDES.find((guide) => guide.id === id) : null;
 
   const slug = document.body.dataset.excursionSlug || new URLSearchParams(location.search).get("slug");
   const excursion = window.EXCURSIONS.find((item) => item.slug === slug);
