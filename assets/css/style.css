@@ -1028,3 +1028,10 @@ h3 {
   .guide-content h2,
   .guide-specialty { min-height: 0; }
 }
+
+.excursion-guide-card{display:grid;grid-template-columns:220px 1fr;gap:34px;align-items:center;padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--bg)}
+.excursion-guide-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px}
+.excursion-guide-card h2{margin-bottom:8px}
+.excursion-guide-specialty{font-weight:700;color:var(--green)}
+.home-guides-intro{max-width:680px;color:var(--muted);font-size:18px}
+@media(max-width:700px){.excursion-guide-card{grid-template-columns:1fr}.excursion-guide-card img{max-width:320px}.home-guides .section-head .text-link{margin-top:-10px}}
