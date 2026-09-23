@@ -7,7 +7,7 @@
   document.title=g.seo.title;
   const set=(sel,attr,val)=>{const el=document.querySelector(sel);if(el&&val)el.setAttribute(attr,val);};
   set('meta[name="description"]',"content",g.seo.description); set('link[rel="canonical"]',"href",g.seo.canonical);
-  const trips=(Array.isArray(window.EXCURSIONS)?window.EXCURSIONS:[]).filter(e=>e.guide&&e.guide.id===g.id);
+  const trips=(Array.isArray(window.EXCURSIONS)?window.EXCURSIONS:[]).filter(e=>e.guideId===g.id);
   root.innerHTML=`
     <section class="guide-hero"><div class="container guide-layout">
       <aside class="guide-photo"><img src="${g.image}" alt="${g.name} - gids bij Dagje in de Frituur" loading="lazy"></aside>
