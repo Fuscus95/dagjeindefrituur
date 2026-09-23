@@ -103,3 +103,7 @@
   }
 
 }
+
+@media (prefers-reduced-data: reduce) {
+  .hero-video { display: none; }
+}
