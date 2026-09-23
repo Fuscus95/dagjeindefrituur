@@ -503,27 +503,7 @@
           </label>
 
           <select id="filter-guide">
-
-            <option value="">
-              Alle gidsen
-            </option>
-
-            <option value="valeir">
-              Valeir
-            </option>
-
-            <option value="de-walter">
-              De Walter
-            </option>
-
-            <option value="bertrand">
-              Bertrand
-            </option>
-
-            <option value="jacobus">
-              Jacobus
-            </option>
-
+            <option value="">Alle gidsen</option>
           </select>
 
         </div>
@@ -827,7 +807,22 @@
 
 <script src="/assets/js/script.js"></script>
 
+<script src="/data/guides.js"></script>
+
 <script src="/data/excursions.js"></script>
+
+<script>
+  (() => {
+    const select = document.querySelector("#filter-guide");
+    if (!select || !Array.isArray(window.GUIDES)) return;
+    window.GUIDES.forEach((guide) => {
+      const option = document.createElement("option");
+      option.value = guide.id;
+      option.textContent = guide.name;
+      select.appendChild(option);
+    });
+  })();
+</script>
 
 <script src="/assets/js/excursions-list.js"></script>
 
