@@ -787,5 +787,144 @@ window.EXCURSIONS = [
       closing: { eyebrow: "Nachtelijk basisprincipe", title: "NA 03:00 IS ELKE FRITUUR EEN TOPFRITUUR", text: "En elke Merel klinkt plots als een lifer." }
     }
   }
+,
+
+  {
+    slug: "workshop-frituurfotografie-oostende",
+    href: "/excursies/workshop-frituurfotografie-oostende",
+    title: "Workshop Frituurfotografie Oostende",
+    tag: "Fotografie",
+    visualClass: "alt7",
+    province: "west-vlaanderen",
+    category: "vogels",
+    durationFilter: "halve-dag",
+    region: "Oostende · Oosterstaketsel",
+    duration: "4 uur",
+
+    guide: {
+      id: "valeir",
+      name: "Valeir",
+      image: "/assets/images/guides/gids1.jpg",
+      href: "/gidsen/gids1"
+    },
+
+    card: {
+      description: "Leer frieten fotograferen in het harde kustlicht van Oostende. Compositie, belichting, sausreflecties en meeuwenmanagement aan het Oosterstaketsel.",
+      fries: "1–3 fotogenieke frituren"
+    },
+
+    seo: {
+      title: "Workshop Frituurfotografie Oostende | Dagje in de Frituur",
+      description: "Satirische workshop frituurfotografie in Oostende: leer compositie, belichting en actiefotografie met frieten, snacks en meeuwen aan de Belgische kust.",
+      canonical: "https://dagjeindefrituur.be/excursies/workshop-frituurfotografie-oostende",
+      ogTitle: "Workshop Frituurfotografie Oostende | Dagje in de Frituur",
+      ogDescription: "Van goudgele friet tot meeuw in vlucht: leer de essentie van frituurfotografie aan de Oostendse kust."
+    },
+
+    hero: {
+      eyebrow: "Fotografie · Oostende · Oosterstaketsel",
+      intro: "Het strand en het Oosterstaketsel vormen een dynamisch decor voor de discipline die binnen de natuurfotografie nog veel te weinig erkenning krijgt: de frituurfotografie."
+    },
+
+    detail: {
+      contentBlocks: [
+        {
+          type: "heading",
+          text: "Van vogelfotografie naar frituurfotografie",
+          first: true
+        },
+        {
+          type: "p",
+          html: "Oostende biedt alles wat de beginnende frituurfotograaf nodig heeft: hard kustlicht, opspattend zeewater, agressieve meeuwen en voldoende horeca om een volledige geheugenkaart met goudgele onderwerpen te vullen."
+        },
+        {
+          type: "p",
+          html: "We starten aan het <strong>Oosterstaketsel</strong>, waar eerst de basisprincipes van kustfotografie worden behandeld. Steenlopers, meeuwen en andere zeevogels mogen gefotografeerd worden, maar dienen hoofdzakelijk als oefenmateriaal voordat we overschakelen op het echte onderwerp."
+        },
+        {
+          type: "heading",
+          text: "Wat ga je leren?"
+        },
+        {
+          type: "checklist",
+          items: [
+            "De juiste camera-instellingen kiezen voor frieten in fel kustlicht",
+            "Bewust omgaan met reflecties op mayonaise, ketchup en aluminium bakjes",
+            "Een laag standpunt gebruiken zonder met de telelens in de saus te hangen",
+            "Rustige composities maken ondanks servetten, plastic vorkjes en voorbijlopende toeristen",
+            "Actiefotografie van een meeuw die onverwacht met je frikandel vertrekt",
+            "Het beslissende moment herkennen waarop een friet exact voldoende saus draagt",
+            "Correct scherpstellen op een bitterbal waarvan niemand weet wat erin zit"
+          ]
+        },
+        {
+          type: "notice",
+          html: "<strong>Belangrijk:</strong> deze workshop draait specifiek om fotografie. Er wordt nog steeds uitleg gegeven over de snacks die we zien, maar de nadruk ligt op de foto en niet op het aantal geconsumeerde soorten."
+        },
+        {
+          type: "heading",
+          text: "Materiaal"
+        },
+        {
+          type: "p",
+          html: "Een spiegelreflex- of systeemcamera wordt aanbevolen. Voor klassieke puntzakfotografie volstaat een standaardzoom; voor vluchtbeelden van meeuwen die met andermans eten vertrekken is <strong>300–400 mm of meer</strong> aangewezen."
+        },
+        {
+          type: "p",
+          html: "Neem volledig opgeladen accu’s, lege geheugenkaarten en kleding mee die bestand is tegen wind, regen, frituurgeur en accidentele tartaarsaus."
+        },
+        {
+          type: "heading",
+          text: "De culinaire nabespreking"
+        },
+        {
+          type: "p",
+          html: "Na het veldwerk bespreken we de resultaten. Technische perfectie is ondergeschikt aan de centrale vraag: <strong>ziet de friet er op de foto beter uit dan hij in werkelijkheid smaakte?</strong> Indien ja, is de workshop geslaagd."
+        }
+      ],
+
+      practical: [
+        ["Gids", "Valeir"],
+        ["Duur", "4 uur"],
+        ["Regio", "Oostende · Oosterstaketsel"],
+        ["Provincie", "West-Vlaanderen"],
+        ["Niveau", "Beginner tot gevorderde sausfotograaf"],
+        ["Materiaal", "Camera · lege geheugenkaart · eetlust"],
+        ["Aanbevolen lens", "24–400 mm, afhankelijk van afstand tot de friet"],
+        ["Beste periode", "Wanneer het licht goed staat en de frituur open is"]
+      ],
+
+      routeHeading: "Verloop van de workshop",
+
+      route: [
+        {
+          title: "Oosterstaketsel — belichting en compositie",
+          text: "We beginnen met kustvogels en leren omgaan met zee, tegenlicht, reflecties en bewegende onderwerpen. Dit gedeelte wekt tijdelijk de indruk dat het om een echte fotografieworkshop gaat."
+        },
+        {
+          title: "Meeuwen in vlucht",
+          text: "Oefenen met autofocus en tracking. Wie zijn snack strategisch vasthoudt, kan rekenen op uitzonderlijk korte minimale scherpstelafstanden."
+        },
+        {
+          title: "De eerste frituur",
+          text: "We schakelen over op stillevenfotografie. Aandacht voor krokantheid, sausstructuur, achtergrondonscherpte en het vermijden van uitgebeten hooglichten op mayonaise."
+        },
+        {
+          title: "Actiefotografie",
+          text: "Deelnemers proberen het beslissende moment vast te leggen waarop een snack uit de puntzak wordt genomen, in saus wordt gedompeld of door lokale fauna wordt onderschept."
+        },
+        {
+          title: "Beeldbespreking",
+          text: "We vergelijken histogrammen, composities en snackkeuzes. Foto’s waarop de frieten groter lijken dan de werkelijk geleverde portie krijgen extra waardering."
+        }
+      ],
+
+      closing: {
+        eyebrow: "Fotografisch basisprincipe",
+        title: "ALS DE FRIET NIET SCHERP IS, WAS JE NIET DICHT GENOEG",
+        text: "Tenzij er een meeuw tussen zat. Dan was je waarschijnlijk al te dicht."
+      }
+    }
+  }
 
 ];
