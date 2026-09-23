@@ -84,8 +84,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Regio", "Knokke – Zeebrugge – Blankenberge"],
-        ["Duur", "4–5 uur"],
         ["Afstand", "ca. 38 km"],
         ["Niveau", "Gemakkelijk, emotioneel wisselend"],
         ["Stops", "Vogelkijkgebieden + resterende frituren"],
@@ -204,8 +202,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Regio", "Linkeroever – Kallo – Waaslandhaven"],
-        ["Duur", "4–6 uur"],
         ["Afstand", "Afhankelijk van de vogels"],
         ["Niveau", "Gemakkelijk tot fanatiek"],
         ["Topfrituur", "Frituur 't Pleintje, Kallo"],
@@ -310,11 +306,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Gids", "Bertrand"],
-        ["Duur", "Hele dag"],
-        ["Provincie", "Namen"],
-        ["Categorie", "Vogels"],
-        ["Regio", "Viroinvallei"],
         ["Afstand", "ca. 62 km"],
         ["Niveau", "Gemiddeld"],
         ["Stops", "Afhankelijk van maag en openingsuren"],
@@ -396,11 +387,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Gids", "De Walter"],
-        ["Duur", "Halve dag"],
-        ["Provincie", "Antwerpen"],
-        ["Categorie", "Vogels"],
-        ["Regio", "Antwerpse rand"],
         ["Indicatieve duur", "4 uur"],
         ["Niveau", "Gemakkelijk"],
         ["Stops", "6–8 frituren"],
@@ -527,10 +513,6 @@ window.EXCURSIONS = [
     ],
 
     practical: [
-      ["Gids", "Jacobus"],
-      ["Duur", "Hele dag"],
-      ["Provincie", "Luxemburg"],
-      ["Regio", "Torgny · Dampicourt · Sainte-Marie"],
       ["Niveau", "Gemakkelijk tot gastronomisch uitdagend"],
       ["Doelsoorten", "Bijeneter · Grauwe Klauwier · Kleine Sleedoornpage"],
       ["Dranksuggestie", "Orval"],
@@ -667,8 +649,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Regio", "Hoge Venen · Eupen"],
-        ["Duur", "Veel langer dan nodig"],
         ["Afstand", "Te ver"],
         ["Niveau", "Existentiëel"],
         ["Hoofddoel", "Pide"],
@@ -849,10 +829,6 @@ window.EXCURSIONS = [
       ],
 
       practical: [
-        ["Gids", "Valeir"],
-        ["Duur", "4 uur"],
-        ["Regio", "Oostende · Oosterstaketsel"],
-        ["Provincie", "West-Vlaanderen"],
         ["Niveau", "Beginner tot gevorderde sausfotograaf"],
         ["Materiaal", "Camera · lege geheugenkaart · eetlust"],
         ["Aanbevolen lens", "24–400 mm, afhankelijk van afstand tot de friet"],
