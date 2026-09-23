@@ -545,8 +545,7 @@ window.EXCURSIONS = [
       title: "IN DE GAUME IS ORVAL OOK EEN KOUDE SAUS",
       text: "En wanneer zelfs dat niet helpt, is er gelukkig nog gesmolten kaas."
     }
-  }
-},
+  },
 
   {
     slug: "hoge-venen",
