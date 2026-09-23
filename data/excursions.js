@@ -21,7 +21,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Vogelkijken & frituren aan de Oostkust | Dagje in de Frituur",
       description: "Op zoek naar de Grauwe Fritis! Vogelkijken aan de Belgische Oostkust rond Knokke, Zeebrugge en Blankenberge, gecombineerd met frituren, havenlandschap en hoogst subjectief frituurveldwerk.",
-      canonical: "https://dagjeindefrituur.be/excursies/oostkust",
+      canonical: "https://dagjeindefrituur.be/excursies/oostkust.html",
       ogTitle: "Frituren van de Oostkust | Dagje in de Frituur",
       ogDescription: "Vogelkijken rond Knokke, Zeebrugge en Blankenberge, gevolgd door hoogst noodzakelijk frituurveldwerk aan de Belgische Oostkust."
     },
@@ -140,7 +140,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Vogelkijken & frituren op Linkeroever | Dagje in de Frituur",
       description: "Vogelkijken op Linkeroever tussen polders, havengebied en natuurontwikkeling, gevolgd door de betere frituur. Polders zijn ook natuur.",
-      canonical: "https://dagjeindefrituur.be/excursies/linkeroever"
+      canonical: "https://dagjeindefrituur.be/excursies/linkeroever.html"
     },
 
     hero: {
@@ -264,7 +264,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Vogelkijken & frituren in de Viroin | Dagje in de Frituur",
       description: "Vogelkijken in de Viroin en daarna op zoek naar frieten. Ontdek de natuur rond Nismes, Olloy-sur-Viroin en onze bedenkelijk grondige frituurervaringen.",
-      canonical: "https://dagjeindefrituur.be/excursies/viroin"
+      canonical: "https://dagjeindefrituur.be/excursies/viroin.html"
     },
 
     hero: {
@@ -357,7 +357,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Vogelkijken & frituren in de Antwerpse rand | Dagje in de Frituur",
       description: "Vogelkijken en frituren in de Antwerpse rand tussen natuurgebieden, steenwegen, verkavelingen en strategisch gelegen frituren.",
-      canonical: "https://dagjeindefrituur.be/excursies/antwerpse-rand"
+      canonical: "https://dagjeindefrituur.be/excursies/antwerpse-rand.html"
     },
 
     hero: {
@@ -428,7 +428,7 @@ window.EXCURSIONS = [
   region: "Torgny – Dampicourt – Sainte-Marie",
   duration: "Volledige dag",
 
-  guideId: "Jacobus",
+  guideId: "jacobus",
 
   card: {
     description: "Kalkgraslanden, zuiderse soorten, Grauwe Klauwieren en de enige frituur van België met een vermelding in Gault&Millau. Welkom in de Gaume.",
@@ -438,7 +438,7 @@ window.EXCURSIONS = [
   seo: {
     title: "Vogelkijken & frituren in de Gaume | Dagje in de Frituur",
     description: "Vogelkijken in de Gaume rond Torgny, Dampicourt en Sainte-Marie, met kalkgraslanden, zuiderse soorten en een bezoek aan Paul - Frites et Burger.",
-    canonical: "https://dagjeindefrituur.be/excursies/gaume"
+    canonical: "https://dagjeindefrituur.be/excursies/gaume.html"
   },
 
   hero: {
@@ -570,7 +570,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Vogelkijken & eten in de Hoge Venen | Dagje in de Frituur",
       description: "Vogelkijken in de Hoge Venen, van Brackvenn tot Eupen, gevolgd door de zoektocht naar degelijk eten aan de rand van België.",
-      canonical: "https://dagjeindefrituur.be/excursies/hoge-venen"
+      canonical: "https://dagjeindefrituur.be/excursies/hoge-venen.html"
     },
 
     hero: {
@@ -703,7 +703,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Nachtje in de Frituur | Nachtvogels & frituren",
       description: "Een satirische nachtexcursie langs uilen, industrieterreinen, verlichte parkings en frituren die openblijven tot diep in de nacht.",
-      canonical: "https://dagjeindefrituur.be/excursies/nachtje-in-de-frituur",
+      canonical: "https://dagjeindefrituur.be/excursies/nachtje-in-de-frituur.html",
       ogTitle: "Nachtje in de Frituur | Dagje in de Frituur",
       ogDescription: "Nachtvogels, vreemde parkings, verdachte verlichting en een laatste friet voor zonsopgang."
     },
@@ -761,7 +761,7 @@ window.EXCURSIONS = [
     seo: {
       title: "Workshop Frituurfotografie Oostende | Dagje in de Frituur",
       description: "Satirische workshop frituurfotografie in Oostende: leer compositie, belichting en actiefotografie met frieten, snacks en meeuwen aan de Belgische kust.",
-      canonical: "https://dagjeindefrituur.be/excursies/workshop-frituurfotografie-oostende",
+      canonical: "https://dagjeindefrituur.be/excursies/workshop-frituurfotografie-oostende.html",
       ogTitle: "Workshop Frituurfotografie Oostende | Dagje in de Frituur",
       ogDescription: "Van goudgele friet tot meeuw in vlucht: leer de essentie van frituurfotografie aan de Oostendse kust."
     },
