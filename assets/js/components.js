@@ -28,7 +28,7 @@ const headerHTML = `
     >
       <a href="/">Home</a>
       <a href="/#excursies">Excursies</a>
-      <a href="/gidsen.html">Gidsen</a>
+      <a href="/gidsen">Gidsen</a>
       <a href="/#werkwijze">Werkwijze</a>
       <a href="/#over">Over ons</a>
     </nav>
