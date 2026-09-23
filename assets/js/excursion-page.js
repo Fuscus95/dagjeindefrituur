@@ -17,6 +17,26 @@
     if (el && value) el.setAttribute(attribute, value);
   };
 
+  const ensureMeta = (selector, attrs) => {
+    let el = document.querySelector(selector);
+    if (!el) {
+      el = document.createElement("meta");
+      document.head.appendChild(el);
+    }
+    Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
+  };
+
+  const setJsonLd = (id, data) => {
+    let script = document.querySelector(`#${id}`);
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = id;
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(data);
+  };
+
   if (excursion.seo) {
     document.title = excursion.seo.title || excursion.title;
     setMeta('meta[name="description"]', "content", excursion.seo.description);
@@ -24,6 +44,9 @@
     setMeta('meta[property="og:title"]', "content", excursion.seo.ogTitle || excursion.seo.title || excursion.title);
     setMeta('meta[property="og:description"]', "content", excursion.seo.ogDescription || excursion.seo.description);
     setMeta('meta[property="og:url"]', "content", excursion.seo.canonical);
+    ensureMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary" });
+    ensureMeta('meta[name="twitter:title"]', { name: "twitter:title", content: excursion.seo.ogTitle || excursion.seo.title || excursion.title });
+    ensureMeta('meta[name="twitter:description"]', { name: "twitter:description", content: excursion.seo.ogDescription || excursion.seo.description || "" });
   }
 
   const renderBlocks = (blocks = []) => blocks.map((block) => {
@@ -35,6 +58,24 @@
   }).join("");
 
   const guide = guideById(excursion.guideId);
+
+  setJsonLd("excursion-structured-data", {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: excursion.title,
+    description: excursion.seo?.description || excursion.hero?.intro || "",
+    url: excursion.seo?.canonical || location.href,
+    touristType: "Vogelkijken en frituurcultuur",
+    itinerary: {
+      "@type": "ItemList",
+      itemListElement: (excursion.detail.route || []).map((step, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: step.title,
+        description: step.text
+      }))
+    }
+  });
   const labels = {
     "antwerpen": "Antwerpen", "limburg": "Limburg", "oost-vlaanderen": "Oost-Vlaanderen",
     "west-vlaanderen": "West-Vlaanderen", "vlaams-brabant": "Vlaams-Brabant",
