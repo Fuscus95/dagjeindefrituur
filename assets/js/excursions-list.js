@@ -10,7 +10,11 @@
     .replaceAll("'", "&#039;");
 
   grid.innerHTML = window.EXCURSIONS.map((excursion) => {
-    const guide = window.GUIDES.find((item) => item.id === excursion.guideId);\n    if (!guide) {\n      console.warn(`Unknown guide "${excursion.guideId}" for excursion "${excursion.slug}"`);\n      return "";\n    }
+    const guide = window.GUIDES.find((item) => item.id === excursion.guideId);
+    if (!guide) {
+      console.warn(`Unknown guide "${excursion.guideId}" for excursion "${excursion.slug}"`);
+      return "";
+    }
     const mediaClass = excursion.visualClass ? ` ${escapeHtml(excursion.visualClass)}` : "";
 
     return `
