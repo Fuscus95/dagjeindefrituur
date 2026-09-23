@@ -732,5 +732,60 @@ window.EXCURSIONS = [
         text: "Bekijk de andere frituurexcursies en ontdek waar in België de combinatie van vogels, vettigheid en slechte beslissingen nog beter tot haar recht komt."
       }
     }
+  },
+
+  {
+    slug: "nachtje-in-de-frituur",
+    href: "/excursies/nachtje-in-de-frituur",
+    title: "Nachtje in de Frituur",
+    tag: "Nacht",
+    visualClass: "alt6",
+    province: "oost-vlaanderen",
+    category: "vogels",
+    durationFilter: "hele-dag",
+    region: "Vlaanderen bij nacht",
+    duration: "Van zonsondergang tot sluitingstijd",
+    guide: { id: "valeir", name: "Valeir", image: "/assets/images/guides/gids1.jpg", href: "/gidsen/gids1" },
+    card: {
+      description: "Een nachtelijke veldexcursie langs verlichte parkings, industrieterreinen, uilenhabitat en frituren die nog open zijn wanneer verstandige mensen al lang thuis zitten.",
+      fries: "3–6 nachtelijke stops"
+    },
+    seo: {
+      title: "Nachtje in de Frituur | Nachtvogels & frituren",
+      description: "Een satirische nachtexcursie langs uilen, industrieterreinen, verlichte parkings en frituren die openblijven tot diep in de nacht.",
+      canonical: "https://dagjeindefrituur.be/excursies/nachtje-in-de-frituur",
+      ogTitle: "Nachtje in de Frituur | Dagje in de Frituur",
+      ogDescription: "Nachtvogels, vreemde parkings, verdachte verlichting en een laatste friet voor zonsopgang."
+    },
+    hero: {
+      eyebrow: "Nacht · Vlaanderen · Tot sluitingstijd",
+      intro: "Waar een normale excursie eindigt wanneer de laatste Merel zwijgt, begint deze pas wanneer de gemiddelde mens naar huis gaat en de frituurverlichting het landschap overneemt."
+    },
+    detail: {
+      contentBlocks: [
+        { type: "heading", text: "Van avondtrek naar nachtelijke vettigheid", first: true },
+        { type: "p", html: "We verzamelen kort voor zonsondergang op een carpoolparking waarvan niemand achteraf precies kan uitleggen waarom ze daar ooit is aangelegd. Verrekijkers blijven nog even om de nek; gezond verstand wordt in de wagen achtergelaten." },
+        { type: "p", html: "De eerste uren worden besteed aan klassieke nachtsoorten. <strong>Steenuil</strong>, <strong>Kerkuil</strong> en met enig geluk een lokale <strong>Oehoe</strong> krijgen voorrang zolang de dichtstbijzijnde frituur nog niet dreigt te sluiten." },
+        { type: "p", html: "Daarna verschuift de focus naar het echte nachtbiotoop: tankstations, industriegebieden, verlaten steenwegen en parkings onder natriumlicht. Hier neemt de ornithologische diversiteit af, maar stijgt de menselijke biodiversiteit exponentieel." },
+        { type: "notice", html: "<strong>Veldregel:</strong> zodra iemand zegt ‘we doen nog één laatste stop’, begint het tweede deel van de excursie." },
+        { type: "heading", text: "De frituur na middernacht" },
+        { type: "p", html: "Rond middernacht wordt een zorgvuldig geselecteerde frituur bezocht die nog open is op een uur waarop culinaire kwaliteitscontrole doorgaans niet meer prioritair is. Determinatie gebeurt op basis van geur, krokantheid en het vermogen van de saus om op de friet te blijven liggen." },
+        { type: "p", html: "De gids documenteert ondertussen alle aanwezige fauna: meeuwen, motten rond de buitenlamp, een vermoedelijke Huiskat en minstens één persoon die beweert ‘nog perfect te kunnen rijden’." },
+        { type: "heading", text: "De dawn chorus die niemand nodig had" },
+        { type: "p", html: "Wie tegen het ochtendgloren nog aanwezig is, krijgt de volledige ornithologische beloning: eerste Merels, overvliegende Kauwen en het besef dat dit zonder twijfel een slecht idee was." },
+        { type: "checklist", items: ["Nachtvogels zoeken tot de frituur belangrijker wordt dan de soortenlijst","Verlichte industrieterreinen beoordelen op uilen- én snackpotentieel","Minstens één frituur bezoeken na middernacht","Discussie over de vraag of een overvliegende meeuw om 03:17 nog telbaar is","Eerste ochtendzang meemaken met mayonaise op de jas","De excursie afsluiten met de collectieve vaststelling dat iedereen gewoon naar huis had moeten gaan"] }
+      ],
+      practical: [["Gids","Valeir"],["Duur","Van zonsondergang tot sluitingstijd"],["Regio","Vlaanderen bij nacht"],["Niveau","Onverantwoord maar haalbaar"],["Doelsoorten","Steenuil · Kerkuil · Oehoe · vroege Merel"],["Stops","3–6 frituren, parkings en verdachte locaties"],["Beste periode","Vrijdag- en zaterdagnacht"],["Einduur","Theoretisch vóór zonsopgang"]],
+      routeHeading: "Verloop van de nacht",
+      route: [
+        { title: "Zonsondergang — klassieke nachtsoorten", text: "We starten nog vrij geloofwaardig met Steenuil, Kerkuil en andere soorten waarvoor men zonder schaamte een excursie kan organiseren." },
+        { title: "Industriezone onder kunstlicht", text: "De duisternis valt in en we verplaatsen ons naar logistieke zones, steenwegen en parkings waar alles onder oranje licht plots ornithologisch verantwoord lijkt." },
+        { title: "Middernachtelijke frituurstop", text: "Kwaliteitscontrole van friet, saus en lokale fauna. Vanaf dit moment wordt elk ornithologisch besluit minder betrouwbaar." },
+        { title: "De laatste stop", text: "Een uitdrukking die tijdens deze excursie meerdere keren gebruikt kan worden zonder feitelijke betekenis." },
+        { title: "Ochtendgloren", text: "De eerste Merel zingt. De deelnemers beseffen dat de dag opnieuw begonnen is terwijl de vorige in feite nooit correct werd afgesloten." }
+      ],
+      closing: { eyebrow: "Nachtelijk basisprincipe", title: "NA 03:00 IS ELKE FRITUUR EEN TOPFRITUUR", text: "En elke Merel klinkt plots als een lifer." }
+    }
   }
+
 ];
