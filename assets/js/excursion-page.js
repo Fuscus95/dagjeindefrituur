@@ -51,7 +51,7 @@
   ].filter(Boolean);
   const practicalRows = [...automaticPractical, ...(excursion.detail.practical || [])];
   const practical = practicalRows.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("");
-  const route = excursion.detail.route.map((step, index) => `<div class="route-step"><div class="step-num">${index + 1}</div><div><strong>${step.title}</strong><p>${step.text}</p></div></div>`).join("");
+  const route = (excursion.detail.route || []).map((step, index) => `<div class="route-step"><div class="step-num">${index + 1}</div><div><strong>${step.title}</strong><p>${step.text}</p></div></div>`).join("");
   const closing = excursion.detail.closing || {
     eyebrow: "Terug naar het overzicht",
     title: "Nog niet genoeg veldwerk?",
@@ -81,13 +81,14 @@
       </div>
     </section>
 
+    ${route ? `
     <section class="section alt">
       <div class="container">
         <p class="eyebrow dark">Indicatieve route</p>
-        <h2>${excursion.detail.routeHeading}</h2>
+        <h2>${excursion.detail.routeHeading || "Verloop van de excursie"}</h2>
         <div class="route-steps">${route}</div>
       </div>
-    </section>
+    </section>` : ""}
 
     <section class="section">
       <div class="container narrow center">
