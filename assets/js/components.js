@@ -1,4 +1,5 @@
 const headerHTML = `
+<a class="skip-link" href="#main-content">Ga naar inhoud</a>
 <header class="site-header">
   <div class="container nav-wrap">
 
