@@ -1006,3 +1006,25 @@ h3 {
   .guide-card img { height: 310px; }
   .hero-actions .btn { width: 100%; }
 }
+
+
+/* Card rendering consistency */
+.excursion-card,
+.guide-card { min-width: 0; }
+
+.excursion-card h3 a,
+.guide-content h2,
+.guide-specialty,
+.card-description,
+.excursion-card .card-body > p {
+  overflow-wrap: anywhere;
+}
+
+.guide-content h2 { min-height: 46px; }
+.guide-specialty { min-height: 48px; }
+.guide-content > p { flex: 1; }
+
+@media (max-width: 600px) {
+  .guide-content h2,
+  .guide-specialty { min-height: 0; }
+}
