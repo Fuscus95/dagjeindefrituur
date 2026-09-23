@@ -1,6 +1,6 @@
 (() => {
   const grid = document.querySelector("#excursion-grid");
-  if (!grid || !Array.isArray(window.EXCURSIONS)) return;
+  if (!grid || !Array.isArray(window.EXCURSIONS) || !Array.isArray(window.GUIDES)) return;
 
   const escapeHtml = (value = "") => String(value)
     .replaceAll("&", "&amp;")
@@ -10,7 +10,7 @@
     .replaceAll("'", "&#039;");
 
   grid.innerHTML = window.EXCURSIONS.map((excursion) => {
-    const guide = excursion.guide;
+    const guide = window.GUIDES.find((item) => item.id === excursion.guideId);\n    if (!guide) {\n      console.warn(`Unknown guide "${excursion.guideId}" for excursion "${excursion.slug}"`);\n      return "";\n    }
     const mediaClass = excursion.visualClass ? ` ${escapeHtml(excursion.visualClass)}` : "";
 
     return `
