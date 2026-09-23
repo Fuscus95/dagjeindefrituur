@@ -394,7 +394,7 @@
           </p>
 
           <h2>
-            Zes volstrekt noodzakelijke frituurexcursies door België
+            <span id="excursion-count">0</span> volstrekt noodzakelijke frituurexcursies door België
           </h2>
 
         </div>
@@ -828,6 +828,12 @@
 <script src="/assets/js/excursions-list.js"></script>
 
 <script src="/assets/js/filters.js"></script>
+<script>
+  (() => {
+    const el = document.querySelector("#excursion-count");
+    if (el && Array.isArray(window.EXCURSIONS)) el.textContent = window.EXCURSIONS.length;
+  })();
+</script>
 
 
 </body>
