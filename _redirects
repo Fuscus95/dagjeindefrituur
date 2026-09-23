@@ -1,4 +1,4 @@
-# Legacy extensionless excursion URLs -> canonical .html pages
+# Keep extensionless excursion links working
 /excursies/oostkust /excursies/oostkust.html 301
 /excursies/linkeroever /excursies/linkeroever.html 301
 /excursies/viroin /excursies/viroin.html 301
