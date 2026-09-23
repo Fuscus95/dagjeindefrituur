@@ -1,10 +1,10 @@
 window.GUIDES = [
   {
-    id: "valeir", slug: "valeir", legacyPath: "/gidsen/gids1.html", href: "/gidsen/valeir.html",
+    id: "valeir", slug: "valeir", legacyPath: "/gidsen/gids1.html", href: "/gidsen/valeir",
     name: "Valeir", image: "/assets/images/guides/gids1.jpg",
     specialty: "Vogels & industriële frituren", tagline: "Specialist in AI tokens opsouperen",
     meta: ["31 jaar","Gent","Globetrotter","Trektellen","IT","Frituursnacks"],
-    seo: { title: "Valeir | Gidsen | Dagje in de Frituur", description: "Maak kennis met Valeir, gids en brein achter Dagje in de Frituur. Globetrotter, trekteller, betere IT'er dan vogelaar en specialist in Gentse frituursnacks.", canonical: "https://dagjeindefrituur.be/gidsen/valeir.html" },
+    seo: { title: "Valeir | Gidsen | Dagje in de Frituur", description: "Maak kennis met Valeir, gids en brein achter Dagje in de Frituur. Globetrotter, trekteller, betere IT'er dan vogelaar en specialist in Gentse frituursnacks.", canonical: "https://dagjeindefrituur.be/gidsen/valeir" },
     intro: "Valeir is het brein achter deze website, wat meteen verklaart waarom de technische kwaliteit ervan aanzienlijk hoger ligt dan het ornithologische niveau van de auteur.",
     paragraphs: [
       "Hoi! Ik ben Valeir, 31 jaar, geboren en getogen in Gent en tegenwoordig vooral actief op het raakvlak tussen vogelkijken, vliegtuigtickets boeken en dingen maken op een computer die niemand gevraagd heeft.",
@@ -22,11 +22,11 @@ window.GUIDES = [
     facts: [["Standplaats","Gent"],["Favoriete Monster","Geen — verkies Jupiler"],["Specialiteit","Gentse frituursnacks"],["Favoriete habitat","Fonteintjes & Wallifornia"],["Maximale bosjestolerantie","± 2 uur"],["Ornithologische opleiding","Grootgebracht aan de Oesterputbrug"],["Digitale functie","Brein achter deze site"],["Zelfverklaard niveau","Betere IT'er dan vogelaar"],["Stamfrituur","'t Kastaarke"],["Voormalige habitat","Louche technoclubs"]]
   },
   {
-    id: "de-walter", slug: "de-walter", legacyPath: "/gidsen/gids2.html", href: "/gidsen/de-walter.html",
+    id: "de-walter", slug: "de-walter", legacyPath: "/gidsen/gids2.html", href: "/gidsen/de-walter",
     name: "De Walter", image: "/assets/images/guides/gids2.jpg",
     specialty: "Kustvogels en havenfrituren", tagline: "Winnaar Gouden Puntzak 2019",
     meta: ["37 jaar","Vogels","Frituren","Nachtvlinders","Peugeot"],
-    seo: { title: "De Walter | Gidsen | Dagje in de Frituur", description: "Maak kennis met De Walter, gids bij Dagje in de Frituur. Vogelkijker, frituurkenner en veteraan van internationale frituurontdekkingsmissies.", canonical: "https://dagjeindefrituur.be/gidsen/de-walter.html" },
+    seo: { title: "De Walter | Gidsen | Dagje in de Frituur", description: "Maak kennis met De Walter, gids bij Dagje in de Frituur. Vogelkijker, frituurkenner en veteraan van internationale frituurontdekkingsmissies.", canonical: "https://dagjeindefrituur.be/gidsen/de-walter" },
     intro: "Als kind in een ketel met frietvet gevallen en sindsdien nooit meer volledig hersteld.",
     paragraphs: [
       "Hoi! Ik ben De Walter, 37 jaar oud. Volgens de familieoverlevering viel ik als kind in een ketel met frietvet en was mijn eerste woordje als baby niet “mama” of “papa”, maar <strong>tertialprojectie</strong>.",
@@ -42,11 +42,11 @@ window.GUIDES = [
     facts: [["Specialiteit","Dwaalgasten & frituren"],["Favoriete Monster","Mango Loco"],["Voormalige carrière","SK Lierse"],["Habitat","Telpost, nachtvlinderval & frituurparking"],["Jeugdervaring","Internationale frituurmissies in Zeeland"],["Herkenning","Vaak onderweg naar iets zeldzaams"]]
   },
   {
-    id: "bertrand", slug: "bertrand", legacyPath: "/gidsen/gids3.html", href: "/gidsen/bertrand.html",
+    id: "bertrand", slug: "bertrand", legacyPath: "/gidsen/gids3.html", href: "/gidsen/bertrand",
     name: "Bertrand", image: "/assets/images/guides/gids3.jpg",
     specialty: "Wereldwijd", tagline: "Gespecialiseerd in overzeese frituren",
     meta: ["Toptransfer","Wereldvogelen","Reisleider","Canada","Frituur Champions League"],
-    seo: { title: "Bertrand | Gidsen | Dagje in de Frituur", description: "Maak kennis met Bertrand, internationaal vogelgids, globetrotter en nieuwste toptransfer van Dagje in de Frituur.", canonical: "https://dagjeindefrituur.be/gidsen/bertrand.html" },
+    seo: { title: "Bertrand | Gidsen | Dagje in de Frituur", description: "Maak kennis met Bertrand, internationaal vogelgids, globetrotter en nieuwste toptransfer van Dagje in de Frituur.", canonical: "https://dagjeindefrituur.be/gidsen/bertrand" },
     intro: "Na jarenlang rijpen in de wachtkamers van Starling en Ornis maakt Bertrand eindelijk zijn droomtransfer waar: de Champions League van het internationale gidsenwezen, <strong>Dagje in de Frituur</strong>.",
     paragraphs: [
       "Bertrand is al jaren actief op het hoogste internationale niveau. Europa, het Midden-Oosten, Afrika, Azië, Noord-Amerika en Zuid-Amerika: zet ergens een zeldzame vogel neer en de kans is groot dat hij er al eens met een groep betalende vogelaars achteraan is gelopen.",
@@ -65,11 +65,11 @@ window.GUIDES = [
     facts: [["Naam op de ploeglijst","Bertrand"],["Favoriete Monster","Rehab"],["Vorige clubs","Starling & Ornis"],["Huidige club","Dagje in de Frituur"],["Competitie","Champions League van het gidsen"],["Standplaats","Victoria, Canada"],["Werkterrein","Min of meer de volledige planeet"],["Specialiteit","Wereldvogelen & verre reizen"],["Senegalees wapenfeit","Cabanis's Bunting"],["Nieuwe uitdaging","Leren gidsen op frituurniveau"]]
   },
   {
-    id: "jacobus", slug: "jacobus", legacyPath: "/gidsen/gids4.html", href: "/gidsen/jacobus.html",
+    id: "jacobus", slug: "jacobus", legacyPath: "/gidsen/gids4.html", href: "/gidsen/jacobus",
     name: "Jacobus", image: "/assets/images/guides/gids4.jpg?v=2",
     specialty: "Kalkgraslandhellingen", tagline: "Koude sauzen sommelier",
     meta: ["Limburg","Planten","Encyclopedische kennis","5 vlezekes","Geen koude sauzen"],
-    seo: { title: "Jacobus | Gidsen | Dagje in de Frituur", description: "Maak kennis met Jacobus, Limburgse plantenspecialist, wandelende encyclopedie, frituursnackliefhebber en uitgesproken tegenstander van koude sauzen.", canonical: "https://dagjeindefrituur.be/gidsen/jacobus.html" },
+    seo: { title: "Jacobus | Gidsen | Dagje in de Frituur", description: "Maak kennis met Jacobus, Limburgse plantenspecialist, wandelende encyclopedie, frituursnackliefhebber en uitgesproken tegenstander van koude sauzen.", canonical: "https://dagjeindefrituur.be/gidsen/jacobus" },
     intro: "Een wandelende flora, een onuitputtelijke bron van nuttige en minder nuttige kennis en afkomstig uit een streek waar men erin geslaagd is een frikandel een <strong>lange hamburger</strong> te noemen.",
     paragraphs: [
       "Jacobus is Limburger van geboorte en draagt die erfenis met opvallend veel waardigheid. Hij komt uit een streek waar een frikandel zonder enige vorm van ironie een <strong>lange hamburger</strong> genoemd wordt.",
