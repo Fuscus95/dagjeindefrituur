@@ -16,6 +16,17 @@
       return "";
     }
     const mediaClass = excursion.visualClass ? ` ${escapeHtml(excursion.visualClass)}` : "";
+    const absurdVisuals = {
+      "oostkust": ["🕶️", "🐦", "🍟"],
+      "linkeroever": ["🔭", "🐄", "🍟"],
+      "viroin": ["👑", "🐸", "🍟"],
+      "antwerpse-rand": ["🦊", "🥤", "🍟"],
+      "gaume": ["📷", "🐦", "🧀"],
+      "hoge-venen": ["🌫️", "🦉", "🥙"],
+      "nachtje-in-de-frituur": ["🔦", "🦉", "🍟"],
+      "workshop-frituurfotografie-oostende": ["📸", "🐦", "🍟"]
+    };
+    const visual = absurdVisuals[excursion.slug] || ["🍟"];
 
     return `
       <article
@@ -34,7 +45,10 @@
           guide.specialty
         ].filter(Boolean).join(" ").toLocaleLowerCase("nl"))}"
       >
-        <div class="card-media${mediaClass}">
+        <div class="card-media${mediaClass} card-media--${escapeHtml(excursion.slug)}" aria-hidden="true">
+          <div class="card-scene">
+            ${visual.map((item, index) => `<span class="scene-object scene-object-${index + 1}">${item}</span>`).join("")}
+          </div>
           <span class="tag">${escapeHtml(excursion.tag)}</span>
         </div>
 
