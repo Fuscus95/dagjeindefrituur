@@ -1,7 +1,7 @@
 window.EXCURSIONS = [
   {
     slug: "oostkust",
-    href: "/excursies/oostkust",
+    href: "/excursies/oostkust.html",
     title: "Frituren van de Oostkust",
     tag: "Kust",
     visualClass: "",
@@ -120,7 +120,7 @@ window.EXCURSIONS = [
 
   {
     slug: "linkeroever",
-    href: "/excursies/linkeroever",
+    href: "/excursies/linkeroever.html",
     title: "Frituren van Linkeroever",
     tag: "Haven & polders",
     visualClass: "alt1",
@@ -244,7 +244,7 @@ window.EXCURSIONS = [
 
   {
     slug: "viroin",
-    href: "/excursies/viroin",
+    href: "/excursies/viroin.html",
     title: "Frituren van de Viroin",
     tag: "Vallei",
     visualClass: "alt2",
@@ -337,7 +337,7 @@ window.EXCURSIONS = [
 
   {
     slug: "antwerpse-rand",
-    href: "/excursies/antwerpse-rand",
+    href: "/excursies/antwerpse-rand.html",
     title: "Frituren van de Antwerpse rand",
     tag: "Suburbaan",
     visualClass: "alt3",
@@ -418,7 +418,7 @@ window.EXCURSIONS = [
 
  {
   slug: "gaume",
-  href: "/excursies/gaume",
+  href: "/excursies/gaume.html",
   title: "Frituren van de Gaume",
   tag: "Zuid-België",
   visualClass: "alt4",
@@ -550,7 +550,7 @@ window.EXCURSIONS = [
 
   {
     slug: "hoge-venen",
-    href: "/excursies/hoge-venen",
+    href: "/excursies/hoge-venen.html",
     title: "Snackbars van de Hoge Venen",
     tag: "Hoogland",
     visualClass: "alt5",
@@ -686,7 +686,7 @@ window.EXCURSIONS = [
 
   {
     slug: "nachtje-in-de-frituur",
-    href: "/excursies/nachtje-in-de-frituur",
+    href: "/excursies/nachtje-in-de-frituur.html",
     title: "Nachtje in de Frituur",
     tag: "Nacht",
     visualClass: "alt6",
@@ -741,7 +741,7 @@ window.EXCURSIONS = [
 
   {
     slug: "workshop-frituurfotografie-oostende",
-    href: "/excursies/workshop-frituurfotografie-oostende",
+    href: "/excursies/workshop-frituurfotografie-oostende.html",
     title: "Workshop Frituurfotografie Oostende",
     tag: "Fotografie",
     visualClass: "alt7",
