@@ -1,5 +1,5 @@
 (() => {
-  const grid = document.querySelector("#guides-grid");
+  const grid = document.querySelector("#guides-grid") || document.querySelector("#home-guides-grid");
   if (!grid || !Array.isArray(window.GUIDES)) return;
   const esc=(v="")=>String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
   grid.innerHTML=window.GUIDES.map(g=>`
