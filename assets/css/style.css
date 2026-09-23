@@ -343,13 +343,81 @@ h3 {
   background: linear-gradient(140deg,#d79737,#6c3d22);
 }
 
-.card-media::after {
-  content: "🍟";
+.card-media::after { content: none; }
+
+.card-media {
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card-media::before {
+  content: "";
   position: absolute;
-  right: 20px;
-  bottom: 2px;
-  font-size: 98px;
-  opacity: .28;
+  inset: auto -12% -48% -12%;
+  height: 75%;
+  border-radius: 50% 50% 0 0;
+  background: rgba(255,255,255,.14);
+  transform: rotate(-4deg);
+  z-index: -1;
+}
+
+.card-scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.scene-object {
+  position: absolute;
+  filter: drop-shadow(0 8px 9px rgba(30,25,15,.18));
+  line-height: 1;
+  user-select: none;
+}
+
+.scene-object-1 {
+  left: 13%;
+  top: 20%;
+  font-size: 62px;
+  transform: rotate(-12deg);
+}
+
+.scene-object-2 {
+  left: 42%;
+  top: 13%;
+  font-size: 92px;
+  transform: rotate(5deg);
+}
+
+.scene-object-3 {
+  right: 9%;
+  bottom: 14%;
+  font-size: 72px;
+  transform: rotate(10deg);
+}
+
+.card-media:hover .scene-object-2 {
+  transform: rotate(1deg) scale(1.06);
+}
+
+.card-media--nachtje-in-de-frituur,
+.card-media--nachtje-in-de-frituur.alt6 {
+  background: radial-gradient(circle at 75% 22%, #f4e5a4 0 8%, transparent 9%), linear-gradient(145deg,#10182b,#4b365c);
+}
+
+.card-media--workshop-frituurfotografie-oostende,
+.card-media--workshop-frituurfotografie-oostende.alt7 {
+  background: linear-gradient(165deg,#83c7df 0 48%,#d9c68e 49% 67%,#587e91 68%);
+}
+
+.card-media--gaume {
+  background: linear-gradient(145deg,#6c884b,#d7b65b);
+}
+
+.card-media--hoge-venen {
+  background: linear-gradient(145deg,#607b72,#a8b6a1);
 }
 
 .card-media.alt1 {
