@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetFilters = document.querySelector("#reset-filters");
   const resultCount = document.querySelector("#filter-result-count");
 
-  const excursionCards = [
+  const getExcursionCards = () => [
     ...document.querySelectorAll(".excursion-card")
   ];
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let visibleCount = 0;
 
 
-    excursionCards.forEach(card => {
+    getExcursionCards().forEach(card => {
 
       const cardProvince = card.dataset.province || "";
       const cardDuration = card.dataset.duration || "";
