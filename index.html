@@ -520,7 +520,7 @@
     const guideSelect = document.querySelector("#filter-guide");
     if (guideSelect && Array.isArray(window.GUIDES)) {
       window.GUIDES
-        .filter((guide) => window.EXCURSIONS.some((e) => e.guide?.id === guide.id))
+        .filter((guide) => window.EXCURSIONS.some((e) => e.guideId === guide.id))
         .sort((a, b) => a.name.localeCompare(b.name, "nl"))
         .forEach((guide) => {
           const option = document.createElement("option");
