@@ -90,6 +90,22 @@
       </div>
     </section>` : ""}
 
+${guide ? `
+    <section class="section excursion-guide-section">
+      <div class="container">
+        <div class="excursion-guide-card">
+          <img src="${guide.image}" alt="${guide.name} - gids bij Dagje in de Frituur" loading="lazy" decoding="async">
+          <div>
+            <p class="eyebrow dark">Uw hoogst noodzakelijke gids</p>
+            <h2>${guide.name}</h2>
+            <p class="excursion-guide-specialty">${guide.specialty}</p>
+            <p>${guide.tagline}</p>
+            <a class="btn btn-primary" href="${guide.href}">Meer over ${guide.name} →</a>
+          </div>
+        </div>
+      </div>
+    </section>` : ""}
+
     <section class="section">
       <div class="container narrow center">
         <p class="eyebrow dark">${closing.eyebrow}</p>
