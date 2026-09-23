@@ -25,7 +25,37 @@
     set('meta[property="og:title"]', "content", g.seo.title || g.name);
     set('meta[property="og:description"]', "content", g.seo.description);
     set('meta[property="og:url"]', "content", g.seo.canonical);
+
+    const ensureMeta = (selector, attrs) => {
+      let el = document.querySelector(selector);
+      if (!el) {
+        el = document.createElement("meta");
+        document.head.appendChild(el);
+      }
+      Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
+    };
+    ensureMeta('meta[property="og:image"]', { property: "og:image", content: new URL(g.image, location.origin).href });
+    ensureMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+    ensureMeta('meta[name="twitter:title"]', { name: "twitter:title", content: g.seo.title || g.name });
+    ensureMeta('meta[name="twitter:description"]', { name: "twitter:description", content: g.seo.description || "" });
+    ensureMeta('meta[name="twitter:image"]', { name: "twitter:image", content: new URL(g.image, location.origin).href });
   }
+
+  const structuredData = document.createElement("script");
+  structuredData.type = "application/ld+json";
+  structuredData.id = "guide-structured-data";
+  structuredData.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: {
+      "@type": "Person",
+      name: g.name,
+      description: g.seo?.description || g.specialty || "",
+      image: new URL(g.image, location.origin).href,
+      url: g.seo?.canonical || location.href
+    }
+  });
+  document.head.appendChild(structuredData);
 
   const trips = (Array.isArray(window.EXCURSIONS) ? window.EXCURSIONS : [])
     .filter((excursion) => excursion.guideId === g.id);
