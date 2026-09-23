@@ -15,7 +15,7 @@ window.EXCURSIONS = [
       id: "de-walter",
       name: "De Walter",
       image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/gids2"
+      href: "/gidsen/de-walter.html"
     },
 
     card: {
@@ -141,7 +141,7 @@ window.EXCURSIONS = [
       id: "de-walter",
       name: "De Walter",
       image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/gids2"
+      href: "/gidsen/de-walter.html"
     },
 
     card: {
@@ -272,7 +272,7 @@ window.EXCURSIONS = [
       id: "bertrand",
       name: "Bertrand",
       image: "/assets/images/guides/gids3.jpg",
-      href: "/gidsen/gids3"
+      href: "/gidsen/bertrand.html"
     },
 
     card: {
@@ -375,7 +375,7 @@ window.EXCURSIONS = [
       id: "de-walter",
       name: "De Walter",
       image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/gids2"
+      href: "/gidsen/de-walter.html"
     },
 
     card: {
@@ -466,7 +466,7 @@ window.EXCURSIONS = [
     id: "Jacobus",
     name: "jacobus",
     image: "/assets/images/guides/gids4.jpg",
-    href: "/gidsen/gids4"
+    href: "/gidsen/jacobus.html"
   },
 
   card: {
@@ -607,7 +607,7 @@ window.EXCURSIONS = [
       id: "valeir",
       name: "Valeir",
       image: "/assets/images/guides/gids1.jpg",
-      href: "/gidsen/gids1"
+      href: "/gidsen/valeir.html"
     },
 
     card: {
@@ -745,7 +745,7 @@ window.EXCURSIONS = [
     durationFilter: "hele-dag",
     region: "Vlaanderen bij nacht",
     duration: "Van zonsondergang tot sluitingstijd",
-    guide: { id: "valeir", name: "Valeir", image: "/assets/images/guides/gids1.jpg", href: "/gidsen/gids1" },
+    guide: { id: "valeir", name: "Valeir", image: "/assets/images/guides/gids1.jpg", href: "/gidsen/valeir.html" },
     card: {
       description: "Een nachtelijke veldexcursie langs verlichte parkings, industrieterreinen, uilenhabitat en frituren die nog open zijn wanneer verstandige mensen al lang thuis zitten.",
       fries: "3–6 nachtelijke stops"
@@ -805,7 +805,7 @@ window.EXCURSIONS = [
       id: "valeir",
       name: "Valeir",
       image: "/assets/images/guides/gids1.jpg",
-      href: "/gidsen/gids1"
+      href: "/gidsen/valeir.html"
     },
 
     card: {
