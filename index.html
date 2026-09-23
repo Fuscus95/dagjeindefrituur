@@ -213,53 +213,7 @@
             Provincie
           </label>
 
-          <select id="filter-province">
-
-            <option value="">
-              Alle provincies
-            </option>
-
-            <option value="antwerpen">
-              Antwerpen
-            </option>
-
-            <option value="limburg">
-              Limburg
-            </option>
-
-            <option value="oost-vlaanderen">
-              Oost-Vlaanderen
-            </option>
-
-            <option value="west-vlaanderen">
-              West-Vlaanderen
-            </option>
-
-            <option value="vlaams-brabant">
-              Vlaams-Brabant
-            </option>
-
-            <option value="waals-brabant">
-              Waals-Brabant
-            </option>
-
-            <option value="henegouwen">
-              Henegouwen
-            </option>
-
-            <option value="luik">
-              Luik
-            </option>
-
-            <option value="luxemburg">
-              Luxemburg
-            </option>
-
-            <option value="namen">
-              Namen
-            </option>
-
-          </select>
+          <select id="filter-province"><option value="">Alle provincies</option></select>
 
         </div>
 
@@ -270,25 +224,7 @@
             Duur
           </label>
 
-          <select id="filter-duration">
-
-            <option value="">
-              Alle duren
-            </option>
-
-            <option value="halve-dag">
-              Halve dag
-            </option>
-
-            <option value="hele-dag">
-              Hele dag
-            </option>
-
-            <option value="weekendje">
-              Weekendje
-            </option>
-
-          </select>
+          <select id="filter-duration"><option value="">Alle duren</option></select>
 
         </div>
 
@@ -312,45 +248,7 @@
             Categorie
           </label>
 
-          <select id="filter-category">
-
-            <option value="">
-              Alle categorieën
-            </option>
-
-            <option value="vogels">
-              Vogels
-            </option>
-
-            <option value="zoogdieren">
-              Zoogdieren
-            </option>
-
-            <option value="vlinders">
-              Vlinders
-            </option>
-
-            <option value="planten">
-              Planten
-            </option>
-
-            <option value="insecten-en-meer">
-              Insecten &amp; meer
-            </option>
-
-            <option value="reptielen-en-amfibieen">
-              Reptielen &amp; amfibieën
-            </option>
-
-            <option value="astronomie">
-              Astronomie
-            </option>
-
-            <option value="beginnersexcursie">
-              Beginnersexcursie
-            </option>
-
-          </select>
+          <select id="filter-category"><option value="">Alle categorieën</option></select>
 
         </div>
 
@@ -572,14 +470,65 @@
 
 <script>
   (() => {
-    const select = document.querySelector("#filter-guide");
-    if (!select || !Array.isArray(window.GUIDES)) return;
-    window.GUIDES.forEach((guide) => {
-      const option = document.createElement("option");
-      option.value = guide.id;
-      option.textContent = guide.name;
-      select.appendChild(option);
-    });
+    if (!Array.isArray(window.EXCURSIONS)) return;
+
+    const labels = {
+      "antwerpen": "Antwerpen",
+      "limburg": "Limburg",
+      "oost-vlaanderen": "Oost-Vlaanderen",
+      "west-vlaanderen": "West-Vlaanderen",
+      "vlaams-brabant": "Vlaams-Brabant",
+      "waals-brabant": "Waals-Brabant",
+      "henegouwen": "Henegouwen",
+      "luik": "Luik",
+      "luxemburg": "Luxemburg",
+      "namen": "Namen",
+      "halve-dag": "Halve dag",
+      "hele-dag": "Hele dag",
+      "weekendje": "Weekendje",
+      "vogels": "Vogels",
+      "zoogdieren": "Zoogdieren",
+      "vlinders": "Vlinders",
+      "planten": "Planten",
+      "insecten-en-meer": "Insecten & meer",
+      "reptielen-en-amfibieen": "Reptielen & amfibieën",
+      "astronomie": "Astronomie",
+      "beginnersexcursie": "Beginnersexcursie"
+};
+
+    const fill = (selector, values) => {
+      const select = document.querySelector(selector);
+      if (!select) return;
+      [...new Set(values.filter(Boolean))]
+        .sort((a, b) => (labels[a] || a).localeCompare(labels[b] || b, "nl"))
+        .forEach((value) => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = labels[value] || value;
+          select.appendChild(option);
+        });
+    };
+
+    fill("#filter-province", window.EXCURSIONS.map((e) => e.province));
+    fill("#filter-duration", window.EXCURSIONS.map((e) => e.durationFilter));
+
+    const categories = window.EXCURSIONS.flatMap((e) =>
+      String(e.category || "").split(/\\s+/).filter(Boolean)
+    );
+    fill("#filter-category", categories);
+
+    const guideSelect = document.querySelector("#filter-guide");
+    if (guideSelect && Array.isArray(window.GUIDES)) {
+      window.GUIDES
+        .filter((guide) => window.EXCURSIONS.some((e) => e.guide?.id === guide.id))
+        .sort((a, b) => a.name.localeCompare(b.name, "nl"))
+        .forEach((guide) => {
+          const option = document.createElement("option");
+          option.value = guide.id;
+          option.textContent = guide.name;
+          guideSelect.appendChild(option);
+        });
+    }
   })();
 </script>
 
