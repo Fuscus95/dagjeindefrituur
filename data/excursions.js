@@ -725,7 +725,7 @@ window.EXCURSIONS = [
         { type: "p", html: "Wie tegen het ochtendgloren nog aanwezig is, krijgt de volledige ornithologische beloning: eerste Merels, overvliegende Kauwen en het besef dat dit zonder twijfel een slecht idee was." },
         { type: "checklist", items: ["Nachtvogels zoeken tot de frituur belangrijker wordt dan de soortenlijst","Verlichte industrieterreinen beoordelen op uilen- én snackpotentieel","Minstens één frituur bezoeken na middernacht","Discussie over de vraag of een overvliegende meeuw om 03:17 nog telbaar is","Eerste ochtendzang meemaken met mayonaise op de jas","De excursie afsluiten met de collectieve vaststelling dat iedereen gewoon naar huis had moeten gaan"] }
       ],
-      practical: [["Gids","Valeir"],["Duur","Van zonsondergang tot sluitingstijd"],["Regio","Vlaanderen bij nacht"],["Niveau","Onverantwoord maar haalbaar"],["Doelsoorten","Steenuil · Kerkuil · Oehoe · vroege Merel"],["Stops","3–6 frituren, parkings en verdachte locaties"],["Beste periode","Vrijdag- en zaterdagnacht"],["Einduur","Theoretisch vóór zonsopgang"]],
+      practical: [["Niveau","Onverantwoord maar haalbaar"],["Doelsoorten","Steenuil · Kerkuil · Oehoe · vroege Merel"],["Stops","3–6 frituren, parkings en verdachte locaties"],["Beste periode","Vrijdag- en zaterdagnacht"],["Einduur","Theoretisch vóór zonsopgang"]],
       routeHeading: "Verloop van de nacht",
       route: [
         { title: "Zonsondergang — klassieke nachtsoorten", text: "We starten nog vrij geloofwaardig met Steenuil, Kerkuil en andere soorten waarvoor men zonder schaamte een excursie kan organiseren." },
