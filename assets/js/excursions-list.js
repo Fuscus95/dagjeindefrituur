@@ -24,6 +24,15 @@
         data-duration="${escapeHtml(excursion.durationFilter)}"
         data-province="${escapeHtml(excursion.province)}"
         data-category="${escapeHtml(excursion.category)}"
+        data-search="${escapeHtml([
+          excursion.title,
+          excursion.region,
+          excursion.tag,
+          excursion.category,
+          excursion.card?.description,
+          guide.name,
+          guide.specialty
+        ].filter(Boolean).join(" ").toLocaleLowerCase("nl"))}"
       >
         <div class="card-media${mediaClass}">
           <span class="tag">${escapeHtml(excursion.tag)}</span>
