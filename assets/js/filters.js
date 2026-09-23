@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  const filterSearch = document.querySelector("#filter-search");
   const filterProvince = document.querySelector("#filter-province");
   const filterDuration = document.querySelector("#filter-duration");
   const filterGuide = document.querySelector("#filter-guide");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function applyExcursionFilters() {
 
+    const search = (filterSearch?.value || "").trim().toLocaleLowerCase("nl");
     const province = filterProvince?.value || "";
     const duration = filterDuration?.value || "";
     const guide = filterGuide?.value || "";
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getExcursionCards().forEach(card => {
 
+      const cardSearch = card.dataset.search || "";
       const cardProvince = card.dataset.province || "";
       const cardDuration = card.dataset.duration || "";
       const cardGuide = card.dataset.guide || "";
@@ -32,6 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const cardCategories = (card.dataset.category || "")
         .split(/\s+/)
         .filter(Boolean);
+
+
+      const matchesSearch =
+        search === "" ||
+        cardSearch.includes(search);
 
 
       const matchesProvince =
@@ -55,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       const visible =
+        matchesSearch &&
         matchesProvince &&
         matchesDuration &&
         matchesGuide &&
@@ -95,6 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  if (filterSearch) {
+    filterSearch.addEventListener("input", applyExcursionFilters);
+  }
+
   [
     filterProvince,
     filterDuration,
@@ -112,6 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (resetFilters) {
 
     resetFilters.addEventListener("click", () => {
+
+      if (filterSearch) {
+        filterSearch.value = "";
+      }
 
       if (filterProvince) {
         filterProvince.value = "";
