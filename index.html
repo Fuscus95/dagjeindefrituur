@@ -513,7 +513,7 @@
     fill("#filter-duration", window.EXCURSIONS.map((e) => e.durationFilter));
 
     const categories = window.EXCURSIONS.flatMap((e) =>
-      String(e.category || "").split(/\\s+/).filter(Boolean)
+      String(e.category || "").split(/\s+/).filter(Boolean)
     );
     fill("#filter-category", categories);
 
@@ -534,7 +534,7 @@
 
 <script src="/assets/js/excursions-list.js"></script>
 
-<script src="/assets/js/filters.js"></script>
+<script src="/assets/js/filters.js"></script>\n<script src="/assets/js/data-validator.js"></script>
 <script>
   (() => {
     if (!Array.isArray(window.EXCURSIONS)) return;
