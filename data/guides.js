@@ -1,6 +1,6 @@
 window.GUIDES = [
   {
-    id: "valeir", slug: "valeir", legacyPath: "/gidsen/gids1.html", href: "/gidsen/valeir",
+    id: "valeir", slug: "valeir", href: "/gidsen/valeir",
     name: "Valeir", image: "/assets/images/guides/gids1.jpg",
     specialty: "Vogels & industriële frituren", tagline: "Specialist in AI tokens opsouperen",
     meta: ["31 jaar","Gent","Globetrotter","Trektellen","IT","Frituursnacks"],
@@ -22,7 +22,7 @@ window.GUIDES = [
     facts: [["Standplaats","Gent"],["Favoriete Monster","Geen — verkies Jupiler"],["Specialiteit","Gentse frituursnacks"],["Favoriete habitat","Fonteintjes & Wallifornia"],["Maximale bosjestolerantie","± 2 uur"],["Ornithologische opleiding","Grootgebracht aan de Oesterputbrug"],["Digitale functie","Brein achter deze site"],["Zelfverklaard niveau","Betere IT'er dan vogelaar"],["Stamfrituur","'t Kastaarke"],["Voormalige habitat","Louche technoclubs"]]
   },
   {
-    id: "de-walter", slug: "de-walter", legacyPath: "/gidsen/gids2.html", href: "/gidsen/de-walter",
+    id: "de-walter", slug: "de-walter", href: "/gidsen/de-walter",
     name: "De Walter", image: "/assets/images/guides/gids2.jpg",
     specialty: "Kustvogels en havenfrituren", tagline: "Winnaar Gouden Puntzak 2019",
     meta: ["37 jaar","Vogels","Frituren","Nachtvlinders","Peugeot"],
@@ -42,7 +42,7 @@ window.GUIDES = [
     facts: [["Specialiteit","Dwaalgasten & frituren"],["Favoriete Monster","Mango Loco"],["Voormalige carrière","SK Lierse"],["Habitat","Telpost, nachtvlinderval & frituurparking"],["Jeugdervaring","Internationale frituurmissies in Zeeland"],["Herkenning","Vaak onderweg naar iets zeldzaams"]]
   },
   {
-    id: "bertrand", slug: "bertrand", legacyPath: "/gidsen/gids3.html", href: "/gidsen/bertrand",
+    id: "bertrand", slug: "bertrand", href: "/gidsen/bertrand",
     name: "Bertrand", image: "/assets/images/guides/gids3.jpg",
     specialty: "Wereldwijd", tagline: "Gespecialiseerd in overzeese frituren",
     meta: ["Toptransfer","Wereldvogelen","Reisleider","Canada","Frituur Champions League"],
@@ -65,7 +65,7 @@ window.GUIDES = [
     facts: [["Naam op de ploeglijst","Bertrand"],["Favoriete Monster","Rehab"],["Vorige clubs","Starling & Ornis"],["Huidige club","Dagje in de Frituur"],["Competitie","Champions League van het gidsen"],["Standplaats","Victoria, Canada"],["Werkterrein","Min of meer de volledige planeet"],["Specialiteit","Wereldvogelen & verre reizen"],["Senegalees wapenfeit","Cabanis's Bunting"],["Nieuwe uitdaging","Leren gidsen op frituurniveau"]]
   },
   {
-    id: "jacobus", slug: "jacobus", legacyPath: "/gidsen/gids4.html", href: "/gidsen/jacobus",
+    id: "jacobus", slug: "jacobus", href: "/gidsen/jacobus",
     name: "Jacobus", image: "/assets/images/guides/gids4.jpg?v=2",
     specialty: "Kalkgraslandhellingen", tagline: "Koude sauzen sommelier",
     meta: ["Limburg","Planten","Encyclopedische kennis","5 vlezekes","Geen koude sauzen"],
