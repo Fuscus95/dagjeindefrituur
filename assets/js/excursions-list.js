@@ -39,7 +39,7 @@
           <p>${escapeHtml(excursion.card.description)}</p>
 
           <div class="excursion-guide">
-            <img src="${escapeHtml(guide.image)}" alt="${escapeHtml(guide.name)}" loading="lazy">
+            <img src="${escapeHtml(guide.image)}" alt="${escapeHtml(guide.name)}" loading="lazy" decoding="async">
             <div>
               <span>Begeleid door</span>
               <a href="${escapeHtml(guide.href)}">${escapeHtml(guide.name)}</a>
