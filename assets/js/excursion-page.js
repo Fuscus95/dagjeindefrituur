@@ -1,6 +1,6 @@
 (() => {
   const root = document.querySelector("#excursion-page");
-  if (!root || !Array.isArray(window.EXCURSIONS)) return;
+  if (!root || !Array.isArray(window.EXCURSIONS)) return;\n\n  const guideById = (id) => Array.isArray(window.GUIDES) ? window.GUIDES.find((guide) => guide.id === id) : null;
 
   const slug = document.body.dataset.excursionSlug || new URLSearchParams(location.search).get("slug");
   const excursion = window.EXCURSIONS.find((item) => item.slug === slug);
@@ -32,7 +32,25 @@
     return "";
   }).join("");
 
-  const practical = excursion.detail.practical.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("");
+  const guide = guideById(excursion.guideId);
+  const labels = {
+    "antwerpen": "Antwerpen", "limburg": "Limburg", "oost-vlaanderen": "Oost-Vlaanderen",
+    "west-vlaanderen": "West-Vlaanderen", "vlaams-brabant": "Vlaams-Brabant",
+    "waals-brabant": "Waals-Brabant", "henegouwen": "Henegouwen", "luik": "Luik",
+    "luxemburg": "Luxemburg", "namen": "Namen", "vogels": "Vogels",
+    "zoogdieren": "Zoogdieren", "vlinders": "Vlinders", "planten": "Planten",
+    "insecten-en-meer": "Insecten & meer", "reptielen-en-amfibieen": "Reptielen & amfibieën",
+    "astronomie": "Astronomie", "beginnersexcursie": "Beginnersexcursie"
+  };
+  const automaticPractical = [
+    guide ? ["Gids", `<a href="${guide.href}">${guide.name}</a>`] : null,
+    ["Duur", excursion.duration],
+    ["Provincie", labels[excursion.province] || excursion.province],
+    ["Categorie", String(excursion.category || "").split(/\\s+/).filter(Boolean).map((x) => labels[x] || x).join(" · ")],
+    ["Regio", excursion.region]
+  ].filter(Boolean);
+  const practicalRows = [...automaticPractical, ...(excursion.detail.practical || [])];
+  const practical = practicalRows.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("");
   const route = excursion.detail.route.map((step, index) => `<div class="route-step"><div class="step-num">${index + 1}</div><div><strong>${step.title}</strong><p>${step.text}</p></div></div>`).join("");
   const closing = excursion.detail.closing || {
     eyebrow: "Terug naar het overzicht",
