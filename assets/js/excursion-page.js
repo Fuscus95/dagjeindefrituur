@@ -46,7 +46,7 @@
     guide ? ["Gids", `<a href="${guide.href}">${guide.name}</a>`] : null,
     ["Duur", excursion.duration],
     ["Provincie", labels[excursion.province] || excursion.province],
-    ["Categorie", String(excursion.category || "").split(/\\s+/).filter(Boolean).map((x) => labels[x] || x).join(" · ")],
+    ["Categorie", String(excursion.category || "").split(/\s+/).filter(Boolean).map((x) => labels[x] || x).join(" · ")],
     ["Regio", excursion.region]
   ].filter(Boolean);
   const practicalRows = [...automaticPractical, ...(excursion.detail.practical || [])];
