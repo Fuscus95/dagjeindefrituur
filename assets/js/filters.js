@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const initExcursionFilters = () => {
 
   const filterSearch = document.querySelector("#filter-search");
   const filterProvince = document.querySelector("#filter-province");
@@ -156,4 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyExcursionFilters();
 
-});
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initExcursionFilters, { once: true });
+} else {
+  initExcursionFilters();
+}
