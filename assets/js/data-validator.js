@@ -13,7 +13,7 @@
       console.warn(`Unknown guideId "${e.guideId}" for excursion "${e.slug}"`);
     }
 
-    const expectedHref = `/excursies/${e.slug}.html`;
+    const expectedHref = `/excursies/${e.slug}`;
     if (e.href !== expectedHref) {
       console.warn(`Unexpected href for "${e.slug}": expected ${expectedHref}, got ${e.href}`);
     }
