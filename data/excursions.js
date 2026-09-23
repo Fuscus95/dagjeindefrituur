@@ -11,12 +11,7 @@ window.EXCURSIONS = [
     region: "Knokke – Zeebrugge – Blankenberge",
     duration: "4–5 uur",
 
-    guide: {
-      id: "de-walter",
-      name: "De Walter",
-      image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/de-walter.html"
-    },
+    guideId: "de-walter",
 
     card: {
       description: "Vogelkijken rond Zeebrugge en de Belgische Oostkust, gevolgd door een hoogst noodzakelijke evaluatie van de plaatselijke frituren. Op zoek naar de grauwe fritis",
@@ -137,12 +132,7 @@ window.EXCURSIONS = [
     region: "Linkeroever – Kallo – Doel",
     duration: "3–4 uur",
 
-    guide: {
-      id: "de-walter",
-      name: "De Walter",
-      image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/de-walter.html"
-    },
+    guideId: "de-walter",
 
     card: {
       description: "Polders, havengebied, moerasvogels en frieten op Linkeroever. Een landschap van natuurontwikkeling, industrie en strategisch geplaatste frituren. Polders zijn ook natuur.",
@@ -268,12 +258,7 @@ window.EXCURSIONS = [
     region: "Nismes – Olloy-sur-Viroin",
     duration: "Volledige dag",
 
-    guide: {
-      id: "bertrand",
-      name: "Bertrand",
-      image: "/assets/images/guides/gids3.jpg",
-      href: "/gidsen/bertrand.html"
-    },
+    guideId: "bertrand",
 
     card: {
       description: "Vogelkijken in de Viroin rond Nismes en Olloy-sur-Viroin, tussen kalkgraslanden, bossen en dorpen waar de frituur soms gevaarlijk dicht bij het ornithologische programma ligt.",
@@ -371,12 +356,7 @@ window.EXCURSIONS = [
     region: "Antwerpse rand",
     duration: "4 uur",
 
-    guide: {
-      id: "de-walter",
-      name: "De Walter",
-      image: "/assets/images/guides/gids2.jpg",
-      href: "/gidsen/de-walter.html"
-    },
+    guideId: "de-walter",
 
     card: {
       description: "Steenwegen, verkavelingen, natuurgebieden en parkeerterreinen vormen hier het ideale leefgebied voor de moderne frituur.",
@@ -462,12 +442,7 @@ window.EXCURSIONS = [
   region: "Torgny – Dampicourt – Sainte-Marie",
   duration: "Volledige dag",
 
-  guide: {
-    id: "Jacobus",
-    name: "jacobus",
-    image: "/assets/images/guides/gids4.jpg",
-    href: "/gidsen/jacobus.html"
-  },
+  guideId: "Jacobus",
 
   card: {
     description: "Kalkgraslanden, zuiderse soorten, Grauwe Klauwieren en de enige frituur van België met een vermelding in Gault&Millau. Welkom in de Gaume.",
@@ -603,12 +578,7 @@ window.EXCURSIONS = [
     region: "Hoge Venen – Brackvenn – Eupen",
     duration: "5–6 uur",
 
-    guide: {
-      id: "valeir",
-      name: "Valeir",
-      image: "/assets/images/guides/gids1.jpg",
-      href: "/gidsen/valeir.html"
-    },
+    guideId: "valeir",
 
     card: {
       description: "Vogelkijken in de Hoge Venen, Brackvenn en omgeving, gevolgd door de existentiële vraag waar je na uren veenlopen nog degelijk kunt eten.",
@@ -745,7 +715,7 @@ window.EXCURSIONS = [
     durationFilter: "hele-dag",
     region: "Vlaanderen bij nacht",
     duration: "Van zonsondergang tot sluitingstijd",
-    guide: { id: "valeir", name: "Valeir", image: "/assets/images/guides/gids1.jpg", href: "/gidsen/valeir.html" },
+    guideId: "valeir",
     card: {
       description: "Een nachtelijke veldexcursie langs verlichte parkings, industrieterreinen, uilenhabitat en frituren die nog open zijn wanneer verstandige mensen al lang thuis zitten.",
       fries: "3–6 nachtelijke stops"
@@ -801,12 +771,7 @@ window.EXCURSIONS = [
     region: "Oostende · Oosterstaketsel",
     duration: "4 uur",
 
-    guide: {
-      id: "valeir",
-      name: "Valeir",
-      image: "/assets/images/guides/gids1.jpg",
-      href: "/gidsen/valeir.html"
-    },
+    guideId: "valeir",
 
     card: {
       description: "Leer frieten fotograferen in het harde kustlicht van Oostende. Compositie, belichting, sausreflecties en meeuwenmanagement aan het Oosterstaketsel.",
