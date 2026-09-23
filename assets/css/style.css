@@ -969,3 +969,40 @@ h3 {
   }
 
 }
+
+
+/* Accessibility & small-screen polish */
+.nav-toggle { cursor: pointer; }
+.nav-toggle:focus-visible,
+.main-nav a:focus-visible,
+.brand:focus-visible,
+.guide-button:focus-visible,
+.mini-link:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .container { width: min(100% - 28px, 1160px); }
+  .nav-wrap { min-height: 68px; }
+  .main-nav { top: 68px; gap: 0; padding: 10px 14px 18px; }
+  .main-nav a { width: 100%; padding: 13px 8px; border-bottom: 1px solid var(--line); }
+  .main-nav a:last-child { border-bottom: 0; }
+  .brand small { display: none; }
+  .brand strong { font-size: 17px; }
+  .brand-icon { width: 40px; height: 40px; }
+  .section { padding: 68px 0; }
+  h1 { font-size: clamp(40px, 13vw, 62px); }
+  h2 { font-size: clamp(31px, 9vw, 44px); }
+  .hero-copy, .subhero-copy { font-size: 18px; }
+  .card-footer { align-items: flex-start; flex-direction: column; }
+  .excursion-card .card-footer a,
+  .excursion-card .card-footer strong { white-space: normal; }
+}
+
+@media (max-width: 420px) {
+  .guides-section { padding: 50px 0; }
+  .guide-card img { height: 310px; }
+  .hero-actions .btn { width: 100%; }
+}
