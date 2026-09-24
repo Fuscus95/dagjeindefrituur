@@ -16,7 +16,9 @@
       return "";
     }
     const mediaClass = excursion.visualClass ? ` ${escapeHtml(excursion.visualClass)}` : "";
-    const image = `/assets/images/excursions/${excursion.slug}.webp`;
+    const image = excursion.slug === "nachtje-in-de-frituur"
+      ? "/assets/images/excursions/nachtje-overpoort.webp"
+      : `/assets/images/excursions/${excursion.slug}.webp`;
     const imageAlt = {
       "oostkust": "Strand en haven van Zeebrugge",
       "linkeroever": "Prosperpolder bij Doel, met havenkranen en koeltorens op de achtergrond",
@@ -24,7 +26,7 @@
       "antwerpse-rand": "Verkeer op de Antwerpse ring",
       "gaume": "Wijngaard in Torgny in de Gaume",
       "hoge-venen": "Satellietbeeld van de brand en het verbrande landschap in de Hoge Venen in augustus 2026",
-      "nachtje-in-de-frituur": "De Keyserlei in Antwerpen bij nacht",
+      "nachtje-in-de-frituur": "De Overpoortstraat in Gent bij nacht",
       "workshop-frituurfotografie-oostende": "Strand van Oostende"
     };
 
