@@ -16,17 +16,17 @@
       return "";
     }
     const mediaClass = excursion.visualClass ? ` ${escapeHtml(excursion.visualClass)}` : "";
-    const absurdVisuals = {
-      "oostkust": ["🕶️", "🐦", "🍟"],
-      "linkeroever": ["🔭", "🐄", "🍟"],
-      "viroin": ["👑", "🐸", "🍟"],
-      "antwerpse-rand": ["🦊", "🥤", "🍟"],
-      "gaume": ["📷", "🐦", "🧀"],
-      "hoge-venen": ["🌫️", "🦉", "🥙"],
-      "nachtje-in-de-frituur": ["🔦", "🦉", "🍟"],
-      "workshop-frituurfotografie-oostende": ["📸", "🐦", "🍟"]
+    const image = `/assets/images/excursions/${excursion.slug}.webp`;
+    const imageAlt = {
+      "oostkust": "Strand en haven van Zeebrugge",
+      "linkeroever": "Prosperpolder bij Doel, met havenkranen en koeltorens op de achtergrond",
+      "viroin": "Landschap van Viroinval bij Nismes",
+      "antwerpse-rand": "Verkeer op de Antwerpse ring",
+      "gaume": "Wijngaard in Torgny in de Gaume",
+      "hoge-venen": "Satellietbeeld van de brand en het verbrande landschap in de Hoge Venen in augustus 2026",
+      "nachtje-in-de-frituur": "De Keyserlei in Antwerpen bij nacht",
+      "workshop-frituurfotografie-oostende": "Strand van Oostende"
     };
-    const visual = absurdVisuals[excursion.slug] || ["🍟"];
 
     return `
       <article
@@ -45,10 +45,7 @@
           guide.specialty
         ].filter(Boolean).join(" ").toLocaleLowerCase("nl"))}"
       >
-        <div class="card-media${mediaClass} card-media--${escapeHtml(excursion.slug)}" aria-hidden="true">
-          <div class="card-scene">
-            ${visual.map((item, index) => `<span class="scene-object scene-object-${index + 1}">${item}</span>`).join("")}
-          </div>
+        <div class="card-media${mediaClass} card-media--${escapeHtml(excursion.slug)}"><img src="${escapeHtml(image)}" alt="${escapeHtml(imageAlt[excursion.slug] || excursion.title)}" loading="lazy" decoding="async" width="960" height="600">
           <span class="tag">${escapeHtml(excursion.tag)}</span>
         </div>
 

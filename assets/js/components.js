@@ -123,6 +123,7 @@ const footerHTML = `
 
 
   <div class="container footer-bottom">
+    <a href="/fotocredits">Fotocredits</a>
 
     <span>
       © <span data-year></span> Dagje in de Frituur | Ontwikkeld door een dorstige AI met een bedenkelijke ecologische voetafdruk.
